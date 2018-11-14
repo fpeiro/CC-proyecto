@@ -14,8 +14,8 @@ El proyecto a desarrollar trata sobre un servicio por el cual se monitorizan sen
 - **Administración de los sensores:** En esta parte de la aplicación se permite añadir nuevos sensores, elegir su tipo y los valores que toma, asi como su eliminación o modificación.
 - **Gestión de avisos:** Por último aquí se gestiona los avisos que debe mostrar un sistema cuando un determinado sensor alcanza un valor. De esta forma, por ejemplo, si un anemómetro capta ráfagas de viento de más de 130 km/h se lanzará un aviso en el sistema.
 
-# Arquitectura
-La realización de este proyecto se elaborará con Node.js utilizando el microframework Express.js. Con ellos se desarrollarán microservicios que usará el cliente de manera dinámica. Estos realizarán las siguientes funcionalidades:
+## Arquitectura
+La realización de este proyecto se elaborará con Node.js utilizando el microframework [Express.js 4](http://expressjs.com/). Con ellos se desarrollarán microservicios que usará el cliente de manera dinámica. Estos realizarán las siguientes funcionalidades:
 
 - Conexión con la base de datos (MySQL).
 - Identificación y registro.
@@ -24,5 +24,18 @@ La realización de este proyecto se elaborará con Node.js utilizando el microfr
 - Creación de sensores.
 - Creación de alertas.
 
-# Licencia
+## Ejecución de manera local
+
+Para poder ejecutarlo se debe tener [Node.js](http://nodejs.org/) instalado y realizar los siguientes comandos en el Terminal de Linux o en el CMD de Windows.
+
+```sh
+$ git clone https://github.com/fpeiro/CC-proyecto.git
+$ cd CC-proyecto
+$ npm install
+$ npm start
+```
+
+La microservicio empezará a correr en [localhost:5000](http://localhost:5000/).
+
+## Licencia
 Este repositorio se encuentra bajo la GNU General Public License v3.0.
