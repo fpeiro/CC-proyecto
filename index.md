@@ -2,7 +2,7 @@
 ### Autor: Felipe Peiró Garrido
 
 ### Menú
-* [Información sobre el hito 2](https://fpeiro.github.io/CC-proyecto/hito2). Desarrollo del primer microservicio.
+* [Información sobre el hito 2](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito2.md). Desarrollo del primer microservicio.
 
 ---
 
@@ -29,7 +29,8 @@ La realización de este proyecto se elaborará con Node.js utilizando el microfr
 
 ## Despliegue en Heroku
 
-El microservicio ha sido puesto en marcha a través de Heroku. Para visitarlo puede hacer click [aquí](https://cc-proyecto-fpeiro.herokuapp.com/).
+El microservicio ha sido puesto en marcha a través de Heroku. Para visitarlo puede hacer click en el siguiente enlace:
+* Despliegue https://cc-proyecto-fpeiro.herokuapp.com/
 
 ## Ejecución de manera local
 
