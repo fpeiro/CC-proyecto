@@ -1,15 +1,39 @@
 {
-  "name": "CC-proyecto", "version": "1.0.0", "description": "Estación meteorológica local en Granada", "engines": {
+  "name": "cc-proyecto",
+  "version": "1.0.0",
+  "description": "Estación meteorológica local en Granada",
+  "engines": {
     "node": "10.x"
-  }, "main": "server.js", "scripts": {
-    "start": "node server.js", "test": "mocha"
-  }, "dependencies": {
-    "body-parser": "^1.18.3", "ejs": "^2.6.1", "express": "^4.16.4", "jsdom": "^13.0.0", "mysql": "^2.16.0"
-  }, "devDependencies": {
-    "supertest": "^3.3.0", "mocha": "^5.2.0"
-  }, "repository": {
-    "type": "git", "url": "https://github.com/fpeiro/CC-proyecto"
-  }, "keywords": [
-    "node", "heroku", "express"
-  ], "license": "GPL-3.0"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jsdom": "^13.0.0",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "supertest": "^3.3.0",
+    "mocha": "^5.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fpeiro/CC-proyecto.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/fpeiro/CC-proyecto/issues"
+  },
+  "homepage": "https://github.com/fpeiro/CC-proyecto#readme",
+  "author": "fpeiro"
 }
