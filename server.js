@@ -11,13 +11,13 @@ const jsdom = require('jsdom');
 const {JSDOM} = jsdom;
 
 // Configuración de la base de datos
-MYSQL_URI = {
+var MYSQL_URI = {
     host: 'us-cdbr-gcp-east-01.cleardb.net',
     user: 'bf513a472fe95b',
     password: '18ecf997',
     database: 'gcp_0ec181dd4858ee89399d'
 };
-NOMBRE_TABLA = 'charts';
+var NOMBRE_TABLA = 'charts';
 
 var DAOChart = require("./model/daochart.js");
 var Chart = require("./model/chart.js");
@@ -50,95 +50,109 @@ app.get('/about', function (req, res) {
 // Página para añadir sensores
 app.put('/chart', function (req, res) {
     daochart.insert(new Chart(null, req.body.tipo), function (status) {
-		if (status === "ERROR") err404(null, req, res, null);
-        res.status(200).json({
-            "message": "Se ha añadido un nuevo sensor de " + req.body.tipo,
-            "status": status
-        });
+        if (status === "ERROR")
+            err404(null, req, res, null);
+        else
+            res.status(200).json({
+                "message": "Se ha añadido un nuevo sensor de " + req.body.tipo,
+                "status": status
+            });
     });
 });
 
 // Página para modificar sensores
 app.post('/chart', function (req, res) {
     daochart.update(new Chart(req.body.id, req.body.tipo), function (status) {
-		if (status === "ERROR") err404(null, req, res, null);
-        res.status(200).json({
-            "message": "Se ha modificado el sensor número " + req.body.id,
-            "status": status
-        });
+        if (status === "ERROR")
+            err404(null, req, res, null);
+        else
+            res.status(200).json({
+                "message": "Se ha modificado el sensor número " + req.body.id,
+                "status": status
+            });
     });
 });
 
 // Página para eliminar sensores
 app.delete('/chart', function (req, res) {
     daochart.delete(new Chart(req.query.id, null), function (status) {
-		if (status === "ERROR") err404(null, req, res, null);
-        res.status(200).json({
-            "message": "Se ha eliminado el sensor número " + req.query.id,
-            "status": status
-        });
+        if (status === "ERROR")
+            err404(null, req, res, null);
+        else
+            res.status(200).json({
+                "message": "Se ha eliminado el sensor número " + req.query.id,
+                "status": status
+            });
     });
 });
 
 // Página para buscar sensores
 app.get('/chart', function (req, res) {
     daochart.find(new Chart(req.query.id, null), function (chart) {
-		if (chart === "ERROR") err404(null, req, res, null);
-		let promesa = getCode(req, chart);
-		Promise.resolve(promesa).then(function (code) {
-			res.status(200).json({
-				"message": "Se ha obtenido correctamente 1 sensor",
-				"valor": {
-					"id": chart.id,
-					"tipo": chart.tipo,
-					"chart": code
-				},
-				"status": "SUCCESS"
-			});
-		});
+        if (chart === "ERROR")
+            err404(null, req, res, null);
+        else {
+            let promesa = getCode(req, chart);
+            Promise.resolve(promesa).then(function (code) {
+                res.status(200).json({
+                    "message": "Se ha obtenido correctamente 1 sensor",
+                    "valor": {
+                        "id": chart.id,
+                        "tipo": chart.tipo,
+                        "chart": code
+                    },
+                    "status": "SUCCESS"
+                });
+            });
+        }
     });
 });
 
 // Página para resetear los sensores
 app.delete('/charts', function (req, res) {
     daochart.deleteAll(function (status) {
-		if (status === "ERROR") err404(null, req, res, null);
-        res.status(200).json({
-            "message": "Se han reseteado los sensores",
-            "status": status
-        });
+        if (status === "ERROR")
+            err404(null, req, res, null);
+        else
+            res.status(200).json({
+                "message": "Se han reseteado los sensores",
+                "status": status
+            });
     });
 });
 
 // Página para obtener los sensores
 app.get('/charts', function (req, res) {
     daochart.findAll(function (charts) {
-		if (charts === "ERROR") err404(null, req, res, null);
-		var promesas = [];
-		for (var chart of charts) {
-			let promesa = getCode(req, chart);
-			promesas.push(promesa);
-		}
-		Promise.all(promesas).then(function (codes) {
-			var jsn = {
-				"message": "Se han obtenido correctamente los sensores",
-				"valores": new Array(),
-				"status": "SUCCESS"
-			};
-			var counter = 0;
-			for (chart of charts) {
-				counter++;
-				var aux = {};
-				aux["valor " + counter] = new Array();
-				jsn.valores.push(aux);
-				jsn.valores[counter - 1]["valor " + counter].push({
-					"id": chart.id,
-					"tipo": chart.tipo,
-					"chart": codes[counter - 1]
-				});
-			}
-			res.status(200).json(jsn);
-		});
+        if (charts === "ERROR")
+            err404(null, req, res, null);
+        else {
+            var promesas = [];
+            for (var chart of charts) {
+                let promesa = getCode(req, chart);
+                promesas.push(promesa);
+            }
+            Promise.all(promesas).then(function (codes) {
+                var jsn = {
+                    "message": "Se han obtenido correctamente los sensores",
+                    "valores": new Array(),
+                    "status": "SUCCESS"
+                };
+                var counter = 0;
+                for (chart of charts) {
+                    counter++;
+                    var aux = {};
+                    aux["valor " + counter] = new Array();
+                    jsn.valores.push(aux);
+                    jsn.valores[counter - 1]["valor " + counter].push({
+                        "id": chart.id,
+                        "tipo": chart.tipo,
+                        "chart": codes[counter - 1]
+                    });
+                }
+                res.status(200).json(jsn);
+            });
+        }
     });
 });
 
@@ -194,3 +208,5 @@ app.use(err405);
 
 // Ejecución del servidor
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
+
+module.exports = app;
