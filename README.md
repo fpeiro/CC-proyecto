@@ -1,6 +1,9 @@
 # Proyecto de Cloud Computing
 ### Autor: Felipe Peiró Garrido
 
+### Menú
+* [Información sobre el hito 2](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito2.md). Desarrollo del primer microservicio.
+
 ---
 
 ## Título
@@ -24,6 +27,10 @@ La realización de este proyecto se elaborará con Node.js utilizando el microfr
 - Creación de sensores.
 - Creación de alertas.
 
+## Despliegue en Heroku
+
+El microservicio ha sido puesto en marcha a través de Heroku. Para visitarlo puede hacer click [aquí](https://cc-proyecto-fpeiro.herokuapp.com/).
+
 ## Ejecución de manera local
 
 Para poder ejecutarlo se debe tener [Node.js](http://nodejs.org/) instalado y realizar los siguientes comandos en el Terminal de Linux o en el CMD de Windows.
@@ -35,7 +42,7 @@ $ npm install
 $ npm start
 ```
 
-La microservicio empezará a correr en [localhost:5000](http://localhost:5000/).
+El microservicio empezará a correr en [localhost:5000](http://localhost:5000/).
 
 ## Licencia
 Este repositorio se encuentra bajo la GNU General Public License v3.0.
