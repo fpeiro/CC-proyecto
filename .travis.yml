@@ -3,7 +3,6 @@ sudo: false
 node_js:
   - node
 install:
-  - npm install supertest
   - npm install mocha
 script:
   - npm test
