@@ -17,15 +17,25 @@ El proyecto a desarrollar trata sobre un servicio por el cual se monitorizan sen
 - **Administración de los sensores:** En esta parte de la aplicación se permite añadir nuevos sensores, elegir su tipo y los valores que toma, asi como su eliminación o modificación.
 - **Gestión de avisos:** Por último aquí se gestiona los avisos que debe mostrar un sistema cuando un determinado sensor alcanza un valor. De esta forma, por ejemplo, si un anemómetro capta ráfagas de viento de más de 130 km/h se lanzará un aviso en el sistema.
 
-## Arquitectura
-La realización de este proyecto se elaborará con Node.js utilizando el microframework [Express.js 4](http://expressjs.com/). Con ellos se desarrollarán microservicios que usará el cliente de manera dinámica. Estos realizarán las siguientes funcionalidades:
+## Definición del proyecto
+El proyecto consiste en la creación de distintos microservicios que se interconectan entre sí. Estos harán uso de una base de datos donde se almacenarán sensores de distintos tipos (velocidad del viento, temperatura,...) así como los valores que toman. Se utilizará además la [API de Google destinada a la elaboración de gráficos](https://google-developers.appspot.com/chart/) mediante la cual realizar representaciones gráficas de los datos almacenados (del valor actual y de los últimos valores). Elaborando de esta manera distintos gráficos para cada uno de los tipos de sensores:
 
-- Conexión con la base de datos (MySQL).
-- Identificación y registro.
-- Visualización de gráficos.
-- Visualización de sensores.
-- Creación de sensores.
-- Creación de alertas.
+El proyecto constará además de aislamiento de datos, motivo por el cual cada uno de los sensores y gráficas solo podrán ser accedidos por el usuario que los ha creado, y por un sistema de alertas para indicar si un sensor ha tomado o no un valor inesperado.
+
+## Arquitectura
+La realización de este proyecto se elaborará con Node.js utilizando el microframework [Express.js 4](http://expressjs.com/). Con ellos se desarrollarán microservicios que usará el cliente de manera dinámica. La elección de una arquitectura basada en microservicios se debe a la fácil escalabilidad y al bajo acoplamiento que ofrece. Estos realizarán las siguientes funcionalidades:
+
+- Conexión con la base de datos (MySQL). Almacenado en el servicio ClearDB, será donde se almacenen los datos de los microservicios.
+- Identificación y registro. Donde los usuarios podrán acceder o registrarse en el sistema.
+- Visualización de gráficos. Donde los usuarios podrán obtener los últimos valores de sus sensores y su representación gráfica.
+- Visualización de sensores. Donde los usuarios podrán obtener los valores actuales de sus sensores y su representación gráfica.
+- Creación de sensores. Para permitir añadir nuevos sensores e introducir datos para su seguimiento.
+- Creación de alertas. Permite la creación de avisos cuando los sensores llegan a un determinado valor.
+
+## Interconexión de servicios
+Para la comunicación con los clientes que se conecten al microservicio se realizan servicios REST, obteniendo de esta manera la información a través de comunicación HTTP.
+
+Para la comunicación entre los microservicios se necesita, en cambio, un software de negociación de mensajes (broker). En este caso se hará uso de [AMQP 0-9-1](https://www.rabbitmq.com/amqp-0-9-1-reference.html), la implementación de RabbitMQ en Node.js.
 
 ## Despliegue en Heroku
 
