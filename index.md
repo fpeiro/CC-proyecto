@@ -20,6 +20,8 @@ El proyecto a desarrollar trata sobre un servicio por el cual se monitorizan sen
 ## Definición del proyecto
 El proyecto consiste en la creación de distintos microservicios que se interconectan entre sí. Estos harán uso de una base de datos donde se almacenarán sensores de distintos tipos (velocidad del viento, temperatura,...) así como los valores que toman. Se utilizará además la [API de Google destinada a la elaboración de gráficos](https://google-developers.appspot.com/chart/) mediante la cual realizar representaciones gráficas de los datos almacenados (del valor actual y de los últimos valores). Elaborando de esta manera distintos gráficos para cada uno de los tipos de sensores:
 
+![Sensor de temperatura](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/gauge.png) ![Gráfica de temperatura](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/chart.png)
+
 El proyecto constará además de aislamiento de datos, motivo por el cual cada uno de los sensores y gráficas solo podrán ser accedidos por el usuario que los ha creado, y por un sistema de alertas para indicar si un sensor ha tomado o no un valor inesperado.
 
 ## Arquitectura
