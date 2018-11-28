@@ -1,0 +1,6 @@
+[prod]
+MV-CC ansible_ssh_port=22 ansible_ssh_host=40.114.90.106
+
+[prod:vars]
+ansible_ssh_user=usuario
+ansible_ssh_private_key_file=./id_rsa
