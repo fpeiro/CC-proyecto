@@ -58,5 +58,9 @@ $ npm start
 
 El microservicio empezará a correr en [localhost:5000](http://localhost:5000/).
 
+## Provisionamiento con Ansible
+
+El provisionamiento con Ansible de @fpeiro ha sido testeado por [@gomezportillo](https://github.com/gomezportillo) y funciona correctamente.
+
 ## Licencia
 Este repositorio se encuentra bajo la GNU General Public License v3.0.
