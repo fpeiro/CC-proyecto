@@ -66,8 +66,7 @@ function drawChart() {
         ['-', dato]
     ]);
 
-    createDiv();
-    var elmnt = document.getElementById('chart');
+    var elmnt = document.getElementById('sensores');
     var chart = new google.visualization.Gauge(elmnt);
 
     if (item === 'temperatura') {
@@ -83,17 +82,4 @@ function drawChart() {
     } else {
         chart.draw(data);
     }
-}
-
-function createDiv() {
-    var outerDiv = document.getElementById('sensores');
-    var firstDiv = document.createElement('div');
-    firstDiv.className = 'rounded-circle img-fluid d-block mx-auto';
-    outerDiv.appendChild(firstDiv);
-
-    var secondDiv = document.createElement('div');
-    secondDiv.id = 'chart';
-    secondDiv.className = 'rounded-circle img-fluid d-block mx-auto';
-    secondDiv.style = 'width: 200px; height: 200px';
-    firstDiv.appendChild(secondDiv);
 }

@@ -92,7 +92,7 @@ app.get('/chart', function (req, res) {
         if (chart === "ERROR")
             err404(null, req, res, null);
         else {
-            let promesa = getCode(req, chart);
+            let promesa = getCode(req, chart, '/render_s');
             Promise.resolve(promesa).then(function (code) {
                 res.status(200).json({
                     "message": "Se ha obtenido correctamente 1 sensor",
@@ -129,7 +129,7 @@ app.get('/charts', function (req, res) {
         else {
             var promesas = [];
             for (var chart of charts) {
-                let promesa = getCode(req, chart);
+                let promesa = getCode(req, chart, '/render_s');
                 promesas.push(promesa);
             }
             Promise.all(promesas).then(function (codes) {
@@ -157,18 +157,23 @@ app.get('/charts', function (req, res) {
 });
 
 // Renderización del sensor
-app.get('/render', function (req, res) {
-    res.status(200).render('pages/render');
+app.get('/render_s', function (req, res) {
+    res.status(200).render('pages/render_s');
+});
+
+// Renderización del gráfico
+app.get('/render_g', function (req, res) {
+    res.status(200).render('pages/render_g');
 });
 
 // Obtención del código del sensor
-function getCode(req, chart) {
+function getCode(req, chart, type) {
     var parms = [];
     var jsn = JSON.parse(JSON.stringify(chart));
     for (var i in jsn) {
         parms.push(encodeURIComponent(i) + '=' + encodeURIComponent(jsn[i]));
     }
-    var origUrl = req.protocol + '://' + req.get('host') + '/render' + '?' + parms.join('&');
+    var origUrl = req.protocol + '://' + req.get('host') + type + '?' + parms.join('&');
     return new Promise(function (resolve, reject) {
         JSDOM.fromURL(origUrl, {runScripts: "dangerously", resources: "usable"}).then(dom => {
             var code = "", strcode = "";
