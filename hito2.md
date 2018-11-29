@@ -7,6 +7,13 @@ Para el almacenamiento de los objetos el microservicio hace uso de una base de d
 resto de microservicios se conecten y hagan persistencia de sus objetos. Como PaaS se ha decidido utilizar Heroku por ser un servicio
 gratuito y fácil de utilizar.
 
+## Ejecución
+
+Para la ejecución del servicio se hace uso de los siguientes ficheros:
+
+* `Procfile`: Es el archivo que lanza Heroku para lanzar la aplicación. En este proyecto consta únicamente de una línea, `web: node server.js`, la cual indica que en la web se va a lanzar el fichero `server.js` que contiene la ejecución del servicio.
+* `package.json` y `package-lock.json`: Son los ficheros que indican las dependencias que se deben instalar para que el servicio funcione. En `package.json` además podemos encontrar el comando a utiizar en la inicialización del servicio y del test que debe realizar para su despliegue.
+
 ## Funcionalidad
 
 Se ha implementado en este hito las siguientes funcionalidades:
