@@ -13,6 +13,7 @@ Para la ejecución del servicio se hace uso de los siguientes ficheros:
 
 * `Procfile`: Es el archivo que lanza Heroku para lanzar la aplicación. En este proyecto consta únicamente de una línea, `web: node server.js`, la cual indica que en la web se va a lanzar el fichero `server.js` que contiene la ejecución del servicio.
 * `package.json` y `package-lock.json`: Son los ficheros que indican las dependencias que se deben instalar para que el servicio funcione. En `package.json` además podemos encontrar el comando a utiizar en la inicialización del servicio y del test que debe realizar para su despliegue.
+* `.travis.yml`: Es el fichero que configura el test que va a realizar el programa antes de su despliegue. En este se indica el lenguaje utilizado, los paquetes que debe instalar para ello y cómo debe ejecutarse. En el caso de este proyecto debe instalarse `mocha` para realizar el test. Este se ejecuta mediante el script `npm test`.
 
 ## Funcionalidad
 
