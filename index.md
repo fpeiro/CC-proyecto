@@ -3,6 +3,7 @@
 
 ### Menú
 * [Información sobre el hito 2](https://fpeiro.github.io/CC-proyecto/hito2). Desarrollo del primer microservicio.
+* [Información sobre el hito 3](https://fpeiro.github.io/CC-proyecto/hito3). Provisionamiento con Ansible.
 
 ---
 
