@@ -11,9 +11,15 @@ gratuito y fácil de utilizar.
 
 Para la ejecución del servicio se hace uso de los siguientes ficheros:
 
-* `Procfile`: Es el archivo que lanza Heroku para lanzar la aplicación. En este proyecto consta únicamente de una línea, `web: node server.js`, la cual indica que en la web se va a lanzar el fichero `server.js` que contiene la ejecución del servicio.
-* `package.json` y `package-lock.json`: Son los ficheros que indican las dependencias que se deben instalar para que el servicio funcione. En `package.json` además podemos encontrar el comando a utiizar en la inicialización del servicio y del test que debe realizar para su despliegue.
-* `.travis.yml`: Es el fichero que configura el test que va a realizar el programa antes de su despliegue. En este se indica el lenguaje utilizado, los paquetes que debe instalar para ello y cómo debe ejecutarse. En el caso de este proyecto debe instalarse `mocha` para realizar el test. Este se ejecuta mediante el script `npm test`.
+* `Procfile`: Es el archivo que lanza Heroku para lanzar la aplicación. Las líneas del `Procfile` constan de un tipo de proceso a la izquierda y un comando a la derecha. En este proyecto se utiliza solamente, `web: node server.js`, la cual indica que en la web se va a lanzar el fichero `server.js` que contiene la ejecución del servicio. También se pueden definir los tipos de proceso `release`, `worker`, etc. donde encuadrar los comandos que se ejecutan en otras fases de desarrollo del servicio.
+* `package.json` y `package-lock.json`: Son los ficheros que indican las dependencias que se deben instalar para que el servicio funcione. En `package.json` además podemos encontrar el comando a utiizar en la inicialización del servicio y del test que debe realizar para su despliegue. Utilizan el tipo de fichero `.json`. Otras sentencias de estos ficheros hacen referencia al nombre del fichero, versión, etc.
+* `.travis.yml`: Es el fichero que configura el test que va a realizar el programa antes de su despliegue. En este se indica el lenguaje utilizado, los paquetes que debe instalar para ello y cómo debe ejecutarse. En el caso de este proyecto debe instalarse `mocha` para realizar el test. Este se ejecuta mediante el script `npm test`. Utiliza el tipo de fichero YAML. Se puede configurar además el nombre del servicio, el proveedor del despliegue, etc.
+
+## Despliegue en GitHub
+
+Para poder desplegar la aplicación en GitHub se ha definido en Heroku que se haga cuando se hace un "push" sobre el repositorio de GitHub. Para ello además debe de pasar los test de Travis.
+
+![Despliegue en GitHub](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/gh-deploy.png)
 
 ## Funcionalidad
 
