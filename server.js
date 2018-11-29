@@ -2,7 +2,7 @@
 
 const express = require('express');
 const path = require('path');
-const PORT = process.env.PORT || 80 || 5000;
+const PORT = process.env.PORT || 80;
 
 var app = express();
 var bodyParser = require('body-parser');
@@ -213,5 +213,8 @@ app.use(err405);
 
 // Ejecución del servidor
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
+app.on('error', function (e){
+	app.listen(5000, () => console.log(`Listening on 5000`));
+});
 
 module.exports = app;
