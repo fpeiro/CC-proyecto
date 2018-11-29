@@ -3,6 +3,7 @@
 
 ### Menú
 * [Información sobre el hito 2](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito2.md). Desarrollo del primer microservicio.
+* [Información sobre el hito 3](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito3.md). Provisionamiento con Ansible.
 
 ---
 
