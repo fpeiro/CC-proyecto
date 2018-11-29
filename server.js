@@ -10,6 +10,9 @@ var bodyParser = require('body-parser');
 const jsdom = require('jsdom');
 const {JSDOM} = jsdom;
 
+var net = require('net');
+var server = net.createServer();
+
 // Configuración de la base de datos
 var MYSQL_URI = {
     host: 'us-cdbr-gcp-east-01.cleardb.net',
@@ -212,9 +215,17 @@ function err405(err, req, res, next) {
 app.use(err405);
 
 // Ejecución del servidor
-app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
-app.on('error', function (e){
-	app.listen(5000, () => console.log(`Listening on 5000`));
+server.once('error', function(err) {
+  if (err.code === 'EADDRINUSE') {
+  app.listen(5000, () => console.log(`Listening on 5000`));
+  }
 });
+
+server.once('listening', function() {
+  server.close();
+  app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
+});
+
+server.listen(PORT);
 
 module.exports = app;
