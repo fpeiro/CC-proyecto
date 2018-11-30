@@ -43,3 +43,16 @@ obtenemos es el siguiente:
 Una vez realizado el despliegue el servicio estará listo en http://40.114.90.106/
 
 ![Proyecto en Chrome](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/azure-chrome.png)
+
+## Despliegue de Pedro Manuel
+
+El provisionamiento con Ansible de [@fpeiro](https://github.com/fpeiro) ha sido testeado por [@gomezportillo](https://github.com/gomezportillo) y funciona correctamente. A continuación se incluye la captura de pantalla generada al ejecutarlo como prueba.
+
+![Despliegue de @gomezportillo](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/ans-gomezportillo.png)
+
+## Despliegue para Juan Carlos
+
+El provisionamiento del servicio ha sido probado por [@fpeiro](https://github.com/fpeiro) verificando que las tareas se realizan
+correctamente. Se muestra una captura del resultado obtenido:
+
+![Despliegue para @xenahort](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/ans-xenahort.png)
