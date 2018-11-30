@@ -60,7 +60,9 @@ El microservicio empezará a correr en [localhost:5000](http://localhost:5000/).
 
 ## Provisionamiento con Ansible
 
-El provisionamiento con Ansible de @fpeiro ha sido testeado por [@gomezportillo](https://github.com/gomezportillo) y funciona correctamente.
+El provisionamiento con Ansible de [@fpeiro](https://github.com/fpeiro) ha sido testeado por [@gomezportillo](https://github.com/gomezportillo) y funciona correctamente. A continuación se incluye la captura de pantalla generada al ejecutarlo como prueba.
+
+![Prueba de @gomezportillo](img/ansible-gomezportillo.png)
 
 ## Licencia
 Este repositorio se encuentra bajo la GNU General Public License v3.0.
