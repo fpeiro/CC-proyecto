@@ -52,7 +52,7 @@ El provisionamiento con Ansible de [@fpeiro](https://github.com/fpeiro) ha sido 
 
 ## Despliegue para Juan Carlos
 
-El provisionamiento del servicio ha sido probado por [@fpeiro](https://github.com/fpeiro) verificando que las tareas se realizan
+El provisionamiento del servicio de [@xenahort](https://github.com/xenahort) ha sido probado verificando que las tareas se realizan
 correctamente. Se muestra una captura del resultado obtenido:
 
 ![Despliegue para @xenahort](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/ans-xenahort.png)
