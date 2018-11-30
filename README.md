@@ -45,6 +45,10 @@ Para la comunicación entre los microservicios se necesita, en cambio, un softwa
 El microservicio ha sido puesto en marcha a través de Heroku. Para visitarlo puede hacer click en el siguiente enlace:
 * Despliegue https://cc-proyecto-fpeiro.herokuapp.com/
 
+## Provisionamiento con Ansible
+
+A través de Ansible se han provisionado máquinas virtuales para el servicio. He probado y verificado que el proyecto de [@xenahort](https://github.com/xenahort) funciona correctamente así como [@gomezportillo](https://github.com/gomezportillo) ha probado el mío. Se puede encontrar más información de estas pruebas [aquí](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito3.md#despliegue-de-pedro-manuel).
+
 ## Ejecución de manera local
 
 Para poder ejecutarlo se debe tener [Node.js](http://nodejs.org/) instalado y realizar los siguientes comandos en el Terminal de Linux o en el CMD de Windows.
@@ -57,12 +61,6 @@ $ npm start
 ```
 
 El microservicio empezará a correr en [localhost:5000](http://localhost:5000/).
-
-## Provisionamiento con Ansible
-
-El provisionamiento con Ansible de [@fpeiro](https://github.com/fpeiro) ha sido testeado por [@gomezportillo](https://github.com/gomezportillo) y funciona correctamente. A continuación se incluye la captura de pantalla generada al ejecutarlo como prueba.
-
-![Prueba de @gomezportillo](img/ansible-gomezportillo.png)
 
 ## Licencia
 Este repositorio se encuentra bajo la GNU General Public License v3.0.
