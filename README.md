@@ -47,7 +47,7 @@ El microservicio ha sido puesto en marcha a través de Heroku. Para visitarlo pu
 
 ## Provisionamiento con Ansible
 
-A través de Ansible se ha provisionado una máquina virtual para el servicio. Esta ha sido creada a través de Azure con la dirección IP: MV: 40.114.90.106. Ahí [será realizado el despliegue](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito3.md#despliegue) donde estará listo el servicio.
+A través de Ansible se ha provisionado una máquina virtual para el servicio. Esta ha sido creada a través de Azure con la dirección IP: MV: 40.114.90.106 . Ahí [será realizado el despliegue](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito3.md#despliegue) donde estará listo el servicio.
 
 He probado y verificado que el proyecto de [@xenahort](https://github.com/xenahort) funciona correctamente así como [@gomezportillo](https://github.com/gomezportillo) ha probado el mío. Se puede encontrar más información de estas pruebas [aquí](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito3.md#despliegue-de-pedro-manuel).
 
