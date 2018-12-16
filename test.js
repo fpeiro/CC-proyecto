@@ -2,24 +2,18 @@ var request = require('supertest');
 var app = require("./server.js");
 var assert = require('assert');
 
-var DAOChart = require("./model/daochart.js");
-var Chart = require("./model/chart.js");
-var daochart = new DAOChart({
+var MYSQL_URI = {
     host: 'us-cdbr-gcp-east-01.cleardb.net',
     user: 'bf513a472fe95b',
     password: '18ecf997',
     database: 'gcp_0ec181dd4858ee89399d'
-}, 'charts');
+};
 
-// Inicialización de datos para el test
-describe("Inicialización de datos para el test", function () {
-    it('', function (done) {
-        daochart.initialize(function (status) {
-            assert.equal(status, "SUCCESS");
-            done();
-        });
-    });
-});
+var DAOChart = require("./model/daochart.js");
+var DAOValor = require("./model/daovalor.js");
+var Chart = require("./model/chart.js");
+var daochart = new DAOChart(MYSQL_URI, 'charts');
+var daovalor = new DAOValor(MYSQL_URI, 'valores');
 
 // Página principal
 describe("GET /", function () {
@@ -36,6 +30,61 @@ describe("GET /about", function () {
     it('devuelve 200 (json)', function (done) {
         request(app)
                 .get('/about')
+                .expect('Content-Type', /json/)
+                .expect(200, done);
+    });
+});
+
+// Inicialización de charts para el test
+describe("Inicialización de charts para el test", function () {
+    it('', function (done) {
+        daochart.initialize(function (status) {
+            assert.equal(status, "SUCCESS");
+            done();
+        });
+    });
+});
+
+// Inicialización de valores para el test
+describe("Inicialización de valores para el test", function () {
+    it('', function (done) {
+        daovalor.initialize(function (status) {
+            assert.equal(status, "SUCCESS");
+            done();
+        });
+    });
+});
+
+// Página para buscar valores
+describe("GET /valor", function () {
+    it('valor.sensor debe existir en la base de datos', function (done) {
+        this.timeout(10000);
+        request(app)
+                .get('/valor')
+                .query({sensor: 31})
+                .expect('Content-Type', /json/)
+                .expect(200, done);
+    });
+});
+
+// Página para buscar valores (fallida)
+describe("GET /valor (fallida)", function () {
+    it('valor.sensor no debe existir en la base de datos', function (done) {
+        this.timeout(10000);
+        request(app)
+                .get('/valor')
+                .query({sensor: 19991})
+                .expect('Content-Type', /json/)
+                .expect(404, done);
+    });
+});
+
+// Página para añadir valores
+describe("PUT /valor", function () {
+    it('devuelve 200 (json)', function (done) {
+        request(app)
+                .put('/valor')
+                .send({dato: 50, sensor: 31})
                 .expect('Content-Type', /json/)
                 .expect(200, done);
     });
@@ -59,6 +108,30 @@ describe("GET /chart (fallida)", function () {
         this.timeout(10000);
         request(app)
                 .get('/chart')
+                .query({id: 19991})
+                .expect('Content-Type', /json/)
+                .expect(404, done);
+    });
+});
+
+// Página para buscar gráficas
+describe("GET /graph", function () {
+    it('chart.id debe existir en la base de datos', function (done) {
+        this.timeout(10000);
+        request(app)
+                .get('/graph')
+                .query({id: 31})
+                .expect('Content-Type', /json/)
+                .expect(200, done);
+    });
+});
+
+// Página para buscar gráficas (fallida)
+describe("GET /graph (fallida)", function () {
+    it('chart.id no debe existir en la base de datos', function (done) {
+        this.timeout(10000);
+        request(app)
+                .get('/graph')
                 .query({id: 19991})
                 .expect('Content-Type', /json/)
                 .expect(404, done);
@@ -93,6 +166,16 @@ describe("PUT /chart", function () {
         request(app)
                 .put('/chart')
                 .send({tipo: 'temperatura'})
+                .expect('Content-Type', /json/)
+                .expect(200, done);
+    });
+});
+
+// Página para resetear los valores
+describe("DELETE /valores", function () {
+    it('devuelve 200 (json)', function (done) {
+        request(app)
+                .delete('/valores')
                 .expect('Content-Type', /json/)
                 .expect(200, done);
     });
@@ -141,10 +224,50 @@ describe("DELETE /charts", function () {
     });
 });
 
-// Inicialización de datos para el test
-describe("Inicialización de datos para el test", function () {
+// Inicialización de charts para el test
+describe("Inicialización de charts para el test", function () {
     it('', function (done) {
         daochart.initialize(function (status) {
+            assert.equal(status, "SUCCESS");
+            done();
+        });
+    });
+});
+
+// Inicialización de valores para el test
+describe("Inicialización de valores para el test", function () {
+    it('', function (done) {
+        daovalor.initialize(function (status) {
+            assert.equal(status, "SUCCESS");
+            done();
+        });
+    });
+});
+
+// Función para buscar valores
+describe("CALL daovalor.find(...)", function () {
+    it('valor.sensor debe existir en la base de datos', function (done) {
+        daovalor.find(31, 100, function (valores) {
+            assert(typeof valores !== 'undefined' && valores.length > 0);
+            done();
+        });
+    });
+});
+
+// Función para buscar valores (fallida)
+describe("CALL daovalor.find(...) (fallida)", function () {
+    it('valor.sensor no debe existir en la base de datos', function (done) {
+        daovalor.find(19991, 1, function (status) {
+            assert.equal(status, "ERROR");
+            done();
+        });
+    });
+});
+
+// Función para añadir valores
+describe("CALL daovalor.insert(...)", function () {
+    it('devuelve 200 (SUCCESS)', function (done) {
+        daovalor.insert(50, 31, function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -195,6 +318,16 @@ describe("CALL daochart.update(...) (fallida)", function () {
 describe("CALL daochart.insert(...)", function () {
     it('devuelve 200 (SUCCESS)', function (done) {
         daochart.insert(new Chart(null, 'presion'), function (status) {
+            assert.equal(status, "SUCCESS");
+            done();
+        });
+    });
+});
+
+// Función para resetear los valores
+describe("CALL daovalor.deleteAll(...)", function () {
+    it('devuelve 200 (SUCCESS)', function (done) {
+        daovalor.deleteAll(function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });

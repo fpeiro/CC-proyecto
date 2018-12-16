@@ -1,6 +1,6 @@
 /* global google */
 
-google.charts.load('current', {'packages':['line']});
+google.charts.load('current', {'packages': ['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
 var url = new URL(window.location.href);
@@ -12,7 +12,7 @@ function drawChart() {
 	data.addColumn('number', 'Número de lectura');
 	data.addColumn('number', 'Valor');
 	data.addRows(datos);
-	var chart = new google.charts.Line(document.getElementById('graficos'));
+	var chart = new google.visualization.LineChart(document.getElementById('graficos'));
 	chart.draw(data);
 	
 }

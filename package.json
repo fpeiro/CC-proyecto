@@ -7,13 +7,14 @@
   },
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "mocha --exit"
+    "start": "node --icu-data-dir=node_modules\\full-icu server.js",
+    "test": "mocha --icu-data-dir=node_modules\\full-icu --exit"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "full-icu": "^1.2.1",
     "jsdom": "^13.0.0",
     "mysql": "^2.16.0"
   },

@@ -20,11 +20,12 @@ var MYSQL_URI = {
     password: '18ecf997',
     database: 'gcp_0ec181dd4858ee89399d'
 };
-var NOMBRE_TABLA = 'charts';
 
 var DAOChart = require("./model/daochart.js");
+var DAOValor = require("./model/daovalor.js");
 var Chart = require("./model/chart.js");
-var daochart = new DAOChart(MYSQL_URI, NOMBRE_TABLA);
+var daochart = new DAOChart(MYSQL_URI, 'charts');
+var daovalor = new DAOValor(MYSQL_URI, 'valores');
 
 // Configuración de la aplicación
 app
@@ -95,18 +96,48 @@ app.get('/chart', function (req, res) {
         if (chart === "ERROR")
             err404(null, req, res, null);
         else {
-            let promesa = getCode(req, chart, '/render_s');
-            Promise.resolve(promesa).then(function (code) {
-                res.status(200).json({
-                    "message": "Se ha obtenido correctamente 1 sensor",
-                    "valor": {
-                        "id": chart.id,
-                        "tipo": chart.tipo,
-                        "chart": code
-                    },
-                    "status": "SUCCESS"
-                });
-            });
+			getLastData(chart.id, function (dato) {
+				chart.valor = dato;
+				let promesa = getCode(req, chart, '/render_s');
+				Promise.resolve(promesa).then(function (code) {
+					res.status(200).json({
+						"message": "Se ha obtenido correctamente 1 sensor",
+						"valor": {
+							"id": chart.id,
+							"tipo": chart.tipo,
+							"valor": chart.valor,
+							"chart": code
+						},
+						"status": "SUCCESS"
+					});
+				});
+			});
+        }
+    });
+});
+
+// Página para buscar gráficas
+app.get('/graph', function (req, res) {
+    daochart.find(new Chart(req.query.id, null), function (chart) {
+        if (chart === "ERROR")
+            err404(null, req, res, null);
+        else {
+			get100Data(chart.id, function (datos) {
+				chart.valores = datos;
+				let promesa = getCode(req, chart, '/render_g');
+				Promise.resolve(promesa).then(function (code) {
+					res.status(200).json({
+						"message": "Se ha obtenido correctamente 1 gráfica",
+						"valor": {
+							"id": chart.id,
+							"tipo": chart.tipo,
+							"valores": chart.valores,
+							"graph": code
+						},
+						"status": "SUCCESS"
+					});
+				});
+			});
         }
     });
 });
@@ -130,32 +161,127 @@ app.get('/charts', function (req, res) {
         if (charts === "ERROR")
             err404(null, req, res, null);
         else {
-            var promesas = [];
-            for (var chart of charts) {
-                let promesa = getCode(req, chart, '/render_s');
-                promesas.push(promesa);
-            }
-            Promise.all(promesas).then(function (codes) {
-                var jsn = {
-                    "message": "Se han obtenido correctamente los sensores",
-                    "valores": new Array(),
-                    "status": "SUCCESS"
-                };
-                var counter = 0;
-                for (chart of charts) {
-                    counter++;
-                    var aux = {};
-                    aux["valor " + counter] = new Array();
-                    jsn.valores.push(aux);
-                    jsn.valores[counter - 1]["valor " + counter].push({
-                        "id": chart.id,
-                        "tipo": chart.tipo,
-                        "chart": codes[counter - 1]
-                    });
-                }
-                res.status(200).json(jsn);
-            });
+			getLastDataAll(charts, 0 , [], function (sdato) {
+				var promesas = [];
+				var counter2 = 0;
+				for (var chart of charts) {
+					chart.valor = sdato[counter2];
+					let promesa = getCode(req, chart, '/render_s');
+					promesas.push(promesa);
+					counter2++;
+				}
+				Promise.all(promesas).then(function (codes) {
+					var jsn = {
+						"message": "Se han obtenido correctamente los sensores",
+						"valores": new Array(),
+						"status": "SUCCESS"
+					};
+					var counter = 0;
+					for (chart of charts) {
+						counter++;
+						var aux = {};
+						aux["valor " + counter] = new Array();
+						jsn.valores.push(aux);
+						jsn.valores[counter - 1]["valor " + counter].push({
+							"id": chart.id,
+							"tipo": chart.tipo,
+							"valor": chart.valor,
+							"chart": codes[counter - 1]
+						});
+					}
+					res.status(200).json(jsn);
+				});
+			});
         }
+    });
+});
+
+
+// Página para obtener las gráficas
+app.get('/graphs', function (req, res) {
+    daochart.findAll(function (charts) {
+        if (charts === "ERROR")
+            err404(null, req, res, null);
+        else {
+			get100DataAll(charts, 0 , [], function (sdatos) {
+				var promesas = [];
+				var counter2 = 0;
+				for (var chart of charts) {
+					chart.valores = sdatos[counter2];
+					let promesa = getCode(req, chart, '/render_g');
+					promesas.push(promesa);
+					counter2++;
+				}
+				Promise.all(promesas).then(function (codes) {
+					var jsn = {
+						"message": "Se han obtenido correctamente las gráficas",
+						"valores": new Array(),
+						"status": "SUCCESS"
+					};
+					var counter = 0;
+					for (chart of charts) {
+						counter++;
+						var aux = {};
+						aux["valor " + counter] = new Array();
+						jsn.valores.push(aux);
+						jsn.valores[counter - 1]["valor " + counter].push({
+							"id": chart.id,
+							"tipo": chart.tipo,
+							"valores": chart.valores,
+							"graph": codes[counter - 1]
+						});
+					}
+					res.status(200).json(jsn);
+				});
+			});
+        }
+    });
+});
+
+// Página para añadir valores
+app.put('/valor', function (req, res) {
+    daovalor.insert(req.body.dato, req.body.sensor, function (status) {
+        if (status === "ERROR")
+            err404(null, req, res, null);
+        else
+            res.status(200).json({
+                "message": "Se ha añadido el valor " + req.body.dato + " al sensor número " + req.body.sensor,
+                "status": status
+            });
+    });
+});
+
+// Página para buscar valores por sensor
+app.get('/valor', function (req, res) {
+    daovalor.find(req.query.sensor, 100, function (datos) {
+        if (datos === "ERROR")
+            err404(null, req, res, null);
+        else {
+			var jsn = {
+				"message": "Se han obtenido correctamente 100 datos del sensor " + req.query.sensor,
+				"valores": {},
+				"status": "SUCCESS"
+			};
+			var counter = 0;
+			for (dato of datos) {
+				counter++;
+				jsn.valores["id " + counter] = dato.dato;
+			}
+			res.status(200).json(jsn);
+        }
+    });
+});
+
+// Página para resetear los valores
+app.delete('/valores', function (req, res) {
+    daovalor.deleteAll(function (status) {
+        if (status === "ERROR")
+            err404(null, req, res, null);
+        else
+            res.status(200).json({
+                "message": "Se han reseteado los valores",
+                "status": status
+            });
     });
 });
 
@@ -174,7 +300,7 @@ function getCode(req, chart, type) {
     var parms = [];
     var jsn = JSON.parse(JSON.stringify(chart));
     for (var i in jsn) {
-        parms.push(encodeURIComponent(i) + '=' + encodeURIComponent(jsn[i]));
+        parms.push(i + '=' + JSON.stringify(jsn[i]).replace(/['"]+/g, ''));
     }
     var origUrl = req.protocol + '://' + req.get('host') + type + '?' + parms.join('&');
     return new Promise(function (resolve, reject) {
@@ -189,6 +315,64 @@ function getCode(req, chart, type) {
             }());
         });
     });
+}
+
+// Obtención del último dato de un sensor
+function getLastData(sensor, callback) {
+	daovalor.find(sensor, 1, function (datos) {
+		if (datos === "ERROR")
+			callback(NaN);
+		else
+			callback(datos[0].dato);
+    });
+}
+
+// Obtención de los últimos 100 datos de un sensor
+function get100Data(sensor, callback) {
+	daovalor.find(sensor, 100, function (datos) {
+		var arr = [];
+		if (datos !== "ERROR") {
+			var counter = datos.length;
+			for (dato of datos) {
+				arr.push([counter, dato.dato]);
+				counter--;
+			}
+		}
+		callback(arr);
+    });
+}
+
+// Obtención del último dato de los sensores
+function getLastDataAll(sensores, i, garr, callback) {
+	if (i < sensores.length) {
+		daovalor.find(sensores[i].id, 1, function (datos) {
+			if (datos === "ERROR")
+				garr.push(NaN);
+			else
+				garr.push(datos[0].dato);
+			getLastDataAll(sensores, ++i, garr, callback);
+		});
+	} else
+		callback(garr);
+}
+
+// Obtención de los últimos 100 datos de los sensores
+function get100DataAll(sensores, i, garr, callback) {
+	if (i < sensores.length) {
+		daovalor.find(sensores[i].id, 100, function (datos) {
+			var arr = [];
+			if (datos !== "ERROR") {
+				var counter = datos.length;
+				for (dato of datos) {
+					arr.push([counter, dato.dato]);
+					counter--;
+				}
+			}
+			garr.push(arr);
+			get100DataAll(sensores, ++i, garr, callback);
+		});
+	} else
+		callback(garr);
 }
 
 // Página por defecto
