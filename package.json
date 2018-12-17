@@ -20,7 +20,8 @@
   },
   "devDependencies": {
     "supertest": "^3.3.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "full-icu": "^1.2.1"
   },
   "repository": {
     "type": "git",

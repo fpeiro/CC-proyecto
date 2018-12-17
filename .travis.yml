@@ -4,5 +4,6 @@ node_js:
   - node
 install:
   - npm install mocha
+  - npm install full-icu
 script:
   - npm test
