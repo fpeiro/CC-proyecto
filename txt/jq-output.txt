@@ -1,0 +1,5446 @@
+{
+  "offer": "secure-ubuntu-os",
+  "publisher": "atomicorp",
+  "sku": "asl-1-0002",
+  "urn": "atomicorp:secure-ubuntu-os:asl-1-0002:1.0.1",
+  "version": "1.0.1"
+}
+{
+  "offer": "azul-zulu-ubuntu-1804",
+  "publisher": "azul",
+  "sku": "azul-zulu-ubtu1804",
+  "urn": "azul:azul-zulu-ubuntu-1804:azul-zulu-ubtu1804:18.10.1",
+  "version": "18.10.1"
+}
+{
+  "offer": "cis-ubuntu-linux-1404-v2-0-0-l1",
+  "publisher": "center-for-internet-security-inc",
+  "sku": "cis-ubuntu1404-l1",
+  "urn": "center-for-internet-security-inc:cis-ubuntu-linux-1404-v2-0-0-l1:cis-ubuntu1404-l1:3.0.0",
+  "version": "3.0.0"
+}
+{
+  "offer": "cis-ubuntu-linux-1604-v1-0-0-l1",
+  "publisher": "center-for-internet-security-inc",
+  "sku": "cis-ubuntu1604-l1",
+  "urn": "center-for-internet-security-inc:cis-ubuntu-linux-1604-v1-0-0-l1:cis-ubuntu1604-l1:4.0.0",
+  "version": "4.0.0"
+}
+{
+  "offer": "cis-ubuntu-linux-1804-l1",
+  "publisher": "center-for-internet-security-inc",
+  "sku": "cis-ubuntu1804-l1",
+  "urn": "center-for-internet-security-inc:cis-ubuntu-linux-1804-l1:cis-ubuntu1804-l1:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.3-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.3-LTS:12.04.201401270",
+  "version": "12.04.201401270"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.3-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.3-LTS:12.04.201401300",
+  "version": "12.04.201401300"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.4-LTS:12.04.201402270",
+  "version": "12.04.201402270"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.4-LTS:12.04.201404080",
+  "version": "12.04.201404080"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.4-LTS:12.04.201404280",
+  "version": "12.04.201404280"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.4-LTS:12.04.201405140",
+  "version": "12.04.201405140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.4-LTS:12.04.201406060",
+  "version": "12.04.201406060"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.4-LTS:12.04.201406190",
+  "version": "12.04.201406190"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.4-LTS:12.04.201407020",
+  "version": "12.04.201407020"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.4-LTS:12.04.201407170",
+  "version": "12.04.201407170"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201408060",
+  "version": "12.04.201408060"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201408292",
+  "version": "12.04.201408292"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201409092",
+  "version": "12.04.201409092"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201409231",
+  "version": "12.04.201409231"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201409244",
+  "version": "12.04.201409244"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201409251",
+  "version": "12.04.201409251"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201409252",
+  "version": "12.04.201409252"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201409270",
+  "version": "12.04.201409270"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201501190",
+  "version": "12.04.201501190"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201501270",
+  "version": "12.04.201501270"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201502040",
+  "version": "12.04.201502040"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201503090",
+  "version": "12.04.201503090"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201504010",
+  "version": "12.04.201504010"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201504130",
+  "version": "12.04.201504130"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201505120",
+  "version": "12.04.201505120"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201505221",
+  "version": "12.04.201505221"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201506100",
+  "version": "12.04.201506100"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201506150",
+  "version": "12.04.201506150"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201506160",
+  "version": "12.04.201506160"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201507070",
+  "version": "12.04.201507070"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201507280",
+  "version": "12.04.201507280"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201507301",
+  "version": "12.04.201507301"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201507311",
+  "version": "12.04.201507311"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201508190",
+  "version": "12.04.201508190"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201509060",
+  "version": "12.04.201509060"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201509090",
+  "version": "12.04.201509090"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201510200",
+  "version": "12.04.201510200"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201511170",
+  "version": "12.04.201511170"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201511300",
+  "version": "12.04.201511300"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201512180",
+  "version": "12.04.201512180"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201601140",
+  "version": "12.04.201601140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201602010",
+  "version": "12.04.201602010"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201602172",
+  "version": "12.04.201602172"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201602220",
+  "version": "12.04.201602220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201603150",
+  "version": "12.04.201603150"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201605090",
+  "version": "12.04.201605090"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201605160",
+  "version": "12.04.201605160"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201606101",
+  "version": "12.04.201606101"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201606270",
+  "version": "12.04.201606270"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201608010",
+  "version": "12.04.201608010"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201608080",
+  "version": "12.04.201608080"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201608290",
+  "version": "12.04.201608290"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201609190",
+  "version": "12.04.201609190"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201610100",
+  "version": "12.04.201610100"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201610201",
+  "version": "12.04.201610201"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201611090",
+  "version": "12.04.201611090"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201611300",
+  "version": "12.04.201611300"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201612050",
+  "version": "12.04.201612050"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201701040",
+  "version": "12.04.201701040"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201701100",
+  "version": "12.04.201701100"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201702020",
+  "version": "12.04.201702020"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201702200",
+  "version": "12.04.201702200"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201702210",
+  "version": "12.04.201702210"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201703070",
+  "version": "12.04.201703070"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201703300",
+  "version": "12.04.201703300"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201704170",
+  "version": "12.04.201704170"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201704270",
+  "version": "12.04.201704270"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "12.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:12.04.5-LTS:12.04.201705020",
+  "version": "12.04.201705020"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.0-LTS:14.04.201404140",
+  "version": "14.04.201404140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.0-LTS:14.04.201404142",
+  "version": "14.04.201404142"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.0-LTS:14.04.201404161",
+  "version": "14.04.201404161"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.0-LTS:14.04.201405280",
+  "version": "14.04.201405280"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.0-LTS:14.04.201406061",
+  "version": "14.04.201406061"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.0-LTS:14.04.201406181",
+  "version": "14.04.201406181"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.0-LTS:14.04.201407240",
+  "version": "14.04.201407240"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.0-LTS:14.04.201808140",
+  "version": "14.04.201808140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.0-LTS:14.04.201808180",
+  "version": "14.04.201808180"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.1-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.1-LTS:14.04.201409090",
+  "version": "14.04.201409090"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.1-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.1-LTS:14.04.201409240",
+  "version": "14.04.201409240"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.1-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.1-LTS:14.04.201409260",
+  "version": "14.04.201409260"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.1-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.1-LTS:14.04.201409270",
+  "version": "14.04.201409270"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.1-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.1-LTS:14.04.201411250",
+  "version": "14.04.201411250"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.1-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.1-LTS:14.04.201501230",
+  "version": "14.04.201501230"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.1-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.1-LTS:14.04.201808140",
+  "version": "14.04.201808140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.1-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.1-LTS:14.04.201808180",
+  "version": "14.04.201808180"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.2-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.2-LTS:14.04.201503090",
+  "version": "14.04.201503090"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.2-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.2-LTS:14.04.201505060",
+  "version": "14.04.201505060"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.2-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.2-LTS:14.04.201506100",
+  "version": "14.04.201506100"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.2-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.2-LTS:14.04.201507060",
+  "version": "14.04.201507060"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.2-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.2-LTS:14.04.201805220",
+  "version": "14.04.201805220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.2-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.2-LTS:14.04.201808180",
+  "version": "14.04.201808180"
+}
+{
+  "offer": "codelathe-filecloud-ubuntu",
+  "publisher": "codelathe",
+  "sku": "filecloud_ubuntu_byol",
+  "urn": "codelathe:codelathe-filecloud-ubuntu:filecloud_ubuntu_byol:17.3.375681",
+  "version": "17.3.375681"
+}
+{
+  "offer": "codelathe-filecloud-ubuntu",
+  "publisher": "codelathe",
+  "sku": "filecloud_ubuntu_byol",
+  "urn": "codelathe:codelathe-filecloud-ubuntu:filecloud_ubuntu_byol:18.1.682",
+  "version": "18.1.682"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.3-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.3-LTS:14.04.201508050",
+  "version": "14.04.201508050"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.3-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.3-LTS:14.04.201509080",
+  "version": "14.04.201509080"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.3-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.3-LTS:14.04.201510150",
+  "version": "14.04.201510150"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.3-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.3-LTS:14.04.201510190",
+  "version": "14.04.201510190"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.3-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.3-LTS:14.04.201510200",
+  "version": "14.04.201510200"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.3-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.3-LTS:14.04.201511050",
+  "version": "14.04.201511050"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.3-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.3-LTS:14.04.201511170",
+  "version": "14.04.201511170"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.3-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.3-LTS:14.04.201512032",
+  "version": "14.04.201512032"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.3-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.3-LTS:14.04.201512170",
+  "version": "14.04.201512170"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.3-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.3-LTS:14.04.201512180",
+  "version": "14.04.201512180"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.3-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.3-LTS:14.04.201601145",
+  "version": "14.04.201601145"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.3-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.3-LTS:14.04.201601190",
+  "version": "14.04.201601190"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.3-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.3-LTS:14.04.201602010",
+  "version": "14.04.201602010"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.3-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.3-LTS:14.04.201602171",
+  "version": "14.04.201602171"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.3-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.3-LTS:14.04.201805220",
+  "version": "14.04.201805220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.3-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.3-LTS:14.04.201808180",
+  "version": "14.04.201808180"
+}
+{
+  "offer": "1-click-secured-joomla-on-ubuntu-1404-lts",
+  "publisher": "cognosys",
+  "sku": "secured-joomla-on-ubuntu",
+  "urn": "cognosys:1-click-secured-joomla-on-ubuntu-1404-lts:secured-joomla-on-ubuntu:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "1-click-secured-joomla-on-ubuntu-1404-lts",
+  "publisher": "cognosys",
+  "sku": "secured-joomla-on-ubuntu",
+  "urn": "cognosys:1-click-secured-joomla-on-ubuntu-1404-lts:secured-joomla-on-ubuntu:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.4-LTS:14.04.201602220",
+  "version": "14.04.201602220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.4-LTS:14.04.201603140",
+  "version": "14.04.201603140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.4-LTS:14.04.201604060",
+  "version": "14.04.201604060"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.4-LTS:14.04.201605091",
+  "version": "14.04.201605091"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.4-LTS:14.04.201605160",
+  "version": "14.04.201605160"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.4-LTS:14.04.201606100",
+  "version": "14.04.201606100"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.4-LTS:14.04.201606200",
+  "version": "14.04.201606200"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.4-LTS:14.04.201606270",
+  "version": "14.04.201606270"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.4-LTS:14.04.201607140",
+  "version": "14.04.201607140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.4-LTS:14.04.201805090",
+  "version": "14.04.201805090"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.4-LTS:14.04.201805220",
+  "version": "14.04.201805220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.4-LTS:14.04.201808140",
+  "version": "14.04.201808140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.4-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.4-LTS:14.04.201808180",
+  "version": "14.04.201808180"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-DAILY-LTS:14.04.201810250",
+  "version": "14.04.201810250"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-DAILY-LTS:14.04.201810310",
+  "version": "14.04.201810310"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-DAILY-LTS:14.04.201811030",
+  "version": "14.04.201811030"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-DAILY-LTS:14.04.201811060",
+  "version": "14.04.201811060"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-DAILY-LTS:14.04.201811140",
+  "version": "14.04.201811140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-DAILY-LTS:14.04.201811230",
+  "version": "14.04.201811230"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-DAILY-LTS:14.04.201812030",
+  "version": "14.04.201812030"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-DAILY-LTS:14.04.201812070",
+  "version": "14.04.201812070"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-DAILY-LTS:14.04.201812170",
+  "version": "14.04.201812170"
+}
+{
+  "offer": "1-click-secured-joomla-on-ubuntu-1604-lts",
+  "publisher": "cognosys",
+  "sku": "1-click-secured-joomla-on-ubuntu-1604-lts",
+  "urn": "cognosys:1-click-secured-joomla-on-ubuntu-1604-lts:1-click-secured-joomla-on-ubuntu-1604-lts:1.0.1",
+  "version": "1.0.1"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201608091",
+  "version": "14.04.201608091"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201608241",
+  "version": "14.04.201608241"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201608300",
+  "version": "14.04.201608300"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201609190",
+  "version": "14.04.201609190"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201610100",
+  "version": "14.04.201610100"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201610200",
+  "version": "14.04.201610200"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201611090",
+  "version": "14.04.201611090"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201611300",
+  "version": "14.04.201611300"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201612050",
+  "version": "14.04.201612050"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201612130",
+  "version": "14.04.201612130"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201701040",
+  "version": "14.04.201701040"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201701100",
+  "version": "14.04.201701100"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201702021",
+  "version": "14.04.201702021"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201702200",
+  "version": "14.04.201702200"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201702220",
+  "version": "14.04.201702220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201703070",
+  "version": "14.04.201703070"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201703230",
+  "version": "14.04.201703230"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201703280",
+  "version": "14.04.201703280"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201703300",
+  "version": "14.04.201703300"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201704050",
+  "version": "14.04.201704050"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201704240",
+  "version": "14.04.201704240"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201705170",
+  "version": "14.04.201705170"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201706190",
+  "version": "14.04.201706190"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201706290",
+  "version": "14.04.201706290"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201707180",
+  "version": "14.04.201707180"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201708020",
+  "version": "14.04.201708020"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201708030",
+  "version": "14.04.201708030"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201708070",
+  "version": "14.04.201708070"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201708110",
+  "version": "14.04.201708110"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201708180",
+  "version": "14.04.201708180"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201708310",
+  "version": "14.04.201708310"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201710100",
+  "version": "14.04.201710100"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201710260",
+  "version": "14.04.201710260"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201711151",
+  "version": "14.04.201711151"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201712080",
+  "version": "14.04.201712080"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201801100",
+  "version": "14.04.201801100"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201801220",
+  "version": "14.04.201801220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201802221",
+  "version": "14.04.201802221"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201803080",
+  "version": "14.04.201803080"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201804040",
+  "version": "14.04.201804040"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201804230",
+  "version": "14.04.201804230"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201805090",
+  "version": "14.04.201805090"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201805220",
+  "version": "14.04.201805220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201806270",
+  "version": "14.04.201806270"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201807030",
+  "version": "14.04.201807030"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201807220",
+  "version": "14.04.201807220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201808140",
+  "version": "14.04.201808140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201808180",
+  "version": "14.04.201808180"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201809130",
+  "version": "14.04.201809130"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201810020",
+  "version": "14.04.201810020"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201810040",
+  "version": "14.04.201810040"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201810220",
+  "version": "14.04.201810220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201811140",
+  "version": "14.04.201811140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "14.04.5-LTS",
+  "urn": "Canonical:UbuntuServer:14.04.5-LTS:14.04.201812030",
+  "version": "14.04.201812030"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-DAILY-LTS:16.04.201811130",
+  "version": "16.04.201811130"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-DAILY-LTS:16.04.201811140",
+  "version": "16.04.201811140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-DAILY-LTS:16.04.201811200",
+  "version": "16.04.201811200"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-DAILY-LTS:16.04.201811221",
+  "version": "16.04.201811221"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-DAILY-LTS:16.04.201811270",
+  "version": "16.04.201811270"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-DAILY-LTS:16.04.201811290",
+  "version": "16.04.201811290"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-DAILY-LTS:16.04.201812040",
+  "version": "16.04.201812040"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-DAILY-LTS:16.04.201812070",
+  "version": "16.04.201812070"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-DAILY-LTS:16.04.201812120",
+  "version": "16.04.201812120"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-DAILY-LTS:16.04.201812170",
+  "version": "16.04.201812170"
+}
+{
+  "offer": "1-click-secured-joomla-on-ubuntu-1804-lts",
+  "publisher": "cognosys",
+  "sku": "1-click-secured-joomla-on-ubuntu-18-04-lts",
+  "urn": "cognosys:1-click-secured-joomla-on-ubuntu-1804-lts:1-click-secured-joomla-on-ubuntu-18-04-lts:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201611220",
+  "version": "16.04.201611220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201611300",
+  "version": "16.04.201611300"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201612050",
+  "version": "16.04.201612050"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201612140",
+  "version": "16.04.201612140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201612210",
+  "version": "16.04.201612210"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201701130",
+  "version": "16.04.201701130"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201702020",
+  "version": "16.04.201702020"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201702200",
+  "version": "16.04.201702200"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201702210",
+  "version": "16.04.201702210"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201702240",
+  "version": "16.04.201702240"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201703020",
+  "version": "16.04.201703020"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201703030",
+  "version": "16.04.201703030"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201703070",
+  "version": "16.04.201703070"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201703270",
+  "version": "16.04.201703270"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201703280",
+  "version": "16.04.201703280"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201703300",
+  "version": "16.04.201703300"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201705080",
+  "version": "16.04.201705080"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201705160",
+  "version": "16.04.201705160"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201706100",
+  "version": "16.04.201706100"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201706191",
+  "version": "16.04.201706191"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201707210",
+  "version": "16.04.201707210"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201707270",
+  "version": "16.04.201707270"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201708030",
+  "version": "16.04.201708030"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201708110",
+  "version": "16.04.201708110"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201708151",
+  "version": "16.04.201708151"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201709190",
+  "version": "16.04.201709190"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201710110",
+  "version": "16.04.201710110"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201710261",
+  "version": "16.04.201710261"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201711072",
+  "version": "16.04.201711072"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201711160",
+  "version": "16.04.201711160"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201711211",
+  "version": "16.04.201711211"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201712080",
+  "version": "16.04.201712080"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201801050",
+  "version": "16.04.201801050"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201801090",
+  "version": "16.04.201801090"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201801120",
+  "version": "16.04.201801120"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201801220",
+  "version": "16.04.201801220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201801260",
+  "version": "16.04.201801260"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201802220",
+  "version": "16.04.201802220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201803230",
+  "version": "16.04.201803230"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201804050",
+  "version": "16.04.201804050"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201804180",
+  "version": "16.04.201804180"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201804240",
+  "version": "16.04.201804240"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201804270",
+  "version": "16.04.201804270"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201805090",
+  "version": "16.04.201805090"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201805220",
+  "version": "16.04.201805220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201806120",
+  "version": "16.04.201806120"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201806210",
+  "version": "16.04.201806210"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201806220",
+  "version": "16.04.201806220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201807030",
+  "version": "16.04.201807030"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201807240",
+  "version": "16.04.201807240"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201808060",
+  "version": "16.04.201808060"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201808140",
+  "version": "16.04.201808140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201808310",
+  "version": "16.04.201808310"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201809120",
+  "version": "16.04.201809120"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201810040",
+  "version": "16.04.201810040"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201810230",
+  "version": "16.04.201810230"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201810300",
+  "version": "16.04.201810300"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201811010",
+  "version": "16.04.201811010"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201811140",
+  "version": "16.04.201811140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201812040",
+  "version": "16.04.201812040"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04-LTS",
+  "urn": "Canonical:UbuntuServer:16.04-LTS:16.04.201812070",
+  "version": "16.04.201812070"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:16.04.0-LTS:16.04.201604203",
+  "version": "16.04.201604203"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:16.04.0-LTS:16.04.201605161",
+  "version": "16.04.201605161"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:16.04.0-LTS:16.04.201606100",
+  "version": "16.04.201606100"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:16.04.0-LTS:16.04.201606270",
+  "version": "16.04.201606270"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:16.04.0-LTS:16.04.201607210",
+  "version": "16.04.201607210"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:16.04.0-LTS:16.04.201608150",
+  "version": "16.04.201608150"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:16.04.0-LTS:16.04.201608250",
+  "version": "16.04.201608250"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:16.04.0-LTS:16.04.201608300",
+  "version": "16.04.201608300"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:16.04.0-LTS:16.04.201609071",
+  "version": "16.04.201609071"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:16.04.0-LTS:16.04.201609210",
+  "version": "16.04.201609210"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:16.04.0-LTS:16.04.201609220",
+  "version": "16.04.201609220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:16.04.0-LTS:16.04.201610110",
+  "version": "16.04.201610110"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:16.04.0-LTS:16.04.201610130",
+  "version": "16.04.201610130"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:16.04.0-LTS:16.04.201610200",
+  "version": "16.04.201610200"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:16.04.0-LTS:16.04.201611150",
+  "version": "16.04.201611150"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:16.04.0-LTS:16.04.201802220",
+  "version": "16.04.201802220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:16.04.0-LTS:16.04.201805220",
+  "version": "16.04.201805220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "16.04.0-LTS",
+  "urn": "Canonical:UbuntuServer:16.04.0-LTS:16.04.201808140",
+  "version": "16.04.201808140"
+}
+{
+  "offer": "deploy-a-secured-modx-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-modx-on-ubuntu-14-04-lts",
+  "urn": "cognosys:deploy-a-secured-modx-on-ubuntu-14-04-lts:new-secured-modx-on-ubuntu-14-04-lts:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "deploy-a-secured-modx-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-modx-on-ubuntu-14-04-lts",
+  "urn": "cognosys:deploy-a-secured-modx-on-ubuntu-14-04-lts:new-secured-modx-on-ubuntu-14-04-lts:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "deploy-a-secured-silverstripe-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-silverstripe-on-ubuntu-14-04-lts",
+  "urn": "cognosys:deploy-a-secured-silverstripe-on-ubuntu-14-04-lts:secured-silverstripe-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "deploy-a-secured-silverstripe-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-silverstripe-on-ubuntu-14-04-lts",
+  "urn": "cognosys:deploy-a-secured-silverstripe-on-ubuntu-14-04-lts:secured-silverstripe-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "deploy-a-secured-silverstripe-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-silverstripe-on-ubuntu-14-04-lts",
+  "urn": "cognosys:deploy-a-secured-silverstripe-on-ubuntu-14-04-lts:secured-silverstripe-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "deploy-a-secured-silverstripe-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-silverstripe-on-ubuntu-14-04-lts",
+  "urn": "cognosys:deploy-a-secured-silverstripe-on-ubuntu-14-04-lts:secured-silverstripe-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-DAILY-LTS:18.04.201811260",
+  "version": "18.04.201811260"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-DAILY-LTS:18.04.201811290",
+  "version": "18.04.201811290"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-DAILY-LTS:18.04.201812030",
+  "version": "18.04.201812030"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-DAILY-LTS:18.04.201812031",
+  "version": "18.04.201812031"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-DAILY-LTS:18.04.201812040",
+  "version": "18.04.201812040"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-DAILY-LTS:18.04.201812050",
+  "version": "18.04.201812050"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-DAILY-LTS:18.04.201812060",
+  "version": "18.04.201812060"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-DAILY-LTS:18.04.201812110",
+  "version": "18.04.201812110"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-DAILY-LTS:18.04.201812120",
+  "version": "18.04.201812120"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-DAILY-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-DAILY-LTS:18.04.201812140",
+  "version": "18.04.201812140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-LTS:18.04.201804262",
+  "version": "18.04.201804262"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-LTS:18.04.201805170",
+  "version": "18.04.201805170"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-LTS:18.04.201805220",
+  "version": "18.04.201805220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-LTS:18.04.201806130",
+  "version": "18.04.201806130"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-LTS:18.04.201806170",
+  "version": "18.04.201806170"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-LTS:18.04.201807240",
+  "version": "18.04.201807240"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-LTS:18.04.201808060",
+  "version": "18.04.201808060"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-LTS:18.04.201808080",
+  "version": "18.04.201808080"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-LTS:18.04.201808140",
+  "version": "18.04.201808140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-LTS:18.04.201808310",
+  "version": "18.04.201808310"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-LTS:18.04.201809110",
+  "version": "18.04.201809110"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-LTS:18.04.201810030",
+  "version": "18.04.201810030"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-LTS:18.04.201810240",
+  "version": "18.04.201810240"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-LTS:18.04.201810290",
+  "version": "18.04.201810290"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-LTS:18.04.201811010",
+  "version": "18.04.201811010"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-LTS:18.04.201812031",
+  "version": "18.04.201812031"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-LTS:18.04.201812040",
+  "version": "18.04.201812040"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.04-LTS",
+  "urn": "Canonical:UbuntuServer:18.04-LTS:18.04.201812060",
+  "version": "18.04.201812060"
+}
+{
+  "offer": "invoice-ninja-2-5-1-1-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-secured-invoice-ninja-on-ubuntu-basic-lic",
+  "urn": "cognosys:invoice-ninja-2-5-1-1-on-ubuntu-1404:new-secured-invoice-ninja-on-ubuntu-basic-lic:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "invoice-ninja-2-5-1-1-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-secured-invoice-ninja-on-ubuntu-basic-lic",
+  "urn": "cognosys:invoice-ninja-2-5-1-1-on-ubuntu-1404:new-secured-invoice-ninja-on-ubuntu-basic-lic:1.0.3",
+  "version": "1.0.3"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.10",
+  "urn": "Canonical:UbuntuServer:18.10:18.10.201810180",
+  "version": "18.10.201810180"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.10",
+  "urn": "Canonical:UbuntuServer:18.10:18.10.201811140",
+  "version": "18.10.201811140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.10",
+  "urn": "Canonical:UbuntuServer:18.10:18.10.201812030",
+  "version": "18.10.201812030"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.10-DAILY",
+  "urn": "Canonical:UbuntuServer:18.10-DAILY:18.10.201811020",
+  "version": "18.10.201811020"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.10-DAILY",
+  "urn": "Canonical:UbuntuServer:18.10-DAILY:18.10.201811050",
+  "version": "18.10.201811050"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.10-DAILY",
+  "urn": "Canonical:UbuntuServer:18.10-DAILY:18.10.201811070",
+  "version": "18.10.201811070"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.10-DAILY",
+  "urn": "Canonical:UbuntuServer:18.10-DAILY:18.10.201811140",
+  "version": "18.10.201811140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.10-DAILY",
+  "urn": "Canonical:UbuntuServer:18.10-DAILY:18.10.201811190",
+  "version": "18.10.201811190"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.10-DAILY",
+  "urn": "Canonical:UbuntuServer:18.10-DAILY:18.10.201811220",
+  "version": "18.10.201811220"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.10-DAILY",
+  "urn": "Canonical:UbuntuServer:18.10-DAILY:18.10.201811280",
+  "version": "18.10.201811280"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.10-DAILY",
+  "urn": "Canonical:UbuntuServer:18.10-DAILY:18.10.201811290",
+  "version": "18.10.201811290"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.10-DAILY",
+  "urn": "Canonical:UbuntuServer:18.10-DAILY:18.10.201812030",
+  "version": "18.10.201812030"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "18.10-DAILY",
+  "urn": "Canonical:UbuntuServer:18.10-DAILY:18.10.201812040",
+  "version": "18.10.201812040"
+}
+{
+  "offer": "jruby-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "jruby-on-ubuntu-14-04-lts",
+  "urn": "cognosys:jruby-on-ubuntu-14-04-lts:jruby-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "jruby-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "jruby-on-ubuntu-14-04-lts",
+  "urn": "cognosys:jruby-on-ubuntu-14-04-lts:jruby-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "jruby-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "jruby-on-ubuntu-14-04-lts",
+  "urn": "cognosys:jruby-on-ubuntu-14-04-lts:jruby-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "jruby-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "jruby-on-ubuntu-14-04-lts",
+  "urn": "cognosys:jruby-on-ubuntu-14-04-lts:jruby-on-ubuntu-14-04-lts:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "jruby-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "jruby-on-ubuntu-14-04-lts",
+  "urn": "cognosys:jruby-on-ubuntu-14-04-lts:jruby-on-ubuntu-14-04-lts:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "jruby-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "jruby-on-ubuntu-14-04-lts",
+  "urn": "cognosys:jruby-on-ubuntu-14-04-lts:jruby-on-ubuntu-14-04-lts:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "19.04-DAILY",
+  "urn": "Canonical:UbuntuServer:19.04-DAILY:19.04.201811290",
+  "version": "19.04.201811290"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "19.04-DAILY",
+  "urn": "Canonical:UbuntuServer:19.04-DAILY:19.04.201812050",
+  "version": "19.04.201812050"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "19.04-DAILY",
+  "urn": "Canonical:UbuntuServer:19.04-DAILY:19.04.201812100",
+  "version": "19.04.201812100"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "19.04-DAILY",
+  "urn": "Canonical:UbuntuServer:19.04-DAILY:19.04.201812110",
+  "version": "19.04.201812110"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "19.04-DAILY",
+  "urn": "Canonical:UbuntuServer:19.04-DAILY:19.04.201812120",
+  "version": "19.04.201812120"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "19.04-DAILY",
+  "urn": "Canonical:UbuntuServer:19.04-DAILY:19.04.201812130",
+  "version": "19.04.201812130"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "19.04-DAILY",
+  "urn": "Canonical:UbuntuServer:19.04-DAILY:19.04.201812140",
+  "version": "19.04.201812140"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "19.04-DAILY",
+  "urn": "Canonical:UbuntuServer:19.04-DAILY:19.04.201812150",
+  "version": "19.04.201812150"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "19.04-DAILY",
+  "urn": "Canonical:UbuntuServer:19.04-DAILY:19.04.201812160",
+  "version": "19.04.201812160"
+}
+{
+  "offer": "UbuntuServer",
+  "publisher": "Canonical",
+  "sku": "19.04-DAILY",
+  "urn": "Canonical:UbuntuServer:19.04-DAILY:19.04.201812180",
+  "version": "19.04.201812180"
+}
+{
+  "offer": "owncloud-9-with-lamp-stack-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-owncloud-on-ubuntu-1404-basic-lic",
+  "urn": "cognosys:owncloud-9-with-lamp-stack-on-ubuntu-1404:new-owncloud-on-ubuntu-1404-basic-lic:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "owncloud-9-with-lamp-stack-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-owncloud-on-ubuntu-1404-basic-lic",
+  "urn": "cognosys:owncloud-9-with-lamp-stack-on-ubuntu-1404:new-owncloud-on-ubuntu-1404-basic-lic:1.2.2",
+  "version": "1.2.2"
+}
+{
+  "offer": "Ubuntu_Core",
+  "publisher": "Canonical",
+  "sku": "16",
+  "urn": "Canonical:Ubuntu_Core:16:2017.0104.0",
+  "version": "2017.0104.0"
+}
+{
+  "offer": "piwigogallerys-ubuntu_14-04_lts",
+  "publisher": "cognosys",
+  "sku": "piwigogallerys-ubuntu_14-04_lts",
+  "urn": "cognosys:piwigogallerys-ubuntu_14-04_lts:piwigogallerys-ubuntu_14-04_lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "piwigogallerys-ubuntu_14-04_lts",
+  "publisher": "cognosys",
+  "sku": "piwigogallerys-ubuntu_14-04_lts",
+  "urn": "cognosys:piwigogallerys-ubuntu_14-04_lts:piwigogallerys-ubuntu_14-04_lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "piwigogallerys-ubuntu_14-04_lts",
+  "publisher": "cognosys",
+  "sku": "piwigogallerys-ubuntu_14-04_lts",
+  "urn": "cognosys:piwigogallerys-ubuntu_14-04_lts:piwigogallerys-ubuntu_14-04_lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "piwigogallerys-ubuntu_14-04_lts",
+  "publisher": "cognosys",
+  "sku": "piwigogallerys-ubuntu_14-04_lts",
+  "urn": "cognosys:piwigogallerys-ubuntu_14-04_lts:piwigogallerys-ubuntu_14-04_lts:1.2.2",
+  "version": "1.2.2"
+}
+{
+  "offer": "piwigogallerys-ubuntu_14-04_lts",
+  "publisher": "cognosys",
+  "sku": "piwigogallerys-ubuntu_14-04_lts",
+  "urn": "cognosys:piwigogallerys-ubuntu_14-04_lts:piwigogallerys-ubuntu_14-04_lts:1.2.3",
+  "version": "1.2.3"
+}
+{
+  "offer": "sec1011-dokuwiki-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "dokuwiki-on-hardened-ubuntu-1404-enterprise-lic",
+  "urn": "cognosys:sec1011-dokuwiki-on-ubuntu-1404:dokuwiki-on-hardened-ubuntu-1404-enterprise-lic:1.0.3",
+  "version": "1.0.3"
+}
+{
+  "offer": "sec1011-dokuwiki-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-dokuwiki-on-hardened-ubuntu-1404-ent-lic",
+  "urn": "cognosys:sec1011-dokuwiki-on-ubuntu-1404:new-dokuwiki-on-hardened-ubuntu-1404-ent-lic:1.0.3",
+  "version": "1.0.3"
+}
+{
+  "offer": "sec1011-dokuwiki-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-dokuwiki-on-hardened-ubuntu-1404-pro-lic",
+  "urn": "cognosys:sec1011-dokuwiki-on-ubuntu-1404:new-dokuwiki-on-hardened-ubuntu-1404-pro-lic:1.0.3",
+  "version": "1.0.3"
+}
+{
+  "offer": "sec1011-dokuwiki-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-dokuwiki-on-hardened-ubuntu-1404-pro-lic",
+  "urn": "cognosys:sec1011-dokuwiki-on-ubuntu-1404:new-dokuwiki-on-hardened-ubuntu-1404-pro-lic:1.0.4",
+  "version": "1.0.4"
+}
+{
+  "offer": "sec1013-elasticsearch-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1013-elasticsearch-on-ubuntu-1404",
+  "urn": "cognosys:sec1013-elasticsearch-on-ubuntu-1404:sec1013-elasticsearch-on-ubuntu-1404:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "sec1013-elasticsearch-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1013-elasticsearch-on-ubuntu-1404",
+  "urn": "cognosys:sec1013-elasticsearch-on-ubuntu-1404:sec1013-elasticsearch-on-ubuntu-1404:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "sec1013-elasticsearch-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1013-elasticsearch-on-ubuntu-1404",
+  "urn": "cognosys:sec1013-elasticsearch-on-ubuntu-1404:sec1013-elasticsearch-on-ubuntu-1404:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "sec1013-elasticsearch-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1013-elasticsearch-on-ubuntu-1404",
+  "urn": "cognosys:sec1013-elasticsearch-on-ubuntu-1404:sec1013-elasticsearch-on-ubuntu-1404:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "sec1013-elasticsearch-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1013-elasticsearch-on-ubuntu-1404",
+  "urn": "cognosys:sec1013-elasticsearch-on-ubuntu-1404:sec1013-elasticsearch-on-ubuntu-1404:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "sec1014-opencart-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-opencart-on-ubuntu-pro-lic",
+  "urn": "cognosys:sec1014-opencart-on-ubuntu-1404:secured-opencart-on-ubuntu-pro-lic:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "sec1014-opencart-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-opencart-on-ubuntu-pro-lic",
+  "urn": "cognosys:sec1014-opencart-on-ubuntu-1404:secured-opencart-on-ubuntu-pro-lic:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "dome9ubuntu",
+  "publisher": "dome9",
+  "sku": "dome9ubuntu",
+  "urn": "dome9:dome9ubuntu:dome9ubuntu:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "sec1015-orangehrm-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-orangehrm-on-ubuntu-lic",
+  "urn": "cognosys:sec1015-orangehrm-on-ubuntu-1404:secured-orangehrm-on-ubuntu-lic:1.3.1",
+  "version": "1.3.1"
+}
+{
+  "offer": "sec1015-orangehrm-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-orangehrm-on-ubuntu-lic",
+  "urn": "cognosys:sec1015-orangehrm-on-ubuntu-1404:secured-orangehrm-on-ubuntu-lic:1.3.2",
+  "version": "1.3.2"
+}
+{
+  "offer": "sec1015-orangehrm-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-orangehrm-on-ubuntu-pro-lic",
+  "urn": "cognosys:sec1015-orangehrm-on-ubuntu-1404:secured-orangehrm-on-ubuntu-pro-lic:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "sec1015-orangehrm-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-orangehrm-on-ubuntu-pro-lic",
+  "urn": "cognosys:sec1015-orangehrm-on-ubuntu-1404:secured-orangehrm-on-ubuntu-pro-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "sec1016-nodejs-server-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "hardened-nodejs-server-on-ubuntu",
+  "urn": "cognosys:sec1016-nodejs-server-on-ubuntu-1404:hardened-nodejs-server-on-ubuntu:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "sec1016-nodejs-server-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "hardened-nodejs-server-on-ubuntu-ent",
+  "urn": "cognosys:sec1016-nodejs-server-on-ubuntu-1404:hardened-nodejs-server-on-ubuntu-ent:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "sec1016-nodejs-server-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "hardened-nodejs-server-on-ubuntu-pro",
+  "urn": "cognosys:sec1016-nodejs-server-on-ubuntu-1404:hardened-nodejs-server-on-ubuntu-pro:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "sec1016-nodejs-server-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "hardened-nodejs-server-on-ubuntu-pro",
+  "urn": "cognosys:sec1016-nodejs-server-on-ubuntu-1404:hardened-nodejs-server-on-ubuntu-pro:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "sec1018-haproxy-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1018-secured-haproxy-on-ubuntu-1404",
+  "urn": "cognosys:sec1018-haproxy-on-ubuntu-1404:sec1018-secured-haproxy-on-ubuntu-1404:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "sec1018-haproxy-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1018-secured-haproxy-on-ubuntu-1404",
+  "urn": "cognosys:sec1018-haproxy-on-ubuntu-1404:sec1018-secured-haproxy-on-ubuntu-1404:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "sec1018-haproxy-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1018-secured-haproxy-on-ubuntu-1404",
+  "urn": "cognosys:sec1018-haproxy-on-ubuntu-1404:sec1018-secured-haproxy-on-ubuntu-1404:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "sec1018-haproxy-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1018-secured-haproxy-on-ubuntu-1404",
+  "urn": "cognosys:sec1018-haproxy-on-ubuntu-1404:sec1018-secured-haproxy-on-ubuntu-1404:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "sec1018-haproxy-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1018-secured-haproxy-on-ubuntu-1404",
+  "urn": "cognosys:sec1018-haproxy-on-ubuntu-1404:sec1018-secured-haproxy-on-ubuntu-1404:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "sec1018-haproxy-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1018-secured-haproxy-on-ubuntu-1404",
+  "urn": "cognosys:sec1018-haproxy-on-ubuntu-1404:sec1018-secured-haproxy-on-ubuntu-1404:1.2.2",
+  "version": "1.2.2"
+}
+{
+  "offer": "sec1019-secured-tomcat-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-tomcat-on-ubuntu",
+  "urn": "cognosys:sec1019-secured-tomcat-on-ubuntu-1404:secured-tomcat-on-ubuntu:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "sec1019-secured-tomcat-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-tomcat-on-ubuntu",
+  "urn": "cognosys:sec1019-secured-tomcat-on-ubuntu-1404:secured-tomcat-on-ubuntu:1.0.3",
+  "version": "1.0.3"
+}
+{
+  "offer": "sec1019-secured-tomcat-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-tomcat-on-ubuntu-pro",
+  "urn": "cognosys:sec1019-secured-tomcat-on-ubuntu-1404:secured-tomcat-on-ubuntu-pro:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "firehost_armor_ubuntu",
+  "publisher": "firehost",
+  "sku": "byol_ubuntu",
+  "urn": "firehost:firehost_armor_ubuntu:byol_ubuntu:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "sec1020-phpbb-on-hardened-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1020-phpbb-on-hardened-ubuntu-1404",
+  "urn": "cognosys:sec1020-phpbb-on-hardened-ubuntu-1404:sec1020-phpbb-on-hardened-ubuntu-1404:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "sec1020-phpbb-on-hardened-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1020-phpbb-on-hardened-ubuntu-1404",
+  "urn": "cognosys:sec1020-phpbb-on-hardened-ubuntu-1404:sec1020-phpbb-on-hardened-ubuntu-1404:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "sec1020-phpbb-on-hardened-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1020-phpbb-on-hardened-ubuntu-1404",
+  "urn": "cognosys:sec1020-phpbb-on-hardened-ubuntu-1404:sec1020-phpbb-on-hardened-ubuntu-1404:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "sec1020-phpbb-on-hardened-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1020-phpbb-on-hardened-ubuntu-1404",
+  "urn": "cognosys:sec1020-phpbb-on-hardened-ubuntu-1404:sec1020-phpbb-on-hardened-ubuntu-1404:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "sec1020-phpbb-on-hardened-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-phpbb-on-ubuntu-pro-lic",
+  "urn": "cognosys:sec1020-phpbb-on-hardened-ubuntu-1404:secured-phpbb-on-ubuntu-pro-lic:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "sec1020-phpbb-on-hardened-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-phpbb-on-ubuntu-pro-lic",
+  "urn": "cognosys:sec1020-phpbb-on-hardened-ubuntu-1404:secured-phpbb-on-ubuntu-pro-lic:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "sec1021-mybb-on-hardened-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-sec1021-mybb-on-hardened-ubuntu-1404-ent",
+  "urn": "cognosys:sec1021-mybb-on-hardened-ubuntu-1404:new-sec1021-mybb-on-hardened-ubuntu-1404-ent:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "sec1021-mybb-on-hardened-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-sec1021-mybb-on-hardened-ubuntu-1404-pro",
+  "urn": "cognosys:sec1021-mybb-on-hardened-ubuntu-1404:new-sec1021-mybb-on-hardened-ubuntu-1404-pro:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "sec1021-mybb-on-hardened-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1021-mybb-on-hardened-ubuntu-1404",
+  "urn": "cognosys:sec1021-mybb-on-hardened-ubuntu-1404:sec1021-mybb-on-hardened-ubuntu-1404:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "sec1021-mybb-on-hardened-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1021-mybb-on-hardened-ubuntu-1404",
+  "urn": "cognosys:sec1021-mybb-on-hardened-ubuntu-1404:sec1021-mybb-on-hardened-ubuntu-1404:1.1.4",
+  "version": "1.1.4"
+}
+{
+  "offer": "hh-ubuntu-phishingfrenzy",
+  "publisher": "hackershub",
+  "sku": "ubuntu-pf-18_04_1_lts",
+  "urn": "hackershub:hh-ubuntu-phishingfrenzy:ubuntu-pf-18_04_1_lts:1.4.0",
+  "version": "1.4.0"
+}
+{
+  "offer": "hapee-ubuntu",
+  "publisher": "haproxy-technologies",
+  "sku": "1_7r2",
+  "urn": "haproxy-technologies:hapee-ubuntu:1_7r2:2018.03.20",
+  "version": "2018.03.20"
+}
+{
+  "offer": "sec1022-sugarcrm-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1022-sugarcrm-on-ubuntu-1404",
+  "urn": "cognosys:sec1022-sugarcrm-on-ubuntu-1404:sec1022-sugarcrm-on-ubuntu-1404:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "hapee-ubuntu",
+  "publisher": "haproxy-technologies",
+  "sku": "1_8r1",
+  "urn": "haproxy-technologies:hapee-ubuntu:1_8r1:2018.11.22",
+  "version": "2018.11.22"
+}
+{
+  "offer": "goanywheremftubuntulinux",
+  "publisher": "help-systems",
+  "sku": "linux574",
+  "urn": "help-systems:goanywheremftubuntulinux:linux574:5.7.4",
+  "version": "5.7.4"
+}
+{
+  "offer": "sec1023-moodle-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-moodle-on-ubuntu-1404-basic-lic",
+  "urn": "cognosys:sec1023-moodle-on-ubuntu-1404:new-moodle-on-ubuntu-1404-basic-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "sec1023-moodle-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-moodle-on-ubuntu-1404-ent-lic",
+  "urn": "cognosys:sec1023-moodle-on-ubuntu-1404:new-moodle-on-ubuntu-1404-ent-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "sec1023-moodle-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-moodle-on-ubuntu-1404-pro-lic",
+  "urn": "cognosys:sec1023-moodle-on-ubuntu-1404:new-moodle-on-ubuntu-1404-pro-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "sec1023-moodle-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-moodle-on-ubuntu-1404-pro-lic",
+  "urn": "cognosys:sec1023-moodle-on-ubuntu-1404:new-moodle-on-ubuntu-1404-pro-lic:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "sec1024_magento-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured_magento-on-hardened-ubuntu-14-04-basic-lic",
+  "urn": "cognosys:sec1024_magento-on-ubuntu-1404:secured_magento-on-hardened-ubuntu-14-04-basic-lic:1.2.2",
+  "version": "1.2.2"
+}
+{
+  "offer": "sec1024_magento-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured_magento-on-hardened-ubuntu-14-04-basic-lic",
+  "urn": "cognosys:sec1024_magento-on-ubuntu-1404:secured_magento-on-hardened-ubuntu-14-04-basic-lic:1.3.0",
+  "version": "1.3.0"
+}
+{
+  "offer": "sec1024_magento-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured_magento-on-hardened-ubuntu-14-04-basic-lic",
+  "urn": "cognosys:sec1024_magento-on-ubuntu-1404:secured_magento-on-hardened-ubuntu-14-04-basic-lic:1.3.1",
+  "version": "1.3.1"
+}
+{
+  "offer": "sec1025-secured-drupal-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-durpal-on-ubuntu-basic-lic",
+  "urn": "cognosys:sec1025-secured-drupal-on-ubuntu-1404:secured-durpal-on-ubuntu-basic-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "ics-payg-ubuntu",
+  "publisher": "informatica",
+  "sku": "ics-payg-ubuntu",
+  "urn": "informatica:ics-payg-ubuntu:ics-payg-ubuntu:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "ics-payg-ubuntu",
+  "publisher": "informatica",
+  "sku": "ics-payg-ubuntu",
+  "urn": "informatica:ics-payg-ubuntu:ics-payg-ubuntu:2.0.0",
+  "version": "2.0.0"
+}
+{
+  "offer": "ics-payg-ubuntu",
+  "publisher": "informatica",
+  "sku": "ics-payg-ubuntu",
+  "urn": "informatica:ics-payg-ubuntu:ics-payg-ubuntu:3.0.0",
+  "version": "3.0.0"
+}
+{
+  "offer": "sec1027-secured-wordpress-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1027-secured-wordpress-on-ubuntu-1404",
+  "urn": "cognosys:sec1027-secured-wordpress-on-ubuntu-1404:sec1027-secured-wordpress-on-ubuntu-1404:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "sec1027-secured-wordpress-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1027-secured-wordpress-on-ubuntu-1404",
+  "urn": "cognosys:sec1027-secured-wordpress-on-ubuntu-1404:sec1027-secured-wordpress-on-ubuntu-1404:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "sec1027-secured-wordpress-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1027-secured-wordpress-on-ubuntu-1404",
+  "urn": "cognosys:sec1027-secured-wordpress-on-ubuntu-1404:sec1027-secured-wordpress-on-ubuntu-1404:1.1.4",
+  "version": "1.1.4"
+}
+{
+  "offer": "sec1027-secured-wordpress-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1027-secured-wordpress-on-ubuntu-1404",
+  "urn": "cognosys:sec1027-secured-wordpress-on-ubuntu-1404:sec1027-secured-wordpress-on-ubuntu-1404:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "powercenter-v10-domain-image-ubuntu14-04-3",
+  "publisher": "informatica",
+  "sku": "byol_ubuntu_for_pc_10",
+  "urn": "informatica:powercenter-v10-domain-image-ubuntu14-04-3:byol_ubuntu_for_pc_10:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "sec1028-secured-lamp-sever-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-secured-lampserver-on-ubuntu-14-04-lts-pro-lic",
+  "urn": "cognosys:sec1028-secured-lamp-sever-on-ubuntu-1404:new-secured-lampserver-on-ubuntu-14-04-lts-pro-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "sec1028-secured-lamp-sever-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-secured-lampserver-on-ubuntu-14-04-lts-pro-lic",
+  "urn": "cognosys:sec1028-secured-lamp-sever-on-ubuntu-1404:new-secured-lampserver-on-ubuntu-14-04-lts-pro-lic:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "powercenter-v10-update1-domain-image-ubuntu",
+  "publisher": "informatica",
+  "sku": "byol_ubuntu_for_pc_10_0_update1",
+  "urn": "informatica:powercenter-v10-update1-domain-image-ubuntu:byol_ubuntu_for_pc_10_0_update1:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "sec1028-secured-lamp-sever-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1028-secured-lamp-sever-on-ubuntu-1404",
+  "urn": "cognosys:sec1028-secured-lamp-sever-on-ubuntu-1404:sec1028-secured-lamp-sever-on-ubuntu-1404:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "sec1028-secured-lamp-sever-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1028-secured-lamp-sever-on-ubuntu-1404",
+  "urn": "cognosys:sec1028-secured-lamp-sever-on-ubuntu-1404:sec1028-secured-lamp-sever-on-ubuntu-1404:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "sec1028-secured-lamp-sever-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1028-secured-lamp-sever-on-ubuntu-1404",
+  "urn": "cognosys:sec1028-secured-lamp-sever-on-ubuntu-1404:sec1028-secured-lamp-sever-on-ubuntu-1404:1.2.2",
+  "version": "1.2.2"
+}
+{
+  "offer": "sec1028-secured-lamp-sever-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1028-secured-lamp-sever-on-ubuntu-1404",
+  "urn": "cognosys:sec1028-secured-lamp-sever-on-ubuntu-1404:sec1028-secured-lamp-sever-on-ubuntu-1404:1.2.3",
+  "version": "1.2.3"
+}
+{
+  "offer": "sec1029-secured-mediawiki-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-secured-mediawiki-on-ubuntu-1404-basic-lic",
+  "urn": "cognosys:sec1029-secured-mediawiki-on-ubuntu-1404:new-secured-mediawiki-on-ubuntu-1404-basic-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "sec1029-secured-mediawiki-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-secured-mediawiki-on-ubuntu-1404-basic-lic",
+  "urn": "cognosys:sec1029-secured-mediawiki-on-ubuntu-1404:new-secured-mediawiki-on-ubuntu-1404-basic-lic:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "sec1029-secured-mediawiki-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-secured-mediawiki-on-ubuntu-1404-ent-lic",
+  "urn": "cognosys:sec1029-secured-mediawiki-on-ubuntu-1404:new-secured-mediawiki-on-ubuntu-1404-ent-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "sec1029-secured-mediawiki-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-secured-mediawiki-on-ubuntu-1404-pro-lic",
+  "urn": "cognosys:sec1029-secured-mediawiki-on-ubuntu-1404:new-secured-mediawiki-on-ubuntu-1404-pro-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "sec1030-secured-subversion-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-subversion-on-ubuntu-basic",
+  "urn": "cognosys:sec1030-secured-subversion-on-ubuntu-1404:secured-subversion-on-ubuntu-basic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "sec1030-secured-subversion-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-subversion-on-ubuntu-basic",
+  "urn": "cognosys:sec1030-secured-subversion-on-ubuntu-1404:secured-subversion-on-ubuntu-basic:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "sec1031-secured-passenger-nginx-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1031-secured-passenger-nginx-on-ubuntu-1404",
+  "urn": "cognosys:sec1031-secured-passenger-nginx-on-ubuntu-1404:sec1031-secured-passenger-nginx-on-ubuntu-1404:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "sec1031-secured-passenger-nginx-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1031-secured-passenger-nginx-on-ubuntu-1404",
+  "urn": "cognosys:sec1031-secured-passenger-nginx-on-ubuntu-1404:sec1031-secured-passenger-nginx-on-ubuntu-1404:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "sec1031-secured-passenger-nginx-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1031-secured-passenger-nginx-on-ubuntu-1404",
+  "urn": "cognosys:sec1031-secured-passenger-nginx-on-ubuntu-1404:sec1031-secured-passenger-nginx-on-ubuntu-1404:2.0.1",
+  "version": "2.0.1"
+}
+{
+  "offer": "sec1033-secured-piwik-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-secured-piwik-on-ubuntu-1404-pro-lic",
+  "urn": "cognosys:sec1033-secured-piwik-on-ubuntu-1404:new-secured-piwik-on-ubuntu-1404-pro-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "sec1033-secured-piwik-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1033-secured-piwik-on-ubuntu-1404",
+  "urn": "cognosys:sec1033-secured-piwik-on-ubuntu-1404:sec1033-secured-piwik-on-ubuntu-1404:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "sec1033-secured-piwik-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-piwik-on-ubuntu-pro-lic",
+  "urn": "cognosys:sec1033-secured-piwik-on-ubuntu-1404:secured-piwik-on-ubuntu-pro-lic:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "sec1033-secured-piwik-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-piwik-on-ubuntu-pro-lic",
+  "urn": "cognosys:sec1033-secured-piwik-on-ubuntu-1404:secured-piwik-on-ubuntu-pro-lic:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "sec1033-secured-piwik-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-piwik-on-ubuntu-pro-lic",
+  "urn": "cognosys:sec1033-secured-piwik-on-ubuntu-1404:secured-piwik-on-ubuntu-pro-lic:1.1.4",
+  "version": "1.1.4"
+}
+{
+  "offer": "sec1034-secured-pligg-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1034-secured-pligg-on-ubuntu-1404",
+  "urn": "cognosys:sec1034-secured-pligg-on-ubuntu-1404:sec1034-secured-pligg-on-ubuntu-1404:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "sec1034-secured-pligg-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1034-secured-pligg-on-ubuntu-1404",
+  "urn": "cognosys:sec1034-secured-pligg-on-ubuntu-1404:sec1034-secured-pligg-on-ubuntu-1404:2.0.2",
+  "version": "2.0.2"
+}
+{
+  "offer": "sec1035-secured-jenkins-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-secured-jenkins-on-ubuntu",
+  "urn": "cognosys:sec1035-secured-jenkins-on-ubuntu-1404:new-secured-jenkins-on-ubuntu:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "sec1035-secured-jenkins-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-secured-jenkins-on-ubuntu",
+  "urn": "cognosys:sec1035-secured-jenkins-on-ubuntu-1404:new-secured-jenkins-on-ubuntu:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "sec1035-secured-jenkins-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-secured-jenkins-on-ubuntu",
+  "urn": "cognosys:sec1035-secured-jenkins-on-ubuntu-1404:new-secured-jenkins-on-ubuntu:1.2.2",
+  "version": "1.2.2"
+}
+{
+  "offer": "linux-data-science-vm-ubuntu",
+  "publisher": "microsoft-ads",
+  "sku": "linuxdsvmubuntu",
+  "urn": "microsoft-ads:linux-data-science-vm-ubuntu:linuxdsvmubuntu:1.1.6",
+  "version": "1.1.6"
+}
+{
+  "offer": "linux-data-science-vm-ubuntu",
+  "publisher": "microsoft-ads",
+  "sku": "linuxdsvmubuntu",
+  "urn": "microsoft-ads:linux-data-science-vm-ubuntu:linuxdsvmubuntu:1.1.7",
+  "version": "1.1.7"
+}
+{
+  "offer": "linux-data-science-vm-ubuntu",
+  "publisher": "microsoft-ads",
+  "sku": "linuxdsvmubuntu",
+  "urn": "microsoft-ads:linux-data-science-vm-ubuntu:linuxdsvmubuntu:18.03.03",
+  "version": "18.03.03"
+}
+{
+  "offer": "linux-data-science-vm-ubuntu",
+  "publisher": "microsoft-ads",
+  "sku": "linuxdsvmubuntu",
+  "urn": "microsoft-ads:linux-data-science-vm-ubuntu:linuxdsvmubuntu:18.05.00",
+  "version": "18.05.00"
+}
+{
+  "offer": "linux-data-science-vm-ubuntu",
+  "publisher": "microsoft-ads",
+  "sku": "linuxdsvmubuntu",
+  "urn": "microsoft-ads:linux-data-science-vm-ubuntu:linuxdsvmubuntu:18.07.01",
+  "version": "18.07.01"
+}
+{
+  "offer": "linux-data-science-vm-ubuntu",
+  "publisher": "microsoft-ads",
+  "sku": "linuxdsvmubuntu",
+  "urn": "microsoft-ads:linux-data-science-vm-ubuntu:linuxdsvmubuntu:18.08.00",
+  "version": "18.08.00"
+}
+{
+  "offer": "linux-data-science-vm-ubuntu",
+  "publisher": "microsoft-ads",
+  "sku": "linuxdsvmubuntu",
+  "urn": "microsoft-ads:linux-data-science-vm-ubuntu:linuxdsvmubuntu:18.09.01",
+  "version": "18.09.01"
+}
+{
+  "offer": "ubuntu-server-container",
+  "publisher": "microsoft-azure-batch",
+  "sku": "16-04-lts",
+  "urn": "microsoft-azure-batch:ubuntu-server-container:16-04-lts:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "ubuntu-server-container",
+  "publisher": "microsoft-azure-batch",
+  "sku": "16-04-lts",
+  "urn": "microsoft-azure-batch:ubuntu-server-container:16-04-lts:1.0.3",
+  "version": "1.0.3"
+}
+{
+  "offer": "ubuntu-server-container",
+  "publisher": "microsoft-azure-batch",
+  "sku": "16-04-lts",
+  "urn": "microsoft-azure-batch:ubuntu-server-container:16-04-lts:1.0.4",
+  "version": "1.0.4"
+}
+{
+  "offer": "ubuntu-server-container",
+  "publisher": "microsoft-azure-batch",
+  "sku": "16-04-lts",
+  "urn": "microsoft-azure-batch:ubuntu-server-container:16-04-lts:1.0.5",
+  "version": "1.0.5"
+}
+{
+  "offer": "ubuntu-server-container",
+  "publisher": "microsoft-azure-batch",
+  "sku": "16-04-lts",
+  "urn": "microsoft-azure-batch:ubuntu-server-container:16-04-lts:1.0.6",
+  "version": "1.0.6"
+}
+{
+  "offer": "linux-data-science-vm-ubuntu",
+  "publisher": "microsoft-ads",
+  "sku": "linuxdsvmubuntubyol",
+  "urn": "microsoft-ads:linux-data-science-vm-ubuntu:linuxdsvmubuntubyol:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "linux-data-science-vm-ubuntu",
+  "publisher": "microsoft-ads",
+  "sku": "linuxdsvmubuntubyol",
+  "urn": "microsoft-ads:linux-data-science-vm-ubuntu:linuxdsvmubuntubyol:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "linux-data-science-vm-ubuntu",
+  "publisher": "microsoft-ads",
+  "sku": "linuxdsvmubuntubyol",
+  "urn": "microsoft-ads:linux-data-science-vm-ubuntu:linuxdsvmubuntubyol:1.1.6",
+  "version": "1.1.6"
+}
+{
+  "offer": "linux-data-science-vm-ubuntu",
+  "publisher": "microsoft-ads",
+  "sku": "linuxdsvmubuntubyol",
+  "urn": "microsoft-ads:linux-data-science-vm-ubuntu:linuxdsvmubuntubyol:1.1.7",
+  "version": "1.1.7"
+}
+{
+  "offer": "linux-data-science-vm-ubuntu",
+  "publisher": "microsoft-ads",
+  "sku": "linuxdsvmubuntubyol",
+  "urn": "microsoft-ads:linux-data-science-vm-ubuntu:linuxdsvmubuntubyol:18.03.03",
+  "version": "18.03.03"
+}
+{
+  "offer": "linux-data-science-vm-ubuntu",
+  "publisher": "microsoft-ads",
+  "sku": "linuxdsvmubuntubyol",
+  "urn": "microsoft-ads:linux-data-science-vm-ubuntu:linuxdsvmubuntubyol:18.05.00",
+  "version": "18.05.00"
+}
+{
+  "offer": "linux-data-science-vm-ubuntu",
+  "publisher": "microsoft-ads",
+  "sku": "linuxdsvmubuntubyol",
+  "urn": "microsoft-ads:linux-data-science-vm-ubuntu:linuxdsvmubuntubyol:18.07.01",
+  "version": "18.07.01"
+}
+{
+  "offer": "linux-data-science-vm-ubuntu",
+  "publisher": "microsoft-ads",
+  "sku": "linuxdsvmubuntubyol",
+  "urn": "microsoft-ads:linux-data-science-vm-ubuntu:linuxdsvmubuntubyol:18.08.00",
+  "version": "18.08.00"
+}
+{
+  "offer": "sec1036-secured-postgresql-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1036-secured-postgresql-on-ubuntu-1404",
+  "urn": "cognosys:sec1036-secured-postgresql-on-ubuntu-1404:sec1036-secured-postgresql-on-ubuntu-1404:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "sec1036-secured-postgresql-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1036-secured-postgresql-on-ubuntu-1404",
+  "urn": "cognosys:sec1036-secured-postgresql-on-ubuntu-1404:sec1036-secured-postgresql-on-ubuntu-1404:1.2.2",
+  "version": "1.2.2"
+}
+{
+  "offer": "sec1036-secured-postgresql-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "sec1036-secured-postgresql-on-ubuntu-1404",
+  "urn": "cognosys:sec1036-secured-postgresql-on-ubuntu-1404:sec1036-secured-postgresql-on-ubuntu-1404:1.2.3",
+  "version": "1.2.3"
+}
+{
+  "offer": "linux-data-science-vm-ubuntu",
+  "publisher": "microsoft-dsvm",
+  "sku": "linuxdsvmubuntu",
+  "urn": "microsoft-dsvm:linux-data-science-vm-ubuntu:linuxdsvmubuntu:18.07.02",
+  "version": "18.07.02"
+}
+{
+  "offer": "linux-data-science-vm-ubuntu",
+  "publisher": "microsoft-dsvm",
+  "sku": "linuxdsvmubuntu",
+  "urn": "microsoft-dsvm:linux-data-science-vm-ubuntu:linuxdsvmubuntu:18.08.00",
+  "version": "18.08.00"
+}
+{
+  "offer": "linux-data-science-vm-ubuntu",
+  "publisher": "microsoft-dsvm",
+  "sku": "linuxdsvmubuntu",
+  "urn": "microsoft-dsvm:linux-data-science-vm-ubuntu:linuxdsvmubuntu:18.09.01",
+  "version": "18.09.01"
+}
+{
+  "offer": "secure-cloud-lamp-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-secured-lamp-on-ubuntu-16-04-lts-pro-lic",
+  "urn": "cognosys:secure-cloud-lamp-ubuntu-1404:new-secured-lamp-on-ubuntu-16-04-lts-pro-lic:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "ubuntu-server-container-rdma",
+  "publisher": "microsoft-azure-batch",
+  "sku": "16-04-lts",
+  "urn": "microsoft-azure-batch:ubuntu-server-container-rdma:16-04-lts:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "ubuntu-server-container-rdma",
+  "publisher": "microsoft-azure-batch",
+  "sku": "16-04-lts",
+  "urn": "microsoft-azure-batch:ubuntu-server-container-rdma:16-04-lts:1.0.3",
+  "version": "1.0.3"
+}
+{
+  "offer": "ubuntu-server-container-rdma",
+  "publisher": "microsoft-azure-batch",
+  "sku": "16-04-lts",
+  "urn": "microsoft-azure-batch:ubuntu-server-container-rdma:16-04-lts:1.0.4",
+  "version": "1.0.4"
+}
+{
+  "offer": "ubuntu-server-container-rdma",
+  "publisher": "microsoft-azure-batch",
+  "sku": "16-04-lts",
+  "urn": "microsoft-azure-batch:ubuntu-server-container-rdma:16-04-lts:1.0.5",
+  "version": "1.0.5"
+}
+{
+  "offer": "ubuntu-server-container-rdma",
+  "publisher": "microsoft-azure-batch",
+  "sku": "16-04-lts",
+  "urn": "microsoft-azure-batch:ubuntu-server-container-rdma:16-04-lts:1.0.6",
+  "version": "1.0.6"
+}
+{
+  "offer": "secure-cloud-lamp-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-lamp-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secure-cloud-lamp-ubuntu-1404:secured-lamp-on-ubuntu-14-04-lts:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "secure-cloud-lamp-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-lamp-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secure-cloud-lamp-ubuntu-1404:secured-lamp-on-ubuntu-14-04-lts:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secure-cloud-lamp-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-lamp-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secure-cloud-lamp-ubuntu-1404:secured-lamp-on-ubuntu-14-04-lts:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "secured-abantecart-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-abantecart-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-abantecart-on-ubuntu-14-04-lts:new-secured-abantecart-on-ubuntu-14-04-lts:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-abantecart-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-abantecart-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-abantecart-on-ubuntu-14-04-lts:new-secured-abantecart-on-ubuntu-14-04-lts:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "secured-acquiadurpal-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-acquiadurpal-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-acquiadurpal-on-ubuntu-14-04-lts:secured-acquiadurpal-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-acquiadurpal-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-acquiadurpal-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-acquiadurpal-on-ubuntu-14-04-lts:secured-acquiadurpal-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-acquiadurpal-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-acquiadurpal-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-acquiadurpal-on-ubuntu-14-04-lts:secured-acquiadurpal-on-ubuntu-14-04-lts:1.2.2",
+  "version": "1.2.2"
+}
+{
+  "offer": "secured-acquiadurpal-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-acquiadurpal-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-acquiadurpal-on-ubuntu-14-04-lts:secured-acquiadurpal-on-ubuntu-14-04-lts:1.2.3",
+  "version": "1.2.3"
+}
+{
+  "offer": "secured-apachesolr-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-apachesolr-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-apachesolr-on-ubuntu-14-04-lts:new-secured-apachesolr-on-ubuntu-14-04-lts:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "secured-apachesolr-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-apachesolr-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-apachesolr-on-ubuntu-14-04-lts:new-secured-apachesolr-on-ubuntu-14-04-lts:1.0.3",
+  "version": "1.0.3"
+}
+{
+  "offer": "secured-artifactory-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-artifactory-on-ubuntu-14-04-lts-basic-lic",
+  "urn": "cognosys:secured-artifactory-on-ubuntu-14-04-lts:secured-artifactory-on-ubuntu-14-04-lts-basic-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-artifactory-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-artifactory-on-ubuntu-14-04-lts-basic-lic",
+  "urn": "cognosys:secured-artifactory-on-ubuntu-14-04-lts:secured-artifactory-on-ubuntu-14-04-lts-basic-lic:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "secured-cakephp-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secure-cakephp-ubuntu",
+  "urn": "cognosys:secured-cakephp-on-ubuntu-14-04-lts:new-secure-cakephp-ubuntu:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-cakephp-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secure-cakephp-ubuntu",
+  "urn": "cognosys:secured-cakephp-on-ubuntu-14-04-lts:new-secure-cakephp-ubuntu:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "secured-cms-made-simple-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-cms-made-simple-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-cms-made-simple-on-ubuntu-14-04-lts:secured-cms-made-simple-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-cms-made-simple-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-cms-made-simple-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-cms-made-simple-on-ubuntu-14-04-lts:secured-cms-made-simple-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-cms-made-simple-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-cms-made-simple-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-cms-made-simple-on-ubuntu-14-04-lts:secured-cms-made-simple-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-cms-made-simple-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-cms-made-simple-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-cms-made-simple-on-ubuntu-14-04-lts:secured-cms-made-simple-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-cms-made-simple-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-cms-made-simple-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-cms-made-simple-on-ubuntu-14-04-lts:secured-cms-made-simple-on-ubuntu-14-04-lts:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "secured-codiad-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-codiad-on-ubuntu-14-04-lts-ent-lic",
+  "urn": "cognosys:secured-codiad-on-ubuntu-14-04-lts:new-secured-codiad-on-ubuntu-14-04-lts-ent-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-codiad-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-codiad-on-ubuntu-14-04-lts-pro-lic",
+  "urn": "cognosys:secured-codiad-on-ubuntu-14-04-lts:new-secured-codiad-on-ubuntu-14-04-lts-pro-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-codiad-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-codiad-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-codiad-on-ubuntu-14-04-lts:secured-codiad-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-codiad-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-codiad-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-codiad-on-ubuntu-14-04-lts:secured-codiad-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-codiad-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-codiad-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-codiad-on-ubuntu-14-04-lts:secured-codiad-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-codiad-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-codiad-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-codiad-on-ubuntu-14-04-lts:secured-codiad-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-codiad-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-codiad-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-codiad-on-ubuntu-14-04-lts:secured-codiad-on-ubuntu-14-04-lts:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "secured-cogdam-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-cogdam-on-ubuntu-14-04-lts-basic-lic",
+  "urn": "cognosys:secured-cogdam-on-ubuntu-14-04-lts:new-secured-cogdam-on-ubuntu-14-04-lts-basic-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "MLServer-Ubuntu",
+  "publisher": "MicrosoftRServer",
+  "sku": "Enterprise",
+  "urn": "MicrosoftRServer:MLServer-Ubuntu:Enterprise:9.3.026060001",
+  "version": "9.3.026060001"
+}
+{
+  "offer": "MLServer-Ubuntu",
+  "publisher": "MicrosoftRServer",
+  "sku": "Enterprise",
+  "urn": "MicrosoftRServer:MLServer-Ubuntu:Enterprise:9.3.026080002",
+  "version": "9.3.026080002"
+}
+{
+  "offer": "secured-cogdam-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-cogdam-on-ubuntu-14-04-lts-pro-lic",
+  "urn": "cognosys:secured-cogdam-on-ubuntu-14-04-lts:new-secured-cogdam-on-ubuntu-14-04-lts-pro-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Enterprise",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Enterprise:14.0.1000205",
+  "version": "14.0.1000205"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Enterprise",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Enterprise:14.0.1000210",
+  "version": "14.0.1000210"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Enterprise",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Enterprise:14.0.1000320",
+  "version": "14.0.1000320"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Enterprise",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Enterprise:14.1.180911",
+  "version": "14.1.180911"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Enterprise",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Enterprise:14.1.181009",
+  "version": "14.1.181009"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Enterprise",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Enterprise:14.1.181113",
+  "version": "14.1.181113"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Enterprise",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Enterprise:14.1.181211",
+  "version": "14.1.181211"
+}
+{
+  "offer": "RServer-Ubuntu",
+  "publisher": "MicrosoftRServer",
+  "sku": "Enterprise",
+  "urn": "MicrosoftRServer:RServer-Ubuntu:Enterprise:9.1.00002",
+  "version": "9.1.00002"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Express",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Express:14.0.1000205",
+  "version": "14.0.1000205"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Express",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Express:14.0.1000210",
+  "version": "14.0.1000210"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Express",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Express:14.0.1000320",
+  "version": "14.0.1000320"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Express",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Express:14.1.180911",
+  "version": "14.1.180911"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Express",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Express:14.1.181009",
+  "version": "14.1.181009"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Express",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Express:14.1.181113",
+  "version": "14.1.181113"
+}
+{
+  "offer": "secured-concrete5-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-concrete5-on-ubuntu-14-04",
+  "urn": "cognosys:secured-concrete5-on-ubuntu-14-04-lts:secured-concrete5-on-ubuntu-14-04:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-concrete5-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-concrete5-on-ubuntu-14-04",
+  "urn": "cognosys:secured-concrete5-on-ubuntu-14-04-lts:secured-concrete5-on-ubuntu-14-04:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "ubuntu1605withimdsretryfix",
+  "publisher": "MicrosoftTestLinuxPPS",
+  "sku": "16.04-LTS",
+  "urn": "MicrosoftTestLinuxPPS:ubuntu1605withimdsretryfix:16.04-LTS:16.04.27",
+  "version": "16.04.27"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "SQLDEV",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:SQLDEV:14.0.1000205",
+  "version": "14.0.1000205"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "SQLDEV",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:SQLDEV:14.0.1000208",
+  "version": "14.0.1000208"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "SQLDEV",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:SQLDEV:14.0.1000210",
+  "version": "14.0.1000210"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "SQLDEV",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:SQLDEV:14.0.1000320",
+  "version": "14.0.1000320"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "SQLDEV",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:SQLDEV:14.1.180911",
+  "version": "14.1.180911"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "SQLDEV",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:SQLDEV:14.1.181009",
+  "version": "14.1.181009"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "SQLDEV",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:SQLDEV:14.1.181113",
+  "version": "14.1.181113"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Standard",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Standard:14.0.1000205",
+  "version": "14.0.1000205"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Standard",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Standard:14.0.1000210",
+  "version": "14.0.1000210"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Standard",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Standard:14.0.1000320",
+  "version": "14.0.1000320"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Standard",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Standard:14.1.180911",
+  "version": "14.1.180911"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Standard",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Standard:14.1.181009",
+  "version": "14.1.181009"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Standard",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Standard:14.1.181113",
+  "version": "14.1.181113"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Standard",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Standard:14.1.181211",
+  "version": "14.1.181211"
+}
+{
+  "offer": "secured-coppermine-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-coppermine-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-coppermine-on-ubuntu-14-04-lts:secured-coppermine-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-coppermine-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-coppermine-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-coppermine-on-ubuntu-14-04-lts:secured-coppermine-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-coppermine-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-coppermine-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-coppermine-on-ubuntu-14-04-lts:secured-coppermine-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-coppermine-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-coppermine-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-coppermine-on-ubuntu-14-04-lts:secured-coppermine-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-coppermine-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-coppermine-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-coppermine-on-ubuntu-14-04-lts:secured-coppermine-on-ubuntu-14-04-lts:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Web",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Web:14.0.1000205",
+  "version": "14.0.1000205"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Web",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Web:14.0.1000210",
+  "version": "14.0.1000210"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Web",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Web:14.0.1000320",
+  "version": "14.0.1000320"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Web",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Web:14.1.180911",
+  "version": "14.1.180911"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Web",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Web:14.1.181009",
+  "version": "14.1.181009"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Web",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Web:14.1.181113",
+  "version": "14.1.181113"
+}
+{
+  "offer": "SQL2017-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "Web",
+  "urn": "MicrosoftSQLServer:SQL2017-Ubuntu1604:Web:14.1.181211",
+  "version": "14.1.181211"
+}
+{
+  "offer": "iot_edge_vm_ubuntu",
+  "publisher": "microsoft_iot_edge",
+  "sku": "ubuntu_1604_edgeruntimeonly",
+  "urn": "microsoft_iot_edge:iot_edge_vm_ubuntu:ubuntu_1604_edgeruntimeonly:1.0.1",
+  "version": "1.0.1"
+}
+{
+  "offer": "secured-crushftp-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-crushftp-on-ubuntu-14-04-lts-basic-lic",
+  "urn": "cognosys:secured-crushftp-on-ubuntu-14-04-lts:new-secured-crushftp-on-ubuntu-14-04-lts-basic-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "SQL2019-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "SQLDEV",
+  "urn": "MicrosoftSQLServer:SQL2019-Ubuntu1604:SQLDEV:15.0.180911",
+  "version": "15.0.180911"
+}
+{
+  "offer": "SQL2019-Ubuntu1604",
+  "publisher": "MicrosoftSQLServer",
+  "sku": "SQLDEV",
+  "urn": "MicrosoftSQLServer:SQL2019-Ubuntu1604:SQLDEV:15.0.181113",
+  "version": "15.0.181113"
+}
+{
+  "offer": "secured-django-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-django-on-ubuntu",
+  "urn": "cognosys:secured-django-on-ubuntu-14-04-lts:new-secured-django-on-ubuntu:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-django-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-django-on-ubuntu",
+  "urn": "cognosys:secured-django-on-ubuntu-14-04-lts:new-secured-django-on-ubuntu:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "secured-dolivbarr-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-dolivbarr-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-dolivbarr-on-ubuntu-14-04-lts:secured-dolivbarr-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-dolivbarr-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-dolivbarr-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-dolivbarr-on-ubuntu-14-04-lts:secured-dolivbarr-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-dolivbarr-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-dolivbarr-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-dolivbarr-on-ubuntu-14-04-lts:secured-dolivbarr-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-dolivbarr-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-dolivbarr-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-dolivbarr-on-ubuntu-14-04-lts:secured-dolivbarr-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-dolivbarr-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-dolivbarr-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-dolivbarr-on-ubuntu-14-04-lts:secured-dolivbarr-on-ubuntu-14-04-lts:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-dolivbarr-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-dolivbarr-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-dolivbarr-on-ubuntu-14-04-lts:secured-dolivbarr-on-ubuntu-14-04-lts:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "secured-espocrm-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-espocrm-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-espocrm-on-ubuntu-14-04-lts:secured-espocrm-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-espocrm-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-espocrm-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-espocrm-on-ubuntu-14-04-lts:secured-espocrm-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-espocrm-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-espocrm-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-espocrm-on-ubuntu-14-04-lts:secured-espocrm-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-espocrm-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-espocrm-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-espocrm-on-ubuntu-14-04-lts:secured-espocrm-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-espocrm-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-espocrm-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-espocrm-on-ubuntu-14-04-lts:secured-espocrm-on-ubuntu-14-04-lts:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "secured-exoplatform-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-exoplatform-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-exoplatform-on-ubuntu-14-04-lts:secured-exoplatform-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-exoplatform-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-exoplatform-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-exoplatform-on-ubuntu-14-04-lts:secured-exoplatform-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-exoplatform-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-exoplatform-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-exoplatform-on-ubuntu-14-04-lts:secured-exoplatform-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-exoplatform-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-exoplatform-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-exoplatform-on-ubuntu-14-04-lts:secured-exoplatform-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-exoplatform-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-exoplatform-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-exoplatform-on-ubuntu-14-04-lts:secured-exoplatform-on-ubuntu-14-04-lts:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "secured-ghost-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-ghost-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-ghost-on-ubuntu-14-04-lts:new-secured-ghost-on-ubuntu-14-04-lts:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-ghost-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-ghost-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-ghost-on-ubuntu-14-04-lts:new-secured-ghost-on-ubuntu-14-04-lts:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "secured-gradle-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-gradle-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-gradle-on-ubuntu-14-04-lts:secured-gradle-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-gradle-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-gradle-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-gradle-on-ubuntu-14-04-lts:secured-gradle-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-gradle-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-gradle-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-gradle-on-ubuntu-14-04-lts:secured-gradle-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-gradle-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-gradle-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-gradle-on-ubuntu-14-04-lts:secured-gradle-on-ubuntu-14-04-lts:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "secured-gradle-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-gradle-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-gradle-on-ubuntu-14-04-lts:secured-gradle-on-ubuntu-14-04-lts:1.1.4",
+  "version": "1.1.4"
+}
+{
+  "offer": "secured-jbossas-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-jbossas-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-jbossas-on-ubuntu-14-04-lts:secured-jbossas-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-jbossas-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-jbossas-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-jbossas-on-ubuntu-14-04-lts:secured-jbossas-on-ubuntu-14-04-lts:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-jbossas-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-jbossas-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-jbossas-on-ubuntu-14-04-lts:secured-jbossas-on-ubuntu-14-04-lts:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "secured-lapp-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-lapp-on-ubuntu-14-04-lts-basic-lic",
+  "urn": "cognosys:secured-lapp-on-ubuntu-14-04-lts:new-secured-lapp-on-ubuntu-14-04-lts-basic-lic:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "secured-lapp-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-lapp-on-ubuntu-14-04-lts-pro-lic",
+  "urn": "cognosys:secured-lapp-on-ubuntu-14-04-lts:new-secured-lapp-on-ubuntu-14-04-lts-pro-lic:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "secured-lapp-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-lapp-on-ubuntu-14-04-lts-pro-lic",
+  "urn": "cognosys:secured-lapp-on-ubuntu-14-04-lts:new-secured-lapp-on-ubuntu-14-04-lts-pro-lic:1.0.3",
+  "version": "1.0.3"
+}
+{
+  "offer": "secured-lemp-sever-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-lemp-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-lemp-sever-on-ubuntu-1404:secured-lemp-on-ubuntu-14-04-lts:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-lemp-sever-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "secured-lemp-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-lemp-sever-on-ubuntu-1404:secured-lemp-on-ubuntu-14-04-lts:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "secured-limesurvey-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "hardened-limesurvey-on-ubu-1404-lts",
+  "urn": "cognosys:secured-limesurvey-on-ubuntu-1404:hardened-limesurvey-on-ubu-1404-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-limesurvey-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "hardened-limesurvey-on-ubu-1404-lts",
+  "urn": "cognosys:secured-limesurvey-on-ubuntu-1404:hardened-limesurvey-on-ubu-1404-lts:1.0.1",
+  "version": "1.0.1"
+}
+{
+  "offer": "ubuntu-base-for-prestashop",
+  "publisher": "prestashop",
+  "sku": "ubuntu_base",
+  "urn": "prestashop:ubuntu-base-for-prestashop:ubuntu_base:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "ubuntu-base-for-prestashop",
+  "publisher": "prestashop",
+  "sku": "ubuntu_base_16_04",
+  "urn": "prestashop:ubuntu-base-for-prestashop:ubuntu_base_16_04:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "secured-livehelperchat-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-livehelperchat-on-ubuntu-14-04-lts-basic-lic",
+  "urn": "cognosys:secured-livehelperchat-on-ubuntu-14-04-lts:new-livehelperchat-on-ubuntu-14-04-lts-basic-lic:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "ubuntu-base-for-prestashop",
+  "publisher": "prestashop",
+  "sku": "ubuntu_base_16_04_no_price",
+  "urn": "prestashop:ubuntu-base-for-prestashop:ubuntu_base_16_04_no_price:1.0.1",
+  "version": "1.0.1"
+}
+{
+  "offer": "secured-livehelperchat-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-livehelperchat-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-livehelperchat-on-ubuntu-14-04-lts:secured-livehelperchat-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-livehelperchat-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-livehelperchat-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-livehelperchat-on-ubuntu-14-04-lts:secured-livehelperchat-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-livehelperchat-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-livehelperchat-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-livehelperchat-on-ubuntu-14-04-lts:secured-livehelperchat-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-livehelperchat-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-livehelperchat-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-livehelperchat-on-ubuntu-14-04-lts:secured-livehelperchat-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-livehelperchat-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-livehelperchat-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-livehelperchat-on-ubuntu-14-04-lts:secured-livehelperchat-on-ubuntu-14-04-lts:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "secured-livehelperchat-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-livehelperchat-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-livehelperchat-on-ubuntu-14-04-lts:secured-livehelperchat-on-ubuntu-14-04-lts:1.1.4",
+  "version": "1.1.4"
+}
+{
+  "offer": "secured-mahara-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-mahara-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-mahara-on-ubuntu-14-04-lts:new-secured-mahara-on-ubuntu-14-04-lts:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-mahara-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-mahara-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-mahara-on-ubuntu-14-04-lts:new-secured-mahara-on-ubuntu-14-04-lts:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "secured-mantis-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-mantis-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-mantis-on-ubuntu-14-04-lts:secured-mantis-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-mantis-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-mantis-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-mantis-on-ubuntu-14-04-lts:secured-mantis-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-mantis-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-mantis-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-mantis-on-ubuntu-14-04-lts:secured-mantis-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-mantis-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-mantis-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-mantis-on-ubuntu-14-04-lts:secured-mantis-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-mariadb-on-ubuntu-16-04",
+  "publisher": "cognosys",
+  "sku": "secured-maria-db-on-ubuntu-16-04",
+  "urn": "cognosys:secured-mariadb-on-ubuntu-16-04:secured-maria-db-on-ubuntu-16-04:1.0.1",
+  "version": "1.0.1"
+}
+{
+  "offer": "secured-mautic-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-mautic-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-mautic-on-ubuntu-14-04-lts:secured-mautic-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-mautic-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-mautic-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-mautic-on-ubuntu-14-04-lts:secured-mautic-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-mautic-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-mautic-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-mautic-on-ubuntu-14-04-lts:secured-mautic-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-mautic-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-mautic-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-mautic-on-ubuntu-14-04-lts:secured-mautic-on-ubuntu-14-04-lts:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "secured-mautic-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-mautic-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-mautic-on-ubuntu-14-04-lts:secured-mautic-on-ubuntu-14-04-lts:1.2.2",
+  "version": "1.2.2"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "12.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:12.04:13.4.0",
+  "version": "13.4.0"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "12.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:12.04:13.5.0",
+  "version": "13.5.0"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "12.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:12.04:13.5.2",
+  "version": "13.5.2"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "12.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:12.04:13.5.3",
+  "version": "13.5.3"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "12.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:12.04:13.5.5",
+  "version": "13.5.5"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "12.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:12.04:14.1.1",
+  "version": "14.1.1"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "12.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:12.04:14.1.3",
+  "version": "14.1.3"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "12.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:12.04:14.1.5",
+  "version": "14.1.5"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "12.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:12.04:14.2.0",
+  "version": "14.2.0"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "12.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:12.04:14.2.1",
+  "version": "14.2.1"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "12.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:12.04:5.8.10",
+  "version": "5.8.10"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "12.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:12.04:5.8.11",
+  "version": "5.8.11"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "12.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:12.04:5.8.8",
+  "version": "5.8.8"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "12.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:12.04:5.8.9",
+  "version": "5.8.9"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "14.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:14.04:14.1.0",
+  "version": "14.1.0"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "14.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:14.04:14.1.3",
+  "version": "14.1.3"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "14.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:14.04:14.1.5",
+  "version": "14.1.5"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "14.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:14.04:14.2.0",
+  "version": "14.2.0"
+}
+{
+  "offer": "RightImage-Ubuntu",
+  "publisher": "RightScaleLinux",
+  "sku": "14.04",
+  "urn": "RightScaleLinux:RightImage-Ubuntu:14.04:14.2.1",
+  "version": "14.2.1"
+}
+{
+  "offer": "secured-ngnix-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-ngnix-on-ubuntu-14-04-lts-basic-lic",
+  "urn": "cognosys:secured-ngnix-on-ubuntu-14-04-lts:new-secured-ngnix-on-ubuntu-14-04-lts-basic-lic:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "secured-ngnix-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-ngnix-on-ubuntu-14-04-lts-basic-lic",
+  "urn": "cognosys:secured-ngnix-on-ubuntu-14-04-lts:new-secured-ngnix-on-ubuntu-14-04-lts-basic-lic:1.0.3",
+  "version": "1.0.3"
+}
+{
+  "offer": "secured-ngnix-on-ubuntu-16-04-lts",
+  "publisher": "cognosys",
+  "sku": "hardened-ngnix-on-ubuntu-16-04-lts",
+  "urn": "cognosys:secured-ngnix-on-ubuntu-16-04-lts:hardened-ngnix-on-ubuntu-16-04-lts:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "secured-noalyss-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-noalyss-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-noalyss-on-ubuntu-14-04-lts:secured-noalyss-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-noalyss-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-noalyss-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-noalyss-on-ubuntu-14-04-lts:secured-noalyss-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-noalyss-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-noalyss-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-noalyss-on-ubuntu-14-04-lts:secured-noalyss-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-noalyss-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-noalyss-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-noalyss-on-ubuntu-14-04-lts:secured-noalyss-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-occlass-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-occlass-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-occlass-on-ubuntu-14-04-lts:secured-occlass-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-occlass-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-occlass-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-occlass-on-ubuntu-14-04-lts:secured-occlass-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-occlass-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-occlass-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-occlass-on-ubuntu-14-04-lts:secured-occlass-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-occlass-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-occlass-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-occlass-on-ubuntu-14-04-lts:secured-occlass-on-ubuntu-14-04-lts:1.1.4",
+  "version": "1.1.4"
+}
+{
+  "offer": "secured-occlass-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-occlass-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-occlass-on-ubuntu-14-04-lts:secured-occlass-on-ubuntu-14-04-lts:1.1.5",
+  "version": "1.1.5"
+}
+{
+  "offer": "secured-ocportal-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "ocportal-on-ubuntu-14-04-lts-enterprise-lic",
+  "urn": "cognosys:secured-ocportal-on-ubuntu-14-04-lts:ocportal-on-ubuntu-14-04-lts-enterprise-lic:1.0.3",
+  "version": "1.0.3"
+}
+{
+  "offer": "secured-ocportal-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "ocportal-on-ubuntu-14-04-lts-professional-lic",
+  "urn": "cognosys:secured-ocportal-on-ubuntu-14-04-lts:ocportal-on-ubuntu-14-04-lts-professional-lic:1.0.3",
+  "version": "1.0.3"
+}
+{
+  "offer": "secured-ocportal-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-ocportal-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-ocportal-on-ubuntu-14-04-lts:secured-ocportal-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-ocportal-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-ocportal-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-ocportal-on-ubuntu-14-04-lts:secured-ocportal-on-ubuntu-14-04-lts:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "secured-ocportal-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-ocportal-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-ocportal-on-ubuntu-14-04-lts:secured-ocportal-on-ubuntu-14-04-lts:1.1.4",
+  "version": "1.1.4"
+}
+{
+  "offer": "secured-oxideshop-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-oxideshop-on-ubuntu-14-04-lts-ent-lic",
+  "urn": "cognosys:secured-oxideshop-on-ubuntu-14-04-lts:new-secured-oxideshop-on-ubuntu-14-04-lts-ent-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-oxideshop-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-oxideshop-on-ubuntu-14-04-lts-pro-lic",
+  "urn": "cognosys:secured-oxideshop-on-ubuntu-14-04-lts:new-secured-oxideshop-on-ubuntu-14-04-lts-pro-lic:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-oxideshop-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-oxideshop-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-oxideshop-on-ubuntu-14-04-lts:secured-oxideshop-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-oxideshop-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-oxideshop-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-oxideshop-on-ubuntu-14-04-lts:secured-oxideshop-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-oxideshop-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-oxideshop-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-oxideshop-on-ubuntu-14-04-lts:secured-oxideshop-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-oxideshop-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-oxideshop-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-oxideshop-on-ubuntu-14-04-lts:secured-oxideshop-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-oxideshop-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-oxideshop-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-oxideshop-on-ubuntu-14-04-lts:secured-oxideshop-on-ubuntu-14-04-lts:1.1.4",
+  "version": "1.1.4"
+}
+{
+  "offer": "secured-plone-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-plone-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-plone-on-ubuntu-14-04-lts:secured-plone-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-plone-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-plone-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-plone-on-ubuntu-14-04-lts:secured-plone-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-plone-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-plone-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-plone-on-ubuntu-14-04-lts:secured-plone-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-plone-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-plone-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-plone-on-ubuntu-14-04-lts:secured-plone-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-plone-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-plone-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-plone-on-ubuntu-14-04-lts:secured-plone-on-ubuntu-14-04-lts:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-plone-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-plone-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-plone-on-ubuntu-14-04-lts:secured-plone-on-ubuntu-14-04-lts:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "secured-prestashop-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-prestashop-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-prestashop-on-ubuntu-14-04-lts:secured-prestashop-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-prestashop-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-prestashop-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-prestashop-on-ubuntu-14-04-lts:secured-prestashop-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-prestashop-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-prestashop-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-prestashop-on-ubuntu-14-04-lts:secured-prestashop-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-prestashop-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-prestashop-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-prestashop-on-ubuntu-14-04-lts:secured-prestashop-on-ubuntu-14-04-lts:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-prestashop-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-prestashop-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-prestashop-on-ubuntu-14-04-lts:secured-prestashop-on-ubuntu-14-04-lts:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "secured-railo-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-railo-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-railo-on-ubuntu-14-04-lts:secured-railo-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-railo-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-railo-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-railo-on-ubuntu-14-04-lts:secured-railo-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-railo-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-railo-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-railo-on-ubuntu-14-04-lts:secured-railo-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-redis-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-redis-on-hardened-ubuntu-basic",
+  "urn": "cognosys:secured-redis-on-ubuntu-1404:new-redis-on-hardened-ubuntu-basic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-redis-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "new-redis-on-hardened-ubuntu-basic",
+  "urn": "cognosys:secured-redis-on-ubuntu-1404:new-redis-on-hardened-ubuntu-basic:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "crossbar_on_azure_ubuntu1404",
+  "publisher": "tavendo",
+  "sku": "free",
+  "urn": "tavendo:crossbar_on_azure_ubuntu1404:free:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-redmine-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-redmine-on-ubuntu-14-04-lts-enterprise-lic",
+  "urn": "cognosys:secured-redmine-on-ubuntu-14-04-lts:new-redmine-on-ubuntu-14-04-lts-enterprise-lic:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "secured-redmine-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-redmine-on-ubuntu-14-04-lts-professional-lic",
+  "urn": "cognosys:secured-redmine-on-ubuntu-14-04-lts:new-redmine-on-ubuntu-14-04-lts-professional-lic:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "secured-redmine-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-redmine-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-redmine-on-ubuntu-14-04-lts:secured-redmine-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-redmine-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-redmine-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-redmine-on-ubuntu-14-04-lts:secured-redmine-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-redmine-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-redmine-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-redmine-on-ubuntu-14-04-lts:secured-redmine-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-redmine-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-redmine-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-redmine-on-ubuntu-14-04-lts:secured-redmine-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-redmine-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-redmine-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-redmine-on-ubuntu-14-04-lts:secured-redmine-on-ubuntu-14-04-lts:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "secured-redmine-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-redmine-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-redmine-on-ubuntu-14-04-lts:secured-redmine-on-ubuntu-14-04-lts:1.1.4",
+  "version": "1.1.4"
+}
+{
+  "offer": "secured-redmineagile-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-redmineagile-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-redmineagile-on-ubuntu-14-04-lts:secured-redmineagile-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-redmineagile-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-redmineagile-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-redmineagile-on-ubuntu-14-04-lts:secured-redmineagile-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-redmineagile-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-redmineagile-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-redmineagile-on-ubuntu-14-04-lts:secured-redmineagile-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-redmineagile-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-redmineagile-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-redmineagile-on-ubuntu-14-04-lts:secured-redmineagile-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-redmineagile-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-redmineagile-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-redmineagile-on-ubuntu-14-04-lts:secured-redmineagile-on-ubuntu-14-04-lts:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "secured-reportserverent-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-reportserverent-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-reportserverent-on-ubuntu-14-04-lts:secured-reportserverent-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-reportserverent-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-reportserverent-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-reportserverent-on-ubuntu-14-04-lts:secured-reportserverent-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "speedus-lite-ubuntu",
+  "publisher": "torusware",
+  "sku": "speedus_lite_free-ubuntu",
+  "urn": "torusware:speedus-lite-ubuntu:speedus_lite_free-ubuntu:1.0.1",
+  "version": "1.0.1"
+}
+{
+  "offer": "secured-resourcespace-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-resourcespace-on-ubuntu-14-04-lts-ent",
+  "urn": "cognosys:secured-resourcespace-on-ubuntu-14-04-lts:new-secured-resourcespace-on-ubuntu-14-04-lts-ent:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "secured-resourcespace-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-resourcespace-on-ubuntu-14-04-lts-pro",
+  "urn": "cognosys:secured-resourcespace-on-ubuntu-14-04-lts:new-secured-resourcespace-on-ubuntu-14-04-lts-pro:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "secured-resourcespace-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-resourcespace-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-resourcespace-on-ubuntu-14-04-lts:secured-resourcespace-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-resourcespace-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-resourcespace-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-resourcespace-on-ubuntu-14-04-lts:secured-resourcespace-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-resourcespace-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-resourcespace-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-resourcespace-on-ubuntu-14-04-lts:secured-resourcespace-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-resourcespace-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-resourcespace-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-resourcespace-on-ubuntu-14-04-lts:secured-resourcespace-on-ubuntu-14-04-lts:1.1.4",
+  "version": "1.1.4"
+}
+{
+  "offer": "secured-resourcespace-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-resourcespace-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-resourcespace-on-ubuntu-14-04-lts:secured-resourcespace-on-ubuntu-14-04-lts:1.1.5",
+  "version": "1.1.5"
+}
+{
+  "offer": "ubuntu_server",
+  "publisher": "tunnelbiz",
+  "sku": "ubuntu1804lts",
+  "urn": "tunnelbiz:ubuntu_server:ubuntu1804lts:0.0.1",
+  "version": "0.0.1"
+}
+{
+  "offer": "ubuntu_server",
+  "publisher": "tunnelbiz",
+  "sku": "ubuntu1804ltswebserver",
+  "urn": "tunnelbiz:ubuntu_server:ubuntu1804ltswebserver:0.0.1",
+  "version": "0.0.1"
+}
+{
+  "offer": "secured-roundcube-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-roundcube-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-roundcube-on-ubuntu-14-04-lts:secured-roundcube-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-roundcube-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-roundcube-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-roundcube-on-ubuntu-14-04-lts:secured-roundcube-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-roundcube-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-roundcube-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-roundcube-on-ubuntu-14-04-lts:secured-roundcube-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-ruby-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-ruby-on-ubuntu-14-04-lts-professional-lic",
+  "urn": "cognosys:secured-ruby-on-ubuntu-14-04-lts:new-ruby-on-ubuntu-14-04-lts-professional-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-ruby-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-ruby-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-ruby-on-ubuntu-14-04-lts:secured-ruby-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-ruby-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-ruby-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-ruby-on-ubuntu-14-04-lts:secured-ruby-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-ruby-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-ruby-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-ruby-on-ubuntu-14-04-lts:secured-ruby-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-ruby-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-ruby-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-ruby-on-ubuntu-14-04-lts:secured-ruby-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-ruby-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-ruby-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-ruby-on-ubuntu-14-04-lts:secured-ruby-on-ubuntu-14-04-lts:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "secured-seopanel-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-seopanel-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-seopanel-on-ubuntu-14-04-lts:new-secured-seopanel-on-ubuntu-14-04-lts:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-seopanel-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-seopanel-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-seopanel-on-ubuntu-14-04-lts:new-secured-seopanel-on-ubuntu-14-04-lts:2.2.1",
+  "version": "2.2.1"
+}
+{
+  "offer": "secured-simple-machines-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-simple-machines-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-simple-machines-on-ubuntu-14-04-lts:secured-simple-machines-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-simple-machines-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-simple-machines-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-simple-machines-on-ubuntu-14-04-lts:secured-simple-machines-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-simple-machines-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-simple-machines-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-simple-machines-on-ubuntu-14-04-lts:secured-simple-machines-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-simple-machines-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-simple-machines-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-simple-machines-on-ubuntu-14-04-lts:secured-simple-machines-on-ubuntu-14-04-lts:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-simple-machines-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-simple-machines-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-simple-machines-on-ubuntu-14-04-lts:secured-simple-machines-on-ubuntu-14-04-lts:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "secured-simpleinvoice-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-simpleinvoice-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-simpleinvoice-on-ubuntu-14-04-lts:secured-simpleinvoice-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-simpleinvoice-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-simpleinvoice-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-simpleinvoice-on-ubuntu-14-04-lts:secured-simpleinvoice-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-simpleinvoice-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-simpleinvoice-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-simpleinvoice-on-ubuntu-14-04-lts:secured-simpleinvoice-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-simpleinvoice-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-simpleinvoice-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-simpleinvoice-on-ubuntu-14-04-lts:secured-simpleinvoice-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-simpleinvoice-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-simpleinvoice-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-simpleinvoice-on-ubuntu-14-04-lts:secured-simpleinvoice-on-ubuntu-14-04-lts:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "nimble-streamer-ubuntu",
+  "publisher": "wmspanel",
+  "sku": "nimble-streamer",
+  "urn": "wmspanel:nimble-streamer-ubuntu:nimble-streamer:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "nimble-streamer-ubuntu",
+  "publisher": "wmspanel",
+  "sku": "nimble-streamer",
+  "urn": "wmspanel:nimble-streamer-ubuntu:nimble-streamer:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-suitecrm-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-suitecrm-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-suitecrm-on-ubuntu-14-04-lts:secured-suitecrm-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-suitecrm-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-suitecrm-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-suitecrm-on-ubuntu-14-04-lts:secured-suitecrm-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-suitecrm-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-suitecrm-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-suitecrm-on-ubuntu-14-04-lts:secured-suitecrm-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-suitecrm-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-suitecrm-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-suitecrm-on-ubuntu-14-04-lts:secured-suitecrm-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-suitecrm-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-suitecrm-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-suitecrm-on-ubuntu-14-04-lts:secured-suitecrm-on-ubuntu-14-04-lts:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "secured-suitecrm-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-suitecrm-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-suitecrm-on-ubuntu-14-04-lts:secured-suitecrm-on-ubuntu-14-04-lts:1.1.4",
+  "version": "1.1.4"
+}
+{
+  "offer": "secured-testlink-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-testlink-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-testlink-on-ubuntu-14-04-lts:secured-testlink-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-testlink-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-testlink-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-testlink-on-ubuntu-14-04-lts:secured-testlink-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-testlink-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-testlink-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-testlink-on-ubuntu-14-04-lts:secured-testlink-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-testlink-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-testlink-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-testlink-on-ubuntu-14-04-lts:secured-testlink-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-testlink-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-testlink-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-testlink-on-ubuntu-14-04-lts:secured-testlink-on-ubuntu-14-04-lts:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "secured-thinkup-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-thinkup-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-thinkup-on-ubuntu-14-04-lts:secured-thinkup-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-thinkup-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-thinkup-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-thinkup-on-ubuntu-14-04-lts:secured-thinkup-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-thinkup-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-thinkup-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-thinkup-on-ubuntu-14-04-lts:secured-thinkup-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-thinkup-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-thinkup-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-thinkup-on-ubuntu-14-04-lts:secured-thinkup-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-thinkup-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-thinkup-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-thinkup-on-ubuntu-14-04-lts:secured-thinkup-on-ubuntu-14-04-lts:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "secured-tikiwikicms-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-tikiwikicms-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-tikiwikicms-on-ubuntu-14-04-lts:secured-tikiwikicms-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-tikiwikicms-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-tikiwikicms-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-tikiwikicms-on-ubuntu-14-04-lts:secured-tikiwikicms-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-tikiwikicms-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-tikiwikicms-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-tikiwikicms-on-ubuntu-14-04-lts:secured-tikiwikicms-on-ubuntu-14-04-lts:1.1.6",
+  "version": "1.1.6"
+}
+{
+  "offer": "secured-tikiwikicms-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-tikiwikicms-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-tikiwikicms-on-ubuntu-14-04-lts:secured-tikiwikicms-on-ubuntu-14-04-lts:1.1.7",
+  "version": "1.1.7"
+}
+{
+  "offer": "secured-tinytinyrss-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-tinytinyrss-on-ubuntu-14-04-ent-lic",
+  "urn": "cognosys:secured-tinytinyrss-on-ubuntu-14-04-lts:new-secured-tinytinyrss-on-ubuntu-14-04-ent-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-tinytinyrss-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-tinytinyrss-on-ubuntu-14-04-pro-lic",
+  "urn": "cognosys:secured-tinytinyrss-on-ubuntu-14-04-lts:new-secured-tinytinyrss-on-ubuntu-14-04-pro-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-tinytinyrss-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-tinytinyrss-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-tinytinyrss-on-ubuntu-14-04-lts:secured-tinytinyrss-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-tinytinyrss-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-tinytinyrss-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-tinytinyrss-on-ubuntu-14-04-lts:secured-tinytinyrss-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-tinytinyrss-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-tinytinyrss-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-tinytinyrss-on-ubuntu-14-04-lts:secured-tinytinyrss-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-tinytinyrss-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-tinytinyrss-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-tinytinyrss-on-ubuntu-14-04-lts:secured-tinytinyrss-on-ubuntu-14-04-lts:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-tinytinyrss-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-tinytinyrss-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-tinytinyrss-on-ubuntu-14-04-lts:secured-tinytinyrss-on-ubuntu-14-04-lts:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "secured-trac-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-trac-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-trac-on-ubuntu-14-04-lts:secured-trac-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-trac-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-trac-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-trac-on-ubuntu-14-04-lts:secured-trac-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-trac-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-trac-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-trac-on-ubuntu-14-04-lts:secured-trac-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-trac-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-trac-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-trac-on-ubuntu-14-04-lts:secured-trac-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-typo3-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-typo3-on-ubuntu-14-04-lts-basic-lic",
+  "urn": "cognosys:secured-typo3-on-ubuntu-14-04-lts:new-secured-typo3-on-ubuntu-14-04-lts-basic-lic:1.2.0",
+  "version": "1.2.0"
+}
+{
+  "offer": "secured-typo3-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-typo3-on-ubuntu-14-04-lts-basic-lic",
+  "urn": "cognosys:secured-typo3-on-ubuntu-14-04-lts:new-secured-typo3-on-ubuntu-14-04-lts-basic-lic:1.2.1",
+  "version": "1.2.1"
+}
+{
+  "offer": "secured-varnish-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "hardened-varnish-ubuntu-1404-lts",
+  "urn": "cognosys:secured-varnish-on-ubuntu-1404:hardened-varnish-ubuntu-1404-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-varnish-on-ubuntu-1404",
+  "publisher": "cognosys",
+  "sku": "hardened-varnish-ubuntu-1404-lts",
+  "urn": "cognosys:secured-varnish-on-ubuntu-1404:hardened-varnish-ubuntu-1404-lts:1.0.1",
+  "version": "1.0.1"
+}
+{
+  "offer": "secured-wildfly-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-wildfly-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-wildfly-on-ubuntu-14-04-lts:secured-wildfly-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-wildfly-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-wildfly-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-wildfly-on-ubuntu-14-04-lts:secured-wildfly-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-wildfly-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-wildfly-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-wildfly-on-ubuntu-14-04-lts:secured-wildfly-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-wordpress-on-ubuntu-16-04-lts",
+  "publisher": "cognosys",
+  "sku": "new-secured-wordpress-on-ubuntu-16-04-lts",
+  "urn": "cognosys:secured-wordpress-on-ubuntu-16-04-lts:new-secured-wordpress-on-ubuntu-16-04-lts:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "secured-x-cart-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-x-cart-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-x-cart-on-ubuntu-14-04-lts:secured-x-cart-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-x-cart-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-x-cart-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-x-cart-on-ubuntu-14-04-lts:secured-x-cart-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-x-cart-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-x-cart-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-x-cart-on-ubuntu-14-04-lts:secured-x-cart-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-x-cart-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-x-cart-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-x-cart-on-ubuntu-14-04-lts:secured-x-cart-on-ubuntu-14-04-lts:1.1.4",
+  "version": "1.1.4"
+}
+{
+  "offer": "secured-x-cart-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-x-cart-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-x-cart-on-ubuntu-14-04-lts:secured-x-cart-on-ubuntu-14-04-lts:1.1.5",
+  "version": "1.1.5"
+}
+{
+  "offer": "secured-xoops-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-xoops-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-xoops-on-ubuntu-14-04-lts:secured-xoops-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-xoops-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-xoops-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-xoops-on-ubuntu-14-04-lts:secured-xoops-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-xoops-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-xoops-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-xoops-on-ubuntu-14-04-lts:secured-xoops-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-xoops-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-xoops-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-xoops-on-ubuntu-14-04-lts:secured-xoops-on-ubuntu-14-04-lts:1.1.4",
+  "version": "1.1.4"
+}
+{
+  "offer": "secured-xoops-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-xoops-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-xoops-on-ubuntu-14-04-lts:secured-xoops-on-ubuntu-14-04-lts:1.1.5",
+  "version": "1.1.5"
+}
+{
+  "offer": "secured-zurmo-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-zurmo-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-zurmo-on-ubuntu-14-04-lts:secured-zurmo-on-ubuntu-14-04-lts:1.0.0",
+  "version": "1.0.0"
+}
+{
+  "offer": "secured-zurmo-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-zurmo-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-zurmo-on-ubuntu-14-04-lts:secured-zurmo-on-ubuntu-14-04-lts:1.1.0",
+  "version": "1.1.0"
+}
+{
+  "offer": "secured-zurmo-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-zurmo-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-zurmo-on-ubuntu-14-04-lts:secured-zurmo-on-ubuntu-14-04-lts:1.1.1",
+  "version": "1.1.1"
+}
+{
+  "offer": "secured-zurmo-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-zurmo-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-zurmo-on-ubuntu-14-04-lts:secured-zurmo-on-ubuntu-14-04-lts:1.1.2",
+  "version": "1.1.2"
+}
+{
+  "offer": "secured-zurmo-on-ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "secured-zurmo-on-ubuntu-14-04-lts",
+  "urn": "cognosys:secured-zurmo-on-ubuntu-14-04-lts:secured-zurmo-on-ubuntu-14-04-lts:1.1.3",
+  "version": "1.1.3"
+}
+{
+  "offer": "ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "hardened-ubuntu-14-04",
+  "urn": "cognosys:ubuntu-14-04-lts:hardened-ubuntu-14-04:1.0.1",
+  "version": "1.0.1"
+}
+{
+  "offer": "ubuntu-14-04-lts",
+  "publisher": "cognosys",
+  "sku": "hardened-ubuntu-14-04",
+  "urn": "cognosys:ubuntu-14-04-lts:hardened-ubuntu-14-04:1.0.2",
+  "version": "1.0.2"
+}
+{
+  "offer": "ubuntu-16-04-lts",
+  "publisher": "cognosys",
+  "sku": "ubuntu-16-04-hardened",
+  "urn": "cognosys:ubuntu-16-04-lts:ubuntu-16-04-hardened:1.0.1",
+  "version": "1.0.1"
+}
+{
+  "offer": "ubuntu-17-04-high-performance-hardened-tcp-bbr",
+  "publisher": "cognosys",
+  "sku": "ubuntu-17-04-high-performance-hardened-tcp-bbr",
+  "urn": "cognosys:ubuntu-17-04-high-performance-hardened-tcp-bbr:ubuntu-17-04-high-performance-hardened-tcp-bbr:1.0.1",
+  "version": "1.0.1"
+}
+{
+  "offer": "ubuntu-18-04",
+  "publisher": "cognosys",
+  "sku": "ubuntu-18-04-hardened",
+  "urn": "cognosys:ubuntu-18-04:ubuntu-18-04-hardened:1.0.1",
+  "version": "1.0.1"
+}
+{
+  "offer": "ubuntu-18-04-lts",
+  "publisher": "cognosys",
+  "sku": "hardened-ubuntu-18-04-lts",
+  "urn": "cognosys:ubuntu-18-04-lts:hardened-ubuntu-18-04-lts:1.0.2",
+  "version": "1.0.2"
+}
