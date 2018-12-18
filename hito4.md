@@ -5,6 +5,22 @@ En este hito se ha realizado las siguientes tareas:
 * Microservicio de introducción de datos a los sensores ya implementados y su correcta representación en los sensores y gráficas. Estos
 datos se almacenarán en una base de datos MySQL.
 
+## Automatización con Azure CLI
+
+Para realizar la automatización se ha definido el archivo `acopio.sh`. Este define la secuencia de comandos _shell_ que se debe seguir
+para la creación y provisionamiento de las máquinas virtuales. El resto de archivos utilizados `ansible.cfg` y `deploy.yml` son los
+mismos a los utilizados en el hito anterior.
+
+Para ejecutarlo antes tenemos que instalar antes Azure CLI ejecutando el siguiente comando:
+
+```sh
+$ curl -L https://aka.ms/InstallAzureCli | bash
+```
+
+Una vez instalado Azure CLI hay que iniciar sesión con el comando `az login` para de esta manera vincular las máquinas virtuales con la suscripción activa en el usuario. Este comando abrirá el navegador con la página web para tal efecto. El resultado del comando es el siguiente:
+
+![Inicio de sesión con Azure CLI](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/azure-login.png)
+
 ## Selección del centro de datos a utilizar
 
 Para la elección del [centro de datos](https://azure.microsoft.com/es-es/global-infrastructure/geographies/) en el que crear las máquinas
@@ -31,6 +47,17 @@ Para la elección de la imagen con la cual crear las máquinas virtuales se ha t
 * Que esté lo suficientemente apoyada por la comunidad y se hayan creado proyectos similares en ella.
 * Que haya sido añadida por una editora de confianza y se pueda comprobar su trazabilidad.
 
+Para ver las imágenes de máquinas virtuales disponibles podemos lanzar el comando `az vm image list --all`. El problema es que este te devuelve todas y cada una de las imágenes disponibles sin tener la capacidad de filtrar entre ellas. Es por ello que vamos a utilizar _jq_. [_jq_](https://stedolan.github.io/jq/) es un software que permite el filtrado de datos en formato JSON posibilitando de esta manera elegir aquellas imágenes virtuales que contengan una secuencia dada.
+
+Para una búsqueda sobre máquinas virtuales Ubuntu se podría lanzar el siguiente comando:
+
+```sh
+$ sudo apt-get install jq
+$ az vm image list --offer Ubuntu --all | jq '.[]'
+```
+
+La salida de este comando está disponible [aquí](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/txt/jq-output.txt)
+
 Tras hacer una valoración de distintos sistemas operativos se ha elegido Ubuntu 18.04 LTS debido a las siguientes razones:
 * Es compatible con las últimas versiones [Node.js 10.14.2 LTS](https://nodejs.org/es/download/) y
 [Express.js 4.16.4](https://www.npmjs.com/package/express).
@@ -40,13 +67,9 @@ Tras hacer una valoración de distintos sistemas operativos se ha elegido Ubuntu
 La imagen elegida para Ubuntu 18.04 LTS es la distribuida por Canonical debido a que esta es la imagen oficial y, de esta manera, la más
 fiable.
 
-## Automatización con Azure CLI
+## Lanzamiento del script de automatización
 
-Para realizar la automatización se ha definido el archivo `acopio.sh`. Este define la secuencia de comandos _shell_ que se debe seguir
-para la creación y provisionamiento de las máquinas virtuales. El resto de archivos utilizados `ansible.cfg` y `deploy.yml` son los
-mismos a los utilizados en el hito anterior.
-
-Para ejecutarlo lanzamos el comando `./acopio.sh`. El resultado que obtenemos es el siguiente:
+Una vez instalado Azure CLI y decidido tanto el centro de datos como la imagen a utilizar podemos lanzar el comando `./acopio.sh`. El resultado que obtenemos es el siguiente:
 
 ![Automatización con Azure CLI](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/acopio.png)
 
