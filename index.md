@@ -4,6 +4,7 @@
 ### Menú
 * [Información sobre el hito 2](https://fpeiro.github.io/CC-proyecto/hito2). Desarrollo del primer microservicio.
 * [Información sobre el hito 3](https://fpeiro.github.io/CC-proyecto/hito3). Provisionamiento con Ansible.
+* [Información sobre el hito 4](https://fpeiro.github.io/CC-proyecto/hito4). Automatización con Azure CLI y desarrollo del segundo microservicio.
 
 ---
 
@@ -50,6 +51,10 @@ El microservicio ha sido puesto en marcha a través de Heroku. Para visitarlo pu
 A través de Ansible se ha provisionado una máquina virtual para el servicio. Esta ha sido creada a través de Azure con la dirección IP: MV: 40.114.90.106 . Ahí [será realizado el despliegue](https://fpeiro.github.io/CC-proyecto/hito3#despliegue) donde estará listo el servicio.
 
 He probado y verificado que el proyecto de [@xenahort](https://github.com/xenahort) funciona correctamente así como [@gomezportillo](https://github.com/gomezportillo) ha probado el mío. Se puede encontrar más información de estas pruebas [aquí](https://fpeiro.github.io/CC-proyecto/hito3#despliegue-de-pedro-manuel).
+
+## Automatización con Azure CLI
+
+Haciendo uso de la interfaz de línea de comandos de Azure se ha realizado un ejecutable _shell_ (disponible en la carpeta [automatizacion](https://github.com/fpeiro/CC-proyecto/tree/master/automatizacion)) que permite la creación automática de máquinas virtuales asi como su provisionamiento. La dirección IP de la máquina virtual utilizada es MV2: 168.62.37.56 . Para más información se puede consultar [la sección al respecto](https://fpeiro.github.io/CC-proyecto/hito4#automatizaci%C3%B3n-con-azure-cli).
 
 ## Ejecución de manera local
 
