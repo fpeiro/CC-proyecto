@@ -91,7 +91,7 @@ Para cada una de las direcciones URL y funciones implementadas se han desarrolla
 
 Los valores de los sensores poseen los siguientes campos en la base de datos:
 
-* Identificador. Es la clave primaria por la que se identifican
+* Identificador. Es la clave primaria por la que se identifican.
 * Dato. Indica el valor de la medición realizada.
 * Identificador del sensor. Sirve para vincular el valor con el sensor correspondiente.
 
