@@ -41,6 +41,8 @@ utilice para la creación de las máquinas virtuales.
 
 ## Selección de la imagen a utilizar
 
+### Extracción de los sistemas operativo
+
 Para la elección de la imagen con la cual crear las máquinas virtuales se ha tenido en cuenta las siguientes consideraciones:
 * Que tenga soporte consolidado para el lenguaje de programación utilizado Node.js así como para Express.js 4.
 * Que tenga un mantenimiento prolongado así como actualizaciones y correcciones de errores.
@@ -49,7 +51,7 @@ Para la elección de la imagen con la cual crear las máquinas virtuales se ha t
 
 Para ver las imágenes de máquinas virtuales disponibles podemos lanzar el comando `az vm image list --all`. El problema es que este te devuelve todas y cada una de las imágenes disponibles sin tener la capacidad de filtrar entre ellas. Es por ello que vamos a utilizar _jq_. [_jq_](https://stedolan.github.io/jq/) es un software que permite el filtrado de datos en formato JSON posibilitando de esta manera elegir aquellas imágenes virtuales que contengan una secuencia dada.
 
-Para una búsqueda sobre máquinas virtuales Ubuntu se podría lanzar el siguiente comando:
+Por ejemplo, para una búsqueda sobre máquinas virtuales Ubuntu se podría lanzar el siguiente comando:
 
 ```sh
 $ sudo apt-get install jq
@@ -58,14 +60,55 @@ $ az vm image list --offer Ubuntu --all | jq '.[]'
 
 La salida de este comando está disponible [aquí](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/txt/jq-output.txt)
 
-Tras hacer una valoración de distintos sistemas operativos se ha elegido Ubuntu 18.04 LTS debido a las siguientes razones:
+### Comparación entre sistemas operativos
+
+Se van a elegir los [tres sistemas operativos más usados](https://w3techs.com/technologies/details/os-linux/all/all) para realizar la comparación: Ubuntu, Debian y CentOS. Las imágenes a comparar son las imágenes oficiales debido a que son las más fiables:
+* Para Ubuntu se lanzará la imagen distribuida por Canonical en su versión 18.04.
+* Para Canonical se lanzará la imagen distribuida por creatadiv en su versión 8.
+* Para CentOS se lanzará la imagen distribuida por OpenLogic en su versión 7.5.
+
+Mediante la utilización de la herramienta `ab` (Apache Benchmark) se van a ejecutar un número determinado de peticiones y se recogerá el tiempo de respuesta, el número de peticiones aceptadas y el tiempo por cada petición. Para ello primero hay que instalar el paquete `ab`y después ejecutar comando correspondiente:
+
+```sh
+$ sudo apt-get install apache2-utils
+$ ab -n 2700 -c 90 -k -H "Accept-Encoding: gzip, deflate" $MV_IP
+```
+
+Este comando lanzará 2700 peticiones en formato _gzip_ y _dflate_ distribuidas en 90 hilos. Debido a esta gran cantidad de peticiones es posible obtener unos resultados de mayor confianza para conocer si nuestro servicio va a poder servir a muchos usuarios a la vez tal y como se explica en este [enlace](https://www.devside.net/wamp-server/load-testing-apache-with-ab-apache-bench).
+
+Una vez desplegado el servicio en cada una de las máquinas virtuales y lanzado el comando anterior obtenemos los siguientes resultados:
+
+| Prueba | Ubuntu | Debian | CentOS |
+|--------|----------|-------------|---------|
+| Tiempo de ejecución (s) | 3.846| 3.860 | 3.756 |
+| Peticiones por segundo (#/s) | 702.04 | 699.53 | 718.87 |
+| Tiempo por hilo de peticiones (ms) | 128.197 | 128.659 | 125.197 |
+| Tiempo por petición (s) | 1.424 | 1.430 | 1.391 |
+
+Se puede consultar en estos enlaces las pruebas en detalle: [Ubuntu](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/ubuntu-benchmark.png), [Debian](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/debian-benchmark.png) y [CentOS](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/centos-benchmark.png).
+
+El resultado entre los distintos sistemas operativos no difiere mucho pero aunque la máquina virtual de CentOS tiene mejores resultados el hecho de que esté basada en Red Hat nos limita en cierta manera los paquetes que podemos utilizar además del bajo conocimiento sobre este.
+
+En cambio, el segundo mejor resultado, Ubuntu nos aporta las siguientes ventajas:
 * Es compatible con las últimas versiones [Node.js 10.14.2 LTS](https://nodejs.org/es/download/) y
 [Express.js 4.16.4](https://www.npmjs.com/package/express).
 * Tiene un soporte de mantenimiento hasta [julio de 2019](https://www.ubuntu.com/about/release-cycle).
 * Es elegido por el [66% de los usuarios](https://www.ubuntu.com/desktop/statistics) siendo el sistema operativo con mayor comunidad.
 
-La imagen elegida para Ubuntu 18.04 LTS es la distribuida por Canonical debido a que esta es la imagen oficial y, de esta manera, la más
-fiable.
+Es por ello que el servicio se desplegará en Ubuntu 18.04 LTS.
+
+### Elección del tamaño de la imagen
+
+Ahora necesitamos conocer el tamaño de la imagen que usaremos con Ubuntu. Cuando hablamos de tamaño hablamos del número de CPUs virtuales y de la memoria RAM que se asignará a nuestra máquina virtual. Aunque es posible cambiar el tamaño de la máquina virtual una vez creada siempre es mejor utilizar un tamaño adecuado desde el principio.
+
+Para conocer los tamaños de máquinas virtuales disponibles en un centro de datos basta con lanzar el comando `az vm list-sizes --location $LOCATION`. Algunos de los tamaños disponibles para las máquinas son los siguientes:
+
+![Lista de tamaños de mvs](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/vm-sizes.png)
+
+Debido a que este servicio es un servicio en desarrollo, no comercial y con una tasa de peticiones muy baja el tamaño más básico (Standard_B1s) nos servirá. Este dispone de las siguientes características:
+* El número de disco de datos máximo que puede añadirse es 2.
+* Tiene una memoria RAM de 1 Gb.
+* Posee un núcleo.
 
 ## Lanzamiento del script de automatización
 
