@@ -1,0 +1,72 @@
+---
+- hosts: all
+  become: yes
+  vars:
+    project_path: /var/www/CC-proyecto
+  tasks:
+    - name: Configura algunas variables
+      set_fact:
+        release_path: "{{ project_path }}/releases/{{ lookup('pipe', 'date +%Y%m%d%H%M%S') }}"
+        current_path: "{{ project_path }}/current"
+    - name: Devuelve la carpeta de entrega actual
+      command: readlink -f current
+      register: current_release_path
+      ignore_errors: yes
+      failed_when: False
+      no_log: True
+      args:
+        chdir: "{{ project_path }}"
+    - name: Crea una nueva carpeta
+      file:
+        dest={{ release_path }}
+        mode=0755
+        recurse=yes
+        state=directory
+    - name: Clona el repositorio
+      git:
+        repo: https://github.com/fpeiro/CC-proyecto.git
+        dest: "{{ release_path }}"
+    - name: Instala npm
+      apt:
+        name: npm
+        state: present
+    - name: Actualiza node
+      shell: "npm cache clean -f && npm install -g n && n stable"
+    - name: Instala pm2
+      npm:
+        name: pm2
+        global: yes
+    - name: Instala las dependencias del proyecto
+      npm:
+        path={{ release_path }}
+      ignore_errors: yes
+      failed_when: False
+      no_log: True
+    - name: Crea el enlace simbólico de node
+      file:
+        src=/usr/bin/nodejs
+        dest=/usr/bin/node
+        state=link
+      ignore_errors: yes
+      failed_when: False
+      no_log: True
+    - name: Actualiza el enlace simbólico del proyecto
+      file:
+        src={{ release_path }}
+        dest={{ current_path }}
+        state=link
+    - name: Elimina los procesos pm2 antiguos
+      shell: pm2 delete CC-proyecto
+      ignore_errors: yes
+      failed_when: False
+      no_log: True
+    - name: Ejecuta pm2
+      shell: pm2 start {{ current_path }}/server.js --name CC-proyecto
+    - name: Elimina directorio antiguo
+      file:
+        state: absent
+        path: "{{ current_release_path.stdout }}/"
+      when: current_release_path.stdout != current_path
+      ignore_errors: yes
+      failed_when: False
+      no_log: True

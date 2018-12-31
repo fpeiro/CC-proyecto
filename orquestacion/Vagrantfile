@@ -1,0 +1,36 @@
+# Variables que definen la máquina virtual
+RES_GROUP='recursos-mv-cc3'
+NSG_NAME='mv-cc3nsg'
+MV_NAME='mv-cc3'
+
+# Configuración de Vagrant
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "azure"
+
+  config.ssh.private_key_path = "~/.ssh/id_rsa"
+  config.vm.provider :azure do |azure, override|
+
+    # Configuración de azure
+    azure.tenant_id = ENV['AZURE_TENANT_ID']
+    azure.client_id = ENV['AZURE_CLIENT_ID']
+    azure.client_secret = ENV['AZURE_CLIENT_SECRET']
+    azure.subscription_id = ENV['AZURE_SUBSCRIPTION_ID']
+
+    # Configuración de la máquina virtual
+    azure.location = 'uksouth'
+    azure.resource_group_name = RES_GROUP
+    azure.vm_name = MV_NAME
+    azure.nsg_name = NSG_NAME
+    azure.vm_image_urn = 'Canonical:UbuntuServer:18.04-LTS:latest'
+    azure.vm_size = 'Standard_B1s' # Tamaño más básico
+    azure.tcp_endpoints = 80 # Abrimos el puerto 80 (HTTP)
+
+  end
+
+  # Configuración de ansible
+  config.vm.provision "ansible" do |ansible|
+    ansible.playbook = "deploy.yml"
+  end
+
+end
