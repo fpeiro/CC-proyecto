@@ -81,3 +81,9 @@ es el siguiente:
 Una vez realizado el despliegue el servicio estará listo en http://51.140.180.218/
 
 ![Proyecto en Chrome](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/azure-chrome3.png)
+
+## Ejecución de Vagrant para Juan Carlos
+
+El sistema de orquestación implementado por [@xenahort](https://github.com/xenahort) ha sido probado verificando que los resultados obtenidos son los correctos. A continuación se muestra una prueba de su ejecución:
+
+![Ejecución de Vagrant para @xenahort](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/vagrant-xenahort.png)
