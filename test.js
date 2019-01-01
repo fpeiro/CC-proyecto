@@ -11,9 +11,12 @@ var MYSQL_URI = {
 
 var DAOChart = require("./model/daochart.js");
 var DAOValor = require("./model/daovalor.js");
+var DAOAlert = require("./model/daoalert.js");
 var Chart = require("./model/chart.js");
+var Alert = require("./model/alert.js");
 var daochart = new DAOChart(MYSQL_URI, 'charts');
 var daovalor = new DAOValor(MYSQL_URI, 'valores');
+var daoalert = new DAOAlert(MYSQL_URI, 'alerts');
 
 // Página principal
 describe("GET /", function () {
@@ -55,10 +58,85 @@ describe("Inicialización de valores para el test", function () {
     });
 });
 
+// Inicialización de alertas para el test
+describe("Inicialización de alerts para el test", function () {
+    it('', function (done) {
+        daoalert.initialize(function (status) {
+            assert.equal(status, "SUCCESS");
+            done();
+        });
+    });
+});
+
+// Página para buscar alertas
+describe("GET /alert", function () {
+    it('alert.sensor debe existir en la base de datos', function (done) {
+        request(app)
+                .get('/alert')
+                .query({sensor: 31})
+                .expect('Content-Type', /json/)
+                .expect(200, done);
+    });
+});
+
+// Página para buscar alertas (fallida)
+describe("GET /alert (fallida)", function () {
+    it('alert.sensor no debe existir en la base de datos', function (done) {
+        request(app)
+                .get('/alert')
+                .query({sensor: 19991})
+                .expect('Content-Type', /json/)
+                .expect(404, done);
+    });
+});
+
+// Página para modificar alertas
+describe("POST /alert", function () {
+    it('alert.id debe existir en la base de datos', function (done) {
+        request(app)
+                .post('/alert')
+                .send({id: 21, dato: 40, sensor: 31, tipo: 'mayor'})
+                .expect('Content-Type', /json/)
+                .expect(200, done);
+    });
+});
+
+// Página para modificar alertas (fallida)
+describe("POST /alert (fallida)", function () {
+    it('alert.id no debe existir en la base de datos', function (done) {
+        request(app)
+                .post('/alert')
+                .send({id: 19991, dato: 40, sensor: 31, tipo: 'mayor'})
+                .expect('Content-Type', /json/)
+                .expect(404, done);
+    });
+});
+
+// Página para añadir alertas
+describe("PUT /alert", function () {
+    it('alert.sensor debe existir en la base de datos', function (done) {
+        request(app)
+                .put('/alert')
+                .send({dato: 45, sensor: 31, tipo: 'mayor'})
+                .expect('Content-Type', /json/)
+                .expect(200, done);
+    });
+});
+
+// Página para añadir alertas (fallida)
+describe("PUT /alert (fallida)", function () {
+    it('alert.sensor no debe existir en la base de datos', function (done) {
+        request(app)
+                .put('/alert')
+                .send({dato: 45, sensor: 19991, tipo: 'mayor'})
+                .expect('Content-Type', /json/)
+                .expect(200, done);
+    });
+});
+
 // Página para buscar valores
 describe("GET /valor", function () {
     it('valor.sensor debe existir en la base de datos', function (done) {
-        this.timeout(10000);
         request(app)
                 .get('/valor')
                 .query({sensor: 31})
@@ -70,7 +148,6 @@ describe("GET /valor", function () {
 // Página para buscar valores (fallida)
 describe("GET /valor (fallida)", function () {
     it('valor.sensor no debe existir en la base de datos', function (done) {
-        this.timeout(10000);
         request(app)
                 .get('/valor')
                 .query({sensor: 19991})
@@ -81,12 +158,23 @@ describe("GET /valor (fallida)", function () {
 
 // Página para añadir valores
 describe("PUT /valor", function () {
-    it('devuelve 200 (json)', function (done) {
+    it('valor.sensor debe existir en la base de datos', function (done) {
         request(app)
                 .put('/valor')
                 .send({dato: 50, sensor: 31})
                 .expect('Content-Type', /json/)
                 .expect(200, done);
+    });
+});
+
+// Página para añadir valores (fallida)
+describe("PUT /valor (fallida)", function () {
+    it('valor.sensor no debe existir en la base de datos', function (done) {
+        request(app)
+                .put('/valor')
+                .send({dato: 50, sensor: 19991})
+                .expect('Content-Type', /json/)
+                .expect(404, done);
     });
 });
 
@@ -181,6 +269,38 @@ describe("DELETE /valores", function () {
     });
 });
 
+// Página para eliminar alertas
+describe("DELETE /alert", function () {
+    it('alert.id debe existir en la base de datos', function (done) {
+        request(app)
+                .delete('/alert')
+                .query({id: 21})
+                .expect('Content-Type', /json/)
+                .expect(200, done);
+    });
+});
+
+// Página para eliminar alertas (fallida)
+describe("DELETE /alert (fallida)", function () {
+    it('alert.id no debe existir en la base de datos', function (done) {
+        request(app)
+                .delete('/alert')
+                .query({id: 19991})
+                .expect('Content-Type', /json/)
+                .expect(404, done);
+    });
+});
+
+// Página para resetear las alertas
+describe("DELETE /alerts", function () {
+    it('devuelve 200 (json)', function (done) {
+        request(app)
+                .delete('/alerts')
+                .expect('Content-Type', /json/)
+                .expect(200, done);
+    });
+});
+
 // Página para eliminar sensores
 describe("DELETE /chart", function () {
     it('chart.id debe existir en la base de datos', function (done) {
@@ -209,6 +329,17 @@ describe("GET /charts", function () {
         this.timeout(10000);
         request(app)
                 .get('/charts')
+                .expect('Content-Type', /json/)
+                .expect(200, done);
+    });
+});
+
+// Página para obtener las gráficas
+describe("GET /graphs", function () {
+    it('devuelve 200 (json)', function (done) {
+        this.timeout(10000);
+        request(app)
+                .get('/graphs')
                 .expect('Content-Type', /json/)
                 .expect(200, done);
     });
@@ -244,6 +375,76 @@ describe("Inicialización de valores para el test", function () {
     });
 });
 
+// Inicialización de alertas para el test
+describe("Inicialización de alerts para el test", function () {
+    it('', function (done) {
+        daoalert.initialize(function (status) {
+            assert.equal(status, "SUCCESS");
+            done();
+        });
+    });
+});
+
+// Función para buscar alertas
+describe("CALL daoalert.find(...)", function () {
+    it('alert.sensor debe existir en la base de datos', function (done) {
+		daoalert.find(31, function (alerts) {
+            assert(typeof alerts !== 'undefined' && alerts.length > 0);
+            done();
+        });
+    });
+});
+
+// Función para buscar alertas (fallida)
+describe("CALL daoalert.find(...) (fallida)", function () {
+    it('alert.sensor no debe existir en la base de datos', function (done) {
+		daoalert.find(19991, function (status) {
+            assert.equal(status, "ERROR");
+            done();
+        });
+    });
+});
+
+// Función para modificar alertas
+describe("CALL daoalert.update(...)", function () {
+    it('alert.id debe existir en la base de datos', function (done) {
+		daoalert.update(new Alert(21, 'mayor', 31, 40), function (status) {
+            assert.equal(status, "SUCCESS");
+            done();
+        });
+    });
+});
+
+// Función para modificar alertas (fallida)
+describe("CALL daoalert.update(...) (fallida)", function () {
+    it('alert.id no debe existir en la base de datos', function (done) {
+		daoalert.update(new Alert(19991, 'mayor', 31, 40), function (status) {
+            assert.equal(status, "ERROR");
+            done();
+        });
+    });
+});
+
+// Función para añadir alertas
+describe("CALL daoalert.insert(...)", function () {
+    it('alert.sensor debe existir en la base de datos', function (done) {
+		daoalert.insert(new Alert(null, 'mayor', 31, 45), function (status) {
+            assert.equal(status, "SUCCESS");
+            done();
+        });
+    });
+});
+
+// Función para añadir alertas (fallida)
+describe("CALL daoalert.insert(...) (fallida)", function () {
+    it('alert.sensor no debe existir en la base de datos', function (done) {
+		daoalert.insert(new Alert(null, 'mayor', 19991, 45), function (status) {
+            assert.equal(status, "ERROR");
+            done();
+        });
+    });
+});
+
 // Función para buscar valores
 describe("CALL daovalor.find(...)", function () {
     it('valor.sensor debe existir en la base de datos', function (done) {
@@ -266,9 +467,19 @@ describe("CALL daovalor.find(...) (fallida)", function () {
 
 // Función para añadir valores
 describe("CALL daovalor.insert(...)", function () {
-    it('devuelve 200 (SUCCESS)', function (done) {
+    it('valor.sensor debe existir en la base de datos', function (done) {
         daovalor.insert(50, 31, function (status) {
             assert.equal(status, "SUCCESS");
+            done();
+        });
+    });
+});
+
+// Función para añadir valores (fallida)
+describe("CALL daovalor.insert(...) (fallida)", function () {
+    it('valor.sensor no debe existir en la base de datos', function (done) {
+        daovalor.insert(50, 19991, function (status) {
+            assert.equal(status, "ERROR");
             done();
         });
     });
@@ -328,6 +539,36 @@ describe("CALL daochart.insert(...)", function () {
 describe("CALL daovalor.deleteAll(...)", function () {
     it('devuelve 200 (SUCCESS)', function (done) {
         daovalor.deleteAll(function (status) {
+            assert.equal(status, "SUCCESS");
+            done();
+        });
+    });
+});
+
+// Función para eliminar alertas
+describe("CALL daoalert.delete(...)", function () {
+    it('alert.id debe existir en la base de datos', function (done) {
+        daoalert.delete(21, function (status) {
+            assert.equal(status, "SUCCESS");
+            done();
+        });
+    });
+});
+
+// Función para eliminar alertas (fallida)
+describe("CALL daoalert.delete(...) (fallida)", function () {
+    it('alert.id no debe existir en la base de datos', function (done) {
+        daoalert.delete(19991, function (status) {
+            assert.equal(status, "ERROR");
+            done();
+        });
+    });
+});
+
+// Función para resetear las alertas
+describe("CALL daoalert.deleteAll(...)", function () {
+    it('devuelve 200 (SUCCESS)', function (done) {
+        daoalert.deleteAll(function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });

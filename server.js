@@ -23,9 +23,12 @@ var MYSQL_URI = {
 
 var DAOChart = require("./model/daochart.js");
 var DAOValor = require("./model/daovalor.js");
+var DAOAlert = require("./model/daoalert.js");
 var Chart = require("./model/chart.js");
+var Alert = require("./model/alert.js");
 var daochart = new DAOChart(MYSQL_URI, 'charts');
 var daovalor = new DAOValor(MYSQL_URI, 'valores');
+var daoalert = new DAOAlert(MYSQL_URI, 'alerts');
 
 // Configuración de la aplicación
 app
@@ -96,19 +99,23 @@ app.get('/chart', function (req, res) {
         if (chart === "ERROR")
             err404(null, req, res, null);
         else {
-			getLastData(chart.id, function (dato) {
-				chart.valor = dato;
-				let promesa = getCode(req, chart, '/render_s');
-				Promise.resolve(promesa).then(function (code) {
-					res.status(200).json({
-						"message": "Se ha obtenido correctamente 1 sensor",
-						"valor": {
-							"id": chart.id,
-							"tipo": chart.tipo,
-							"valor": chart.valor,
-							"chart": code
-						},
-						"status": "SUCCESS"
+			getLastData(chart.id, function (datov) {
+				getAlerts(chart.id, function (datoa) {
+					chart.valor = datov;
+					var alertMsg = getAlertMsg(datoa, datov);
+					let promesa = getCode(req, chart, '/render_s');
+					Promise.resolve(promesa).then(function (code) {
+						res.status(200).json({
+							"message": "Se ha obtenido correctamente 1 sensor",
+							"valor": {
+								"alerts" : alertMsg,
+								"id": chart.id,
+								"tipo": chart.tipo,
+								"valor": chart.valor,
+								"chart": code
+							},
+							"status": "SUCCESS"
+						});
 					});
 				});
 			});
@@ -122,19 +129,23 @@ app.get('/graph', function (req, res) {
         if (chart === "ERROR")
             err404(null, req, res, null);
         else {
-			get100Data(chart.id, function (datos) {
-				chart.valores = datos;
-				let promesa = getCode(req, chart, '/render_g');
-				Promise.resolve(promesa).then(function (code) {
-					res.status(200).json({
-						"message": "Se ha obtenido correctamente 1 gráfica",
-						"valor": {
-							"id": chart.id,
-							"tipo": chart.tipo,
-							"valores": chart.valores,
-							"graph": code
-						},
-						"status": "SUCCESS"
+			get100Data(chart.id, function (datosv) {
+				getAlerts(chart.id, function (datoa) {
+					chart.valores = datosv;
+					var alertMsg = getAlertMsgs(datoa, datosv);
+					let promesa = getCode(req, chart, '/render_g');
+					Promise.resolve(promesa).then(function (code) {
+						res.status(200).json({
+							"message": "Se ha obtenido correctamente 1 gráfica",
+							"valor": {
+								"alerts" : alertMsg,
+								"id": chart.id,
+								"tipo": chart.tipo,
+								"valores": chart.valores,
+								"graph": code
+							},
+							"status": "SUCCESS"
+						});
 					});
 				});
 			});
@@ -161,35 +172,39 @@ app.get('/charts', function (req, res) {
         if (charts === "ERROR")
             err404(null, req, res, null);
         else {
-			getLastDataAll(charts, 0 , [], function (sdato) {
-				var promesas = [];
-				var counter2 = 0;
-				for (var chart of charts) {
-					chart.valor = sdato[counter2];
-					let promesa = getCode(req, chart, '/render_s');
-					promesas.push(promesa);
-					counter2++;
-				}
-				Promise.all(promesas).then(function (codes) {
-					var jsn = {
-						"message": "Se han obtenido correctamente los sensores",
-						"valores": new Array(),
-						"status": "SUCCESS"
-					};
-					var counter = 0;
-					for (chart of charts) {
-						counter++;
-						var aux = {};
-						aux["valor " + counter] = new Array();
-						jsn.valores.push(aux);
-						jsn.valores[counter - 1]["valor " + counter].push({
-							"id": chart.id,
-							"tipo": chart.tipo,
-							"valor": chart.valor,
-							"chart": codes[counter - 1]
-						});
+			getLastDataAll(charts, 0 , [], function (sdatov) {
+				getAlertsAll(charts, 0 , [], function (sdatoa) {
+					var counter2 = 0;
+					var alertMsgs = [], promesas = [];
+					for (var chart of charts) {
+						chart.valor = sdatov[counter2];
+						alertMsgs.push(getAlertMsg(sdatoa[counter2], sdatov[counter2]));
+						let promesa = getCode(req, chart, '/render_s');
+						promesas.push(promesa);
+						counter2++;
 					}
-					res.status(200).json(jsn);
+					Promise.all(promesas).then(function (codes) {
+						var jsn = {
+							"message": "Se han obtenido correctamente los sensores",
+							"valores": new Array(),
+							"status": "SUCCESS"
+						};
+						var counter = 0;
+						for (chart of charts) {
+							counter++;
+							var aux = {};
+							aux["valor " + counter] = new Array();
+							jsn.valores.push(aux);
+							jsn.valores[counter - 1]["valor " + counter].push({
+								"alerts" : alertMsgs[counter - 1],
+								"id": chart.id,
+								"tipo": chart.tipo,
+								"valor": chart.valor,
+								"chart": codes[counter - 1]
+							});
+						}
+						res.status(200).json(jsn);
+					});
 				});
 			});
         }
@@ -203,35 +218,39 @@ app.get('/graphs', function (req, res) {
         if (charts === "ERROR")
             err404(null, req, res, null);
         else {
-			get100DataAll(charts, 0 , [], function (sdatos) {
-				var promesas = [];
-				var counter2 = 0;
-				for (var chart of charts) {
-					chart.valores = sdatos[counter2];
-					let promesa = getCode(req, chart, '/render_g');
-					promesas.push(promesa);
-					counter2++;
-				}
-				Promise.all(promesas).then(function (codes) {
-					var jsn = {
-						"message": "Se han obtenido correctamente las gráficas",
-						"valores": new Array(),
-						"status": "SUCCESS"
-					};
-					var counter = 0;
-					for (chart of charts) {
-						counter++;
-						var aux = {};
-						aux["valor " + counter] = new Array();
-						jsn.valores.push(aux);
-						jsn.valores[counter - 1]["valor " + counter].push({
-							"id": chart.id,
-							"tipo": chart.tipo,
-							"valores": chart.valores,
-							"graph": codes[counter - 1]
-						});
+			get100DataAll(charts, 0 , [], function (sdatosv) {
+				getAlertsAll(charts, 0 , [], function (sdatoa) {
+					var counter2 = 0;
+					var alertMsgs = [], promesas = [];
+					for (var chart of charts) {
+						chart.valores = sdatosv[counter2];
+						alertMsgs.push(getAlertMsgs(sdatoa[counter2], sdatosv[counter2]));
+						let promesa = getCode(req, chart, '/render_g');
+						promesas.push(promesa);
+						counter2++;
 					}
-					res.status(200).json(jsn);
+					Promise.all(promesas).then(function (codes) {
+						var jsn = {
+							"message": "Se han obtenido correctamente las gráficas",
+							"valores": new Array(),
+							"status": "SUCCESS"
+						};
+						var counter = 0;
+						for (chart of charts) {
+							counter++;
+							var aux = {};
+							aux["valor " + counter] = new Array();
+							jsn.valores.push(aux);
+							jsn.valores[counter - 1]["valor " + counter].push({
+								"alerts" : alertMsgs[counter - 1],
+								"id": chart.id,
+								"tipo": chart.tipo,
+								"valores": chart.valores,
+								"graph": codes[counter - 1]
+							});
+						}
+						res.status(200).json(jsn);
+					});
 				});
 			});
         }
@@ -285,6 +304,79 @@ app.delete('/valores', function (req, res) {
     });
 });
 
+// Página para añadir alertas
+app.put('/alert', function (req, res) {
+    daoalert.insert(new Alert(null, req.body.tipo, req.body.sensor, req.body.dato), function (status) {
+        if (status === "ERROR")
+            err404(null, req, res, null);
+        else
+            res.status(200).json({
+                "message": "Se ha añadido una alerta al sensor número " + req.body.sensor,
+                "status": status
+            });
+    });
+});
+
+// Página para modificar alertas
+app.post('/alert', function (req, res) {
+    daoalert.update(new Alert(req.body.id, req.body.tipo, req.body.sensor, req.body.dato), function (status) {
+        if (status === "ERROR")
+            err404(null, req, res, null);
+        else
+            res.status(200).json({
+                "message": "Se ha modificado la alerta número " + req.body.id,
+                "status": status
+            });
+    });
+});
+
+// Página para eliminar alertas
+app.delete('/alert', function (req, res) {
+    daoalert.delete(req.query.id, function (status) {
+        if (status === "ERROR")
+            err404(null, req, res, null);
+        else
+            res.status(200).json({
+                "message": "Se ha eliminado la alerta número " + req.query.id,
+                "status": status
+            });
+    });
+});
+
+// Página para buscar alertas por sensor
+app.get('/alert', function (req, res) {
+    daoalert.find(req.query.sensor, function (datos) {
+        if (datos === "ERROR")
+            err404(null, req, res, null);
+        else {
+			var jsn = {
+				"message": "Se han obtenido correctamente las alertas del sensor " + req.query.sensor,
+				"valores": {},
+				"status": "SUCCESS"
+			};
+			var counter = 0;
+			for (dato of datos) {
+				counter++;
+				jsn.valores["id " + counter] = dato;
+			}
+			res.status(200).json(jsn);
+        }
+    });
+});
+
+// Página para resetear las alertas
+app.delete('/alerts', function (req, res) {
+    daoalert.deleteAll(function (status) {
+        if (status === "ERROR")
+            err404(null, req, res, null);
+        else
+            res.status(200).json({
+                "message": "Se han reseteado las alertas",
+                "status": status
+            });
+    });
+});
+
 // Renderización del sensor
 app.get('/render_s', function (req, res) {
     res.status(200).render('pages/render_s');
@@ -315,6 +407,68 @@ function getCode(req, chart, type) {
             }());
         });
     });
+}
+
+// Obtención del mensaje de alerta
+function getAlertMsg(alerts, datav) {
+	var messages = [];
+	for (var alert of alerts) {
+		switch (alert.tipo) {
+			case "mayor":
+				if (datav > alert.dato) messages.push("El sensor está superando el valor " + alert.dato + " indicado.");
+				break;
+			case "menor":
+				if (datav < alert.dato) messages.push("El sensor no está superando el valor " + alert.dato + " indicado.");
+				break;
+			case "mayorigual":
+				if (datav >= alert.dato) messages.push("El sensor está superando el valor " + alert.dato + " indicado.");
+				break;
+			case "menorigual":
+				if (datav <= alert.dato) messages.push("El sensor no está superando el valor " + alert.dato + " indicado.");
+				break;
+			case "igual":
+				if (datav == alert.dato) messages.push("El sensor está mostrando el valor " + alert.dato + " indicado.");
+				break;
+			case "noigual":
+				if (datav != alert.dato) messages.push("El sensor no está mostrando el valor " + alert.dato + " indicado.");
+				break;
+			default:
+				break;
+		}
+	}
+	return messages;
+}
+
+// Obtención de los mensajes de alerta
+function getAlertMsgs(alerts, data) {
+	var messages = [];
+	for (var datav of data) {
+		for (var alert of alerts) {
+			switch (alert.tipo) {
+				case "mayor":
+					if (datav[1] > alert.dato) messages.push("El sensor ha superado en el instante " + datav[0] + " el valor " + alert.dato + " indicado.");
+					break;
+				case "menor":
+					if (datav[1] < alert.dato) messages.push("El sensor no ha superado en el instante " + datav[0] + " el valor " + alert.dato + " indicado.");
+					break;
+				case "mayorigual":
+					if (datav[1] >= alert.dato) messages.push("El sensor ha superado en el instante " + datav[0] + " el valor " + alert.dato + " indicado.");
+					break;
+				case "menorigual":
+					if (datav[1] <= alert.dato) messages.push("El sensor no ha superado en el instante " + datav[0] + " el valor " + alert.dato + " indicado.");
+					break;
+				case "igual":
+					if (datav[1] == alert.dato) messages.push("El sensor ha mostrado en el instante " + datav[0] + " el valor " + alert.dato + " indicado.");
+					break;
+				case "noigual":
+					if (datav[1] != alert.dato) messages.push("El sensor no ha mostrado en el instante " + datav[0] + " el valor " + alert.dato + " indicado.");
+					break;
+				default:
+					break;
+			}
+		}
+	}
+	return messages;
 }
 
 // Obtención del último dato de un sensor
@@ -370,6 +524,32 @@ function get100DataAll(sensores, i, garr, callback) {
 			}
 			garr.push(arr);
 			get100DataAll(sensores, ++i, garr, callback);
+		});
+	} else
+		callback(garr);
+}
+
+// Obtención de las alertas de un sensor
+function getAlerts(sensor, callback) {
+	daoalert.find(sensor, function (datos) {
+		var arr = [];
+		if (datos !== "ERROR") {
+			arr = datos;
+		}
+		callback(arr);
+    });
+}
+
+// Obtención de las alertas de todos los sensores
+function getAlertsAll(sensores, i, garr, callback) {
+	if (i < sensores.length) {
+		daoalert.find(sensores[i].id, function (datos) {
+			var arr = [];
+			if (datos !== "ERROR") {
+				arr = datos;
+			}
+			garr.push(arr);
+			getAlertsAll(sensores, ++i, garr, callback);
 		});
 	} else
 		callback(garr);
