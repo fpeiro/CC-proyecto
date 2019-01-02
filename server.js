@@ -13,22 +13,9 @@ const {JSDOM} = jsdom;
 var net = require('net');
 var server = net.createServer();
 
-// Configuración de la base de datos
-var MYSQL_URI = {
-    host: 'us-cdbr-gcp-east-01.cleardb.net',
-    user: 'bf513a472fe95b',
-    password: '18ecf997',
-    database: 'gcp_0ec181dd4858ee89399d'
-};
-
-var DAOChart = require("./model/daochart.js");
-var DAOValor = require("./model/daovalor.js");
-var DAOAlert = require("./model/daoalert.js");
+var Pool = require("./model/pool.js");
 var Chart = require("./model/chart.js");
 var Alert = require("./model/alert.js");
-var daochart = new DAOChart(MYSQL_URI, 'charts');
-var daovalor = new DAOValor(MYSQL_URI, 'valores');
-var daoalert = new DAOAlert(MYSQL_URI, 'alerts');
 
 // Configuración de la aplicación
 app
@@ -56,7 +43,7 @@ app.get('/about', function (req, res) {
 
 // Página para añadir sensores
 app.put('/chart', function (req, res) {
-    daochart.insert(new Chart(null, req.body.tipo), function (status) {
+    Pool.daochart.insert(new Chart(null, req.body.tipo), function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
         else
@@ -69,7 +56,7 @@ app.put('/chart', function (req, res) {
 
 // Página para modificar sensores
 app.post('/chart', function (req, res) {
-    daochart.update(new Chart(req.body.id, req.body.tipo), function (status) {
+    Pool.daochart.update(new Chart(req.body.id, req.body.tipo), function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
         else
@@ -82,7 +69,7 @@ app.post('/chart', function (req, res) {
 
 // Página para eliminar sensores
 app.delete('/chart', function (req, res) {
-    daochart.delete(new Chart(req.query.id, null), function (status) {
+    Pool.daochart.delete(new Chart(req.query.id, null), function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
         else
@@ -95,7 +82,7 @@ app.delete('/chart', function (req, res) {
 
 // Página para buscar sensores
 app.get('/chart', function (req, res) {
-    daochart.find(new Chart(req.query.id, null), function (chart) {
+    Pool.daochart.find(new Chart(req.query.id, null), function (chart) {
         if (chart === "ERROR")
             err404(null, req, res, null);
         else {
@@ -125,7 +112,7 @@ app.get('/chart', function (req, res) {
 
 // Página para buscar gráficas
 app.get('/graph', function (req, res) {
-    daochart.find(new Chart(req.query.id, null), function (chart) {
+    Pool.daochart.find(new Chart(req.query.id, null), function (chart) {
         if (chart === "ERROR")
             err404(null, req, res, null);
         else {
@@ -155,7 +142,7 @@ app.get('/graph', function (req, res) {
 
 // Página para resetear los sensores
 app.delete('/charts', function (req, res) {
-    daochart.deleteAll(function (status) {
+    Pool.daochart.deleteAll(function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
         else
@@ -168,7 +155,7 @@ app.delete('/charts', function (req, res) {
 
 // Página para obtener los sensores
 app.get('/charts', function (req, res) {
-    daochart.findAll(function (charts) {
+    Pool.daochart.findAll(function (charts) {
         if (charts === "ERROR")
             err404(null, req, res, null);
         else {
@@ -214,7 +201,7 @@ app.get('/charts', function (req, res) {
 
 // Página para obtener las gráficas
 app.get('/graphs', function (req, res) {
-    daochart.findAll(function (charts) {
+    Pool.daochart.findAll(function (charts) {
         if (charts === "ERROR")
             err404(null, req, res, null);
         else {
@@ -259,7 +246,7 @@ app.get('/graphs', function (req, res) {
 
 // Página para añadir valores
 app.put('/valor', function (req, res) {
-    daovalor.insert(req.body.dato, req.body.sensor, function (status) {
+    Pool.daovalor.insert(req.body.dato, req.body.sensor, function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
         else
@@ -272,7 +259,7 @@ app.put('/valor', function (req, res) {
 
 // Página para buscar valores por sensor
 app.get('/valor', function (req, res) {
-    daovalor.find(req.query.sensor, 100, function (datos) {
+    Pool.daovalor.find(req.query.sensor, 100, function (datos) {
         if (datos === "ERROR")
             err404(null, req, res, null);
         else {
@@ -293,7 +280,7 @@ app.get('/valor', function (req, res) {
 
 // Página para resetear los valores
 app.delete('/valores', function (req, res) {
-    daovalor.deleteAll(function (status) {
+    Pool.daovalor.deleteAll(function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
         else
@@ -306,7 +293,7 @@ app.delete('/valores', function (req, res) {
 
 // Página para añadir alertas
 app.put('/alert', function (req, res) {
-    daoalert.insert(new Alert(null, req.body.tipo, req.body.sensor, req.body.dato), function (status) {
+    Pool.daoalert.insert(new Alert(null, req.body.tipo, req.body.sensor, req.body.dato), function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
         else
@@ -319,7 +306,7 @@ app.put('/alert', function (req, res) {
 
 // Página para modificar alertas
 app.post('/alert', function (req, res) {
-    daoalert.update(new Alert(req.body.id, req.body.tipo, req.body.sensor, req.body.dato), function (status) {
+    Pool.daoalert.update(new Alert(req.body.id, req.body.tipo, req.body.sensor, req.body.dato), function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
         else
@@ -332,7 +319,7 @@ app.post('/alert', function (req, res) {
 
 // Página para eliminar alertas
 app.delete('/alert', function (req, res) {
-    daoalert.delete(req.query.id, function (status) {
+    Pool.daoalert.delete(req.query.id, function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
         else
@@ -345,7 +332,7 @@ app.delete('/alert', function (req, res) {
 
 // Página para buscar alertas por sensor
 app.get('/alert', function (req, res) {
-    daoalert.find(req.query.sensor, function (datos) {
+    Pool.daoalert.find(req.query.sensor, function (datos) {
         if (datos === "ERROR")
             err404(null, req, res, null);
         else {
@@ -366,7 +353,7 @@ app.get('/alert', function (req, res) {
 
 // Página para resetear las alertas
 app.delete('/alerts', function (req, res) {
-    daoalert.deleteAll(function (status) {
+    Pool.daoalert.deleteAll(function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
         else
@@ -473,7 +460,7 @@ function getAlertMsgs(alerts, data) {
 
 // Obtención del último dato de un sensor
 function getLastData(sensor, callback) {
-	daovalor.find(sensor, 1, function (datos) {
+	Pool.daovalor.find(sensor, 1, function (datos) {
 		if (datos === "ERROR")
 			callback(NaN);
 		else
@@ -483,7 +470,7 @@ function getLastData(sensor, callback) {
 
 // Obtención de los últimos 100 datos de un sensor
 function get100Data(sensor, callback) {
-	daovalor.find(sensor, 100, function (datos) {
+	Pool.daovalor.find(sensor, 100, function (datos) {
 		var arr = [];
 		if (datos !== "ERROR") {
 			var counter = datos.length;
@@ -499,7 +486,7 @@ function get100Data(sensor, callback) {
 // Obtención del último dato de los sensores
 function getLastDataAll(sensores, i, garr, callback) {
 	if (i < sensores.length) {
-		daovalor.find(sensores[i].id, 1, function (datos) {
+		Pool.daovalor.find(sensores[i].id, 1, function (datos) {
 			if (datos === "ERROR")
 				garr.push(NaN);
 			else
@@ -513,7 +500,7 @@ function getLastDataAll(sensores, i, garr, callback) {
 // Obtención de los últimos 100 datos de los sensores
 function get100DataAll(sensores, i, garr, callback) {
 	if (i < sensores.length) {
-		daovalor.find(sensores[i].id, 100, function (datos) {
+		Pool.daovalor.find(sensores[i].id, 100, function (datos) {
 			var arr = [];
 			if (datos !== "ERROR") {
 				var counter = datos.length;
@@ -531,7 +518,7 @@ function get100DataAll(sensores, i, garr, callback) {
 
 // Obtención de las alertas de un sensor
 function getAlerts(sensor, callback) {
-	daoalert.find(sensor, function (datos) {
+	Pool.daoalert.find(sensor, function (datos) {
 		var arr = [];
 		if (datos !== "ERROR") {
 			arr = datos;
@@ -543,7 +530,7 @@ function getAlerts(sensor, callback) {
 // Obtención de las alertas de todos los sensores
 function getAlertsAll(sensores, i, garr, callback) {
 	if (i < sensores.length) {
-		daoalert.find(sensores[i].id, function (datos) {
+		Pool.daoalert.find(sensores[i].id, function (datos) {
 			var arr = [];
 			if (datos !== "ERROR") {
 				arr = datos;

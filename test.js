@@ -2,21 +2,9 @@ var request = require('supertest');
 var app = require("./server.js");
 var assert = require('assert');
 
-var MYSQL_URI = {
-    host: 'us-cdbr-gcp-east-01.cleardb.net',
-    user: 'bf513a472fe95b',
-    password: '18ecf997',
-    database: 'gcp_0ec181dd4858ee89399d'
-};
-
-var DAOChart = require("./model/daochart.js");
-var DAOValor = require("./model/daovalor.js");
-var DAOAlert = require("./model/daoalert.js");
+var Pool = require("./model/pool.js");
 var Chart = require("./model/chart.js");
 var Alert = require("./model/alert.js");
-var daochart = new DAOChart(MYSQL_URI, 'charts');
-var daovalor = new DAOValor(MYSQL_URI, 'valores');
-var daoalert = new DAOAlert(MYSQL_URI, 'alerts');
 
 // Página principal
 describe("GET /", function () {
@@ -41,7 +29,7 @@ describe("GET /about", function () {
 // Inicialización de charts para el test
 describe("Inicialización de charts para el test", function () {
     it('', function (done) {
-        daochart.initialize(function (status) {
+        Pool.daochart.initialize(function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -51,7 +39,7 @@ describe("Inicialización de charts para el test", function () {
 // Inicialización de valores para el test
 describe("Inicialización de valores para el test", function () {
     it('', function (done) {
-        daovalor.initialize(function (status) {
+        Pool.daovalor.initialize(function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -61,7 +49,7 @@ describe("Inicialización de valores para el test", function () {
 // Inicialización de alertas para el test
 describe("Inicialización de alerts para el test", function () {
     it('', function (done) {
-        daoalert.initialize(function (status) {
+        Pool.daoalert.initialize(function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -130,7 +118,7 @@ describe("PUT /alert (fallida)", function () {
                 .put('/alert')
                 .send({dato: 45, sensor: 19991, tipo: 'mayor'})
                 .expect('Content-Type', /json/)
-                .expect(200, done);
+                .expect(404, done);
     });
 });
 
@@ -193,7 +181,6 @@ describe("GET /chart", function () {
 // Página para buscar sensores (fallida)
 describe("GET /chart (fallida)", function () {
     it('chart.id no debe existir en la base de datos', function (done) {
-        this.timeout(10000);
         request(app)
                 .get('/chart')
                 .query({id: 19991})
@@ -217,7 +204,6 @@ describe("GET /graph", function () {
 // Página para buscar gráficas (fallida)
 describe("GET /graph (fallida)", function () {
     it('chart.id no debe existir en la base de datos', function (done) {
-        this.timeout(10000);
         request(app)
                 .get('/graph')
                 .query({id: 19991})
@@ -358,7 +344,7 @@ describe("DELETE /charts", function () {
 // Inicialización de charts para el test
 describe("Inicialización de charts para el test", function () {
     it('', function (done) {
-        daochart.initialize(function (status) {
+        Pool.daochart.initialize(function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -368,7 +354,7 @@ describe("Inicialización de charts para el test", function () {
 // Inicialización de valores para el test
 describe("Inicialización de valores para el test", function () {
     it('', function (done) {
-        daovalor.initialize(function (status) {
+        Pool.daovalor.initialize(function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -378,7 +364,7 @@ describe("Inicialización de valores para el test", function () {
 // Inicialización de alertas para el test
 describe("Inicialización de alerts para el test", function () {
     it('', function (done) {
-        daoalert.initialize(function (status) {
+        Pool.daoalert.initialize(function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -386,9 +372,9 @@ describe("Inicialización de alerts para el test", function () {
 });
 
 // Función para buscar alertas
-describe("CALL daoalert.find(...)", function () {
+describe("CALL Pool.daoalert.find(...)", function () {
     it('alert.sensor debe existir en la base de datos', function (done) {
-		daoalert.find(31, function (alerts) {
+		Pool.daoalert.find(31, function (alerts) {
             assert(typeof alerts !== 'undefined' && alerts.length > 0);
             done();
         });
@@ -396,9 +382,9 @@ describe("CALL daoalert.find(...)", function () {
 });
 
 // Función para buscar alertas (fallida)
-describe("CALL daoalert.find(...) (fallida)", function () {
+describe("CALL Pool.daoalert.find(...) (fallida)", function () {
     it('alert.sensor no debe existir en la base de datos', function (done) {
-		daoalert.find(19991, function (status) {
+		Pool.daoalert.find(19991, function (status) {
             assert.equal(status, "ERROR");
             done();
         });
@@ -406,9 +392,9 @@ describe("CALL daoalert.find(...) (fallida)", function () {
 });
 
 // Función para modificar alertas
-describe("CALL daoalert.update(...)", function () {
+describe("CALL Pool.daoalert.update(...)", function () {
     it('alert.id debe existir en la base de datos', function (done) {
-		daoalert.update(new Alert(21, 'mayor', 31, 40), function (status) {
+		Pool.daoalert.update(new Alert(21, 'mayor', 31, 40), function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -416,9 +402,9 @@ describe("CALL daoalert.update(...)", function () {
 });
 
 // Función para modificar alertas (fallida)
-describe("CALL daoalert.update(...) (fallida)", function () {
+describe("CALL Pool.daoalert.update(...) (fallida)", function () {
     it('alert.id no debe existir en la base de datos', function (done) {
-		daoalert.update(new Alert(19991, 'mayor', 31, 40), function (status) {
+		Pool.daoalert.update(new Alert(19991, 'mayor', 31, 40), function (status) {
             assert.equal(status, "ERROR");
             done();
         });
@@ -426,9 +412,9 @@ describe("CALL daoalert.update(...) (fallida)", function () {
 });
 
 // Función para añadir alertas
-describe("CALL daoalert.insert(...)", function () {
+describe("CALL Pool.daoalert.insert(...)", function () {
     it('alert.sensor debe existir en la base de datos', function (done) {
-		daoalert.insert(new Alert(null, 'mayor', 31, 45), function (status) {
+		Pool.daoalert.insert(new Alert(null, 'mayor', 31, 45), function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -436,9 +422,9 @@ describe("CALL daoalert.insert(...)", function () {
 });
 
 // Función para añadir alertas (fallida)
-describe("CALL daoalert.insert(...) (fallida)", function () {
+describe("CALL Pool.daoalert.insert(...) (fallida)", function () {
     it('alert.sensor no debe existir en la base de datos', function (done) {
-		daoalert.insert(new Alert(null, 'mayor', 19991, 45), function (status) {
+		Pool.daoalert.insert(new Alert(null, 'mayor', 19991, 45), function (status) {
             assert.equal(status, "ERROR");
             done();
         });
@@ -446,9 +432,9 @@ describe("CALL daoalert.insert(...) (fallida)", function () {
 });
 
 // Función para buscar valores
-describe("CALL daovalor.find(...)", function () {
+describe("CALL Pool.daovalor.find(...)", function () {
     it('valor.sensor debe existir en la base de datos', function (done) {
-        daovalor.find(31, 100, function (valores) {
+        Pool.daovalor.find(31, 100, function (valores) {
             assert(typeof valores !== 'undefined' && valores.length > 0);
             done();
         });
@@ -456,9 +442,9 @@ describe("CALL daovalor.find(...)", function () {
 });
 
 // Función para buscar valores (fallida)
-describe("CALL daovalor.find(...) (fallida)", function () {
+describe("CALL Pool.daovalor.find(...) (fallida)", function () {
     it('valor.sensor no debe existir en la base de datos', function (done) {
-        daovalor.find(19991, 1, function (status) {
+        Pool.daovalor.find(19991, 1, function (status) {
             assert.equal(status, "ERROR");
             done();
         });
@@ -466,9 +452,9 @@ describe("CALL daovalor.find(...) (fallida)", function () {
 });
 
 // Función para añadir valores
-describe("CALL daovalor.insert(...)", function () {
+describe("CALL Pool.daovalor.insert(...)", function () {
     it('valor.sensor debe existir en la base de datos', function (done) {
-        daovalor.insert(50, 31, function (status) {
+        Pool.daovalor.insert(50, 31, function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -476,9 +462,9 @@ describe("CALL daovalor.insert(...)", function () {
 });
 
 // Función para añadir valores (fallida)
-describe("CALL daovalor.insert(...) (fallida)", function () {
+describe("CALL Pool.daovalor.insert(...) (fallida)", function () {
     it('valor.sensor no debe existir en la base de datos', function (done) {
-        daovalor.insert(50, 19991, function (status) {
+        Pool.daovalor.insert(50, 19991, function (status) {
             assert.equal(status, "ERROR");
             done();
         });
@@ -486,9 +472,9 @@ describe("CALL daovalor.insert(...) (fallida)", function () {
 });
 
 // Función para buscar sensores
-describe("CALL daochart.find(...)", function () {
+describe("CALL Pool.daochart.find(...)", function () {
     it('chart.id debe existir en la base de datos', function (done) {
-        daochart.find(new Chart(31, null), function (chart) {
+        Pool.daochart.find(new Chart(31, null), function (chart) {
             assert(chart instanceof Chart);
             done();
         });
@@ -496,9 +482,9 @@ describe("CALL daochart.find(...)", function () {
 });
 
 // Función para buscar sensores (fallida)
-describe("CALL daochart.find(...) (fallida)", function () {
+describe("CALL Pool.daochart.find(...) (fallida)", function () {
     it('chart.id no debe existir en la base de datos', function (done) {
-        daochart.find(new Chart(19991, null), function (status) {
+        Pool.daochart.find(new Chart(19991, null), function (status) {
             assert.equal(status, "ERROR");
             done();
         });
@@ -506,9 +492,9 @@ describe("CALL daochart.find(...) (fallida)", function () {
 });
 
 // Función para modificar sensores
-describe("CALL daochart.update(...)", function () {
+describe("CALL Pool.daochart.update(...)", function () {
     it('chart.id debe existir en la base de datos', function (done) {
-        daochart.update(new Chart(31, 'luminiscencia'), function (status) {
+        Pool.daochart.update(new Chart(31, 'luminiscencia'), function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -516,9 +502,9 @@ describe("CALL daochart.update(...)", function () {
 });
 
 // Función para modificar sensores (fallida)
-describe("CALL daochart.update(...) (fallida)", function () {
+describe("CALL Pool.daochart.update(...) (fallida)", function () {
     it('chart.id no debe existir en la base de datos', function (done) {
-        daochart.update(new Chart(19991, 'luminiscencia'), function (status) {
+        Pool.daochart.update(new Chart(19991, 'luminiscencia'), function (status) {
             assert.equal(status, "ERROR");
             done();
         });
@@ -526,9 +512,9 @@ describe("CALL daochart.update(...) (fallida)", function () {
 });
 
 // Función para añadir sensores
-describe("CALL daochart.insert(...)", function () {
+describe("CALL Pool.daochart.insert(...)", function () {
     it('devuelve 200 (SUCCESS)', function (done) {
-        daochart.insert(new Chart(null, 'presion'), function (status) {
+        Pool.daochart.insert(new Chart(null, 'presion'), function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -536,9 +522,9 @@ describe("CALL daochart.insert(...)", function () {
 });
 
 // Función para resetear los valores
-describe("CALL daovalor.deleteAll(...)", function () {
+describe("CALL Pool.daovalor.deleteAll(...)", function () {
     it('devuelve 200 (SUCCESS)', function (done) {
-        daovalor.deleteAll(function (status) {
+        Pool.daovalor.deleteAll(function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -546,9 +532,9 @@ describe("CALL daovalor.deleteAll(...)", function () {
 });
 
 // Función para eliminar alertas
-describe("CALL daoalert.delete(...)", function () {
+describe("CALL Pool.daoalert.delete(...)", function () {
     it('alert.id debe existir en la base de datos', function (done) {
-        daoalert.delete(21, function (status) {
+        Pool.daoalert.delete(21, function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -556,9 +542,9 @@ describe("CALL daoalert.delete(...)", function () {
 });
 
 // Función para eliminar alertas (fallida)
-describe("CALL daoalert.delete(...) (fallida)", function () {
+describe("CALL Pool.daoalert.delete(...) (fallida)", function () {
     it('alert.id no debe existir en la base de datos', function (done) {
-        daoalert.delete(19991, function (status) {
+        Pool.daoalert.delete(19991, function (status) {
             assert.equal(status, "ERROR");
             done();
         });
@@ -566,9 +552,9 @@ describe("CALL daoalert.delete(...) (fallida)", function () {
 });
 
 // Función para resetear las alertas
-describe("CALL daoalert.deleteAll(...)", function () {
+describe("CALL Pool.daoalert.deleteAll(...)", function () {
     it('devuelve 200 (SUCCESS)', function (done) {
-        daoalert.deleteAll(function (status) {
+        Pool.daoalert.deleteAll(function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -576,9 +562,9 @@ describe("CALL daoalert.deleteAll(...)", function () {
 });
 
 // Función para eliminar sensores
-describe("CALL daochart.delete(...)", function () {
+describe("CALL Pool.daochart.delete(...)", function () {
     it('chart.id debe existir en la base de datos', function (done) {
-        daochart.delete(new Chart(31, null), function (status) {
+        Pool.daochart.delete(new Chart(31, null), function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -586,9 +572,9 @@ describe("CALL daochart.delete(...)", function () {
 });
 
 // Función para eliminar sensores (fallida)
-describe("CALL daochart.delete(...) (fallida)", function () {
+describe("CALL Pool.daochart.delete(...) (fallida)", function () {
     it('chart.id no debe existir en la base de datos', function (done) {
-        daochart.delete(new Chart(19991, null), function (status) {
+        Pool.daochart.delete(new Chart(19991, null), function (status) {
             assert.equal(status, "ERROR");
             done();
         });
@@ -596,9 +582,9 @@ describe("CALL daochart.delete(...) (fallida)", function () {
 });
 
 // Función para obtener los sensores
-describe("CALL daochart.findAll(...)", function () {
+describe("CALL Pool.daochart.findAll(...)", function () {
     it('devuelve un array de charts', function (done) {
-        daochart.findAll(function (charts) {
+        Pool.daochart.findAll(function (charts) {
             assert(typeof charts !== 'undefined' && charts.length > 0);
             done();
         });
@@ -606,9 +592,9 @@ describe("CALL daochart.findAll(...)", function () {
 });
 
 // Función para resetear los sensores
-describe("CALL daochart.deleteAll(...)", function () {
+describe("CALL Pool.daochart.deleteAll(...)", function () {
     it('devuelve 200 (SUCCESS)', function (done) {
-        daochart.deleteAll(function (status) {
+        Pool.daochart.deleteAll(function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });

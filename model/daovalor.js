@@ -1,10 +1,7 @@
-var mysql = require('mysql');
-
 // Constructor de la clase
-function DAOValor(MYSQL_URI, NOMBRE_TABLA) {
-    this.MYSQL_URI = MYSQL_URI;
+function DAOValor(poolparam, NOMBRE_TABLA) {
+	pool = poolparam;
     this.NOMBRE_TABLA = NOMBRE_TABLA;
-    pool = mysql.createPool(MYSQL_URI);
     createTable(NOMBRE_TABLA);
 }
 
@@ -17,6 +14,8 @@ function createTable(NOMBRE_TABLA) {
 			foreign key(sensor) references charts(id)
 		)`;
 	pool.getConnection(function (err, con) {
+		if (err)
+			throw err;
 		con.query(sql, function (err, result) {
 			if (err)
 				throw err;

@@ -1,11 +1,9 @@
-var mysql = require('mysql');
 var Chart = require("./chart.js");
 
 // Constructor de la clase
-function DAOChart(MYSQL_URI, NOMBRE_TABLA) {
-    this.MYSQL_URI = MYSQL_URI;
+function DAOChart(poolparam, NOMBRE_TABLA) {
+	pool = poolparam;
     this.NOMBRE_TABLA = NOMBRE_TABLA;
-    pool = mysql.createPool(MYSQL_URI);
     createTable(NOMBRE_TABLA);
 }
 
@@ -16,6 +14,8 @@ function createTable(NOMBRE_TABLA) {
 			tipo varchar(255) not null
 		)`;
 	pool.getConnection(function (err, con) {
+		if (err)
+			throw err;
 		con.query(sql, function (err, result) {
 			if (err)
 				throw err;
