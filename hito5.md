@@ -82,6 +82,12 @@ Una vez realizado el despliegue el servicio estará listo en http://51.140.180.2
 
 ![Proyecto en Chrome](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/azure-chrome3.png)
 
+## Ejecución de Vagrant de Pedro Manuel
+
+La orquestación con Vagrant diseñada por [@fpeiro](https://github.com/fpeiro) ha sido testeada por [@gomezportillo](https://github.com/gomezportillo) y funciona correctamente. A continuación se incluye la captura de pantalla generada al ejecutarlo como prueba.
+
+![Ejecución de Vagrant de @gomezportillo](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/vagrant-gomezportillo.png)
+
 ## Ejecución de Vagrant para Juan Carlos
 
 El sistema de orquestación implementado por [@xenahort](https://github.com/xenahort) ha sido probado verificando que los resultados obtenidos son los correctos. A continuación se muestra una prueba de su ejecución:
