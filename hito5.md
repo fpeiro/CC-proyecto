@@ -17,7 +17,7 @@ $ sudo apt-get update
 $ sudo apt-get install vagrant
 ```
 
-De esta manera Vagrant ya estará instalado en nuestra máquina.
+Este comando añade a la lista de repositorios la última versión de Vagrant y después lo instala desde ahí. De esta manera Vagrant ya estará instalado en nuestra máquina.
 
 Ahora toca configurarlo. Para ello ejecutamos el comando `vagrant init -m`, mediante el cual se creará un archivo `Vagrantfile` con la
 configuración básica que partiremos para definir la configuración final que puede encontrarse
@@ -44,14 +44,13 @@ Dentro del `Vagrantfile` necesitaremos los siguientes identificadores:
 * `azure.client_secret` que identifica la contraseña para usar ese servicio
 * `azure.subscription_id` que identifica a la suscripción que utilizará el usuario
 
-Para obtener dichos valores es necesario crear una aplicación de directorio activo (AAD) con el comando `az ad sp create-for-rbac`. El
-resultado de este es el siguiente:
+Para obtener dichos valores es necesario crear una aplicación de directorio activo (AAD) que permite a Vagrant el acceso a tu cuenta para la creación de las máquinas virtuales. Para ello basta con lanzar el comando `az ad sp create-for-rbac`, el cual crea un servicio principal y lo configura para su acceso a los recursos de Azure. El resultado de este es el siguiente:
 
 ![Obtención de identificadores](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/vagrant-params.png)
 
 Para la obtención del identificador de la suscripción en cambio hay que ejecutar el comando
-`az account list --query "[?isDefault].id" -o tsv`. Tras ello hay que exportarlos como variables de entorno para utilizarlas en el
-`Vagrantfile`.
+`az account list --query "[?isDefault].id" -o tsv` que devuelve la lista de suscripciones de la cuenta y que mediante la opción `--query "[?isDefault].id"` extraerá la suscripción por defecto. Tras ello hay que exportarlos como variables de entorno para utilizarlas en el
+`Vagrantfile`, estas son `AZURE_TENANT_ID`, `AZURE_CLIENT_ID`, `AZURE_CLIENT_SECRET` y `AZURE_SUBSCRIPTION_ID` respectivamente.
 
 Para que este proceso sea más sencillo de hacer se ha diseñado un script para automatizarlo. Este se puede ver
 [aquí](https://github.com/fpeiro/CC-proyecto/blob/master/orquestacion/configure.sh).
@@ -70,6 +69,8 @@ La integración con Ansible es mucho más sencilla. Tal y como indica
     ansible.playbook = "playbook.yml"
   end
 ```
+
+Este comando indica básicamente la localización del `playbook.yml` ya que el plugin de Ansible ya está integrado en Vagrant por defecto.
 
 ## Ejecución de Vagrant
 
@@ -93,3 +94,39 @@ La orquestación con Vagrant diseñada por [@fpeiro](https://github.com/fpeiro) 
 El sistema de orquestación implementado por [@xenahort](https://github.com/xenahort) ha sido probado verificando que los resultados obtenidos son los correctos. A continuación se muestra una prueba de su ejecución:
 
 ![Ejecución de Vagrant para @xenahort](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/vagrant-xenahort.png)
+
+## Funcionalidad
+
+Se ha implementado en este hito las siguientes funcionalidades:
+
+* Adición de alertas a los sensores
+* Listado de alertas por sensor
+* Generación de mensajes de alerta en lenguaje natural
+
+Para cada una de las direcciones URL y funciones implementadas se han desarrollao los tests para comprobar su correcto funcionamiento.
+
+## Estructura de los alertas del sensor
+
+Las alertas de los sensores poseen los siguientes campos en la base de datos:
+
+* Identificador. Es la clave primaria por la que se identifican.
+* Dato. Indica el valor límite permitido.
+* Identificador del sensor. Sirve para vincular la alerta con el sensor correspondiente.
+* Tipo de alerta. Indica el control que realiza. Estos pueden ser de los siguientes tipos:
+  - Alerta por alcanzar un número superior al indicado.
+  - Alerta por alcanzar un número igual al indicado.
+  - Alerta por alcanzar un número superior o igual al indicado.
+  - Alerta por no alcanzar un número superior al indicado.
+  - Alerta por no alcanzar un número igual al indicado.
+  - Alerta por no alcanzar un número superior o igual al indicado.
+
+## Direcciones implementadas
+
+Se han implementado las siguientes direcciones para la realización de las funcionalidades:
+
+* `/alert`: Depende su funcionalidad según el método utilizado:
+  - Con el método GET sirve para obtener las alertas del sensor con el id indicado.
+  - Con el método PUT sirve para crear una alerta para el sensor con el id y el dato indicado.
+  - Con el método POST sirve para editar una alerta para el sensor con el id y el dato indicado.
+  - Con el método DELETE sirve para eliminar la alerta de un sensor.
+* `/alerts`: Sirve para eliminar todas las alertas de los sensores. (Solo admite el método DELETE.)
