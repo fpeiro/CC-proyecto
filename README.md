@@ -59,7 +59,7 @@ Haciendo uso de la interfaz de línea de comandos de Azure se ha realizado un ej
 
 ## Orquestación con Vagrant
 
-Se ha hecho uso de Vagrant para la orquestación de máquinas virtuales. En la carpeta [orquestacion](https://github.com/fpeiro/CC-proyecto/tree/master/orquestacion) se encuentran los archivos necesarios para llevarla a cabo. Se debe ejecutar el comando `vagrant up --provider=azure` el cual iniciará la serie de tareas que se encuentran en el _Vagrantfile_. La dirección IP de la máquina virtual donde se ha desplegado la orquestación es Despliegue Vagrant: 51.140.180.218 . La documentación correspondiente a la orquestación se encuentra [aquí](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito5.md).
+Se ha hecho uso de Vagrant para la orquestación de máquinas virtuales. En la carpeta [orquestacion](https://github.com/fpeiro/CC-proyecto/tree/master/orquestacion) se encuentran los archivos necesarios para llevarla a cabo. Se debe ejecutar el comando `vagrant up --provider=azure` el cual iniciará la serie de tareas que se encuentran en el _Vagrantfile_. La dirección IP de la máquina virtual donde se ha desplegado la orquestación es Despliegue Vagrant: 51.140.67.10 . La documentación correspondiente a la orquestación se encuentra [aquí](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito5.md).
 
 ## Ejecución de manera local
 
