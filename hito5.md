@@ -28,6 +28,25 @@ La configuración para la base de datos es la misma a la utilizada en el hito 4.
 * Utilización de la máquina virtual Standard_B1s con 1 Gb de memoria RAM.
 * Utilización de la imagen de Ubuntu 18.04 LTS proporcionada por Canonical.
 
+## Entorno multimáquina
+
+Para este hito se utilizará dos máquinas virtuales, las cuales se conectarán haciendo uso de una red privada. Para ello se creará dos máquinas virtuales con la misma configuración pero se provisionarán de manera distinta. Estas máquinas virtuales son:
+* Máquina virtual donde se desplegará el servicio y que será accesible desde el exterior mediante HTTP. Su playbook es este: [servicio.yml](https://github.com/fpeiro/CC-proyecto/blob/master/orquestacion/servicio.yml).
+* Máquina virtual donde se ejecutará la base de datos y que será accesible únicamente por la otra máquina virtual. Su playbook es este: [basedatos.yml](https://github.com/fpeiro/CC-proyecto/blob/master/orquestacion/basedatos.yml).
+
+Por cada máquina virtual se añadirá una línea al `Vagrantfile` donde se le asignará una dirección IP para la red privada tal y como se indica [en la página de Vagrant](https://www.vagrantup.com/docs/networking/private_network.html) de la forma:
+
+```
+  config.vm.define "machine" do |machine|
+    machine.vm.network "private_network", ip: "192.168.50.4"
+    #
+    # Run Ansible from the Vagrant Host
+    #
+  end
+```
+
+De esta manera podrán conectarse ambas máquinas virtuales.
+
 ## Integración con Azure CLI
 
 Tal y como dice el [GitHub oficial](https://github.com/Azure/vagrant-azure) del plugin de Azure para Vagrant para configurar este dentro
