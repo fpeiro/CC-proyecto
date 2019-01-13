@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Instala mysql
+      apt:
+        name: ['python-mysqldb', 'mysql-server']
+        state: present
+    - name: Ejecuta mysql
+      service: 
+        name: mysql 
+        state: started
+        enabled: true

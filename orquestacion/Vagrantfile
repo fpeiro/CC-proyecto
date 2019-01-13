@@ -1,36 +1,81 @@
-# Variables que definen la máquina virtual
-RES_GROUP='recursos-mv-cc3'
-NSG_NAME='mv-cc3nsg'
-MV_NAME='mv-cc3'
+# Variables que definen la máquina virtual 1
+RES_GROUP_1='recursos-mv-serv'
+NSG_NAME_1='mv-servnsg'
+MV_NAME_1='mv-serv'
+IP_ADD_1='192.168.50.100'
+
+# Variables que definen la máquina virtual 2
+RES_GROUP_2='recursos-mv-bbdd'
+NSG_NAME_2='mv-bbddnsg'
+MV_NAME_2='mv-bbdd' 
+IP_ADD_2='192.168.50.110'
 
 # Configuración de Vagrant
 Vagrant.configure("2") do |config|
 
   config.vm.box = "azure"
-
   config.ssh.private_key_path = "~/.ssh/id_rsa"
-  config.vm.provider :azure do |azure, override|
 
-    # Configuración de azure
-    azure.tenant_id = ENV['AZURE_TENANT_ID']
-    azure.client_id = ENV['AZURE_CLIENT_ID']
-    azure.client_secret = ENV['AZURE_CLIENT_SECRET']
-    azure.subscription_id = ENV['AZURE_SUBSCRIPTION_ID']
+  config.vm.define "servicio" do |machine|
 
-    # Configuración de la máquina virtual
-    azure.location = 'uksouth'
-    azure.resource_group_name = RES_GROUP
-    azure.vm_name = MV_NAME
-    azure.nsg_name = NSG_NAME
-    azure.vm_image_urn = 'Canonical:UbuntuServer:18.04-LTS:latest'
-    azure.vm_size = 'Standard_B1s' # Tamaño más básico
-    azure.tcp_endpoints = 80 # Abrimos el puerto 80 (HTTP)
+	# Asignación de la IP privada para la conexión
+    machine.vm.network "private_network", ip: IP_ADD_1
+
+    machine.vm.provider :azure do |azure, override|
+
+      # Configuración de azure
+      azure.tenant_id = ENV['AZURE_TENANT_ID']
+      azure.client_id = ENV['AZURE_CLIENT_ID']
+      azure.client_secret = ENV['AZURE_CLIENT_SECRET']
+      azure.subscription_id = ENV['AZURE_SUBSCRIPTION_ID']
+
+      # Configuración de la máquina virtual
+      azure.location = 'uksouth'
+      azure.resource_group_name = RES_GROUP_1
+      azure.vm_name = MV_NAME_1
+      azure.nsg_name = NSG_NAME_1
+      azure.vm_image_urn = 'Canonical:UbuntuServer:18.04-LTS:latest'
+      azure.vm_size = 'Standard_B1s' # Tamaño más básico
+      azure.tcp_endpoints = 80 # Abrimos el puerto 80 (HTTP)
+
+    end
+
+    # Configuración de ansible
+    machine.vm.provision "ansible" do |ansible|
+      ansible.playbook = "servicio.yml"
+    end
 
   end
 
-  # Configuración de ansible
-  config.vm.provision "ansible" do |ansible|
-    ansible.playbook = "deploy.yml"
+  config.vm.define "basedatos" do |machine|
+
+	# Asignación de la IP privada para la conexión
+    machine.vm.network "private_network", ip: IP_ADD_2
+
+    machine.vm.provider :azure do |azure, override|
+
+      # Configuración de azure
+      azure.tenant_id = ENV['AZURE_TENANT_ID']
+      azure.client_id = ENV['AZURE_CLIENT_ID']
+      azure.client_secret = ENV['AZURE_CLIENT_SECRET']
+      azure.subscription_id = ENV['AZURE_SUBSCRIPTION_ID']
+
+      # Configuración de la máquina virtual
+      azure.location = 'uksouth'
+      azure.resource_group_name = RES_GROUP_2
+      azure.vm_name = MV_NAME_2
+      azure.nsg_name = NSG_NAME_2
+      azure.vm_image_urn = 'Canonical:UbuntuServer:18.04-LTS:latest'
+      azure.vm_size = 'Standard_B1s' # Tamaño más básico
+      azure.tcp_endpoints = 3306 # Abrimos el puerto 3306 (MYSQL)
+
+    end
+
+    # Configuración de ansible
+    machine.vm.provision "ansible" do |ansible|
+      ansible.playbook = "basedatos.yml"
+    end
+
   end
 
 end
