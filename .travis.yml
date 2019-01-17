@@ -1,14 +1,13 @@
 language: node_js
 sudo: false
 node_js:
-- node
+  - node
 install:
-- npm install mocha
-- npm install full-icu
+  - npm install mocha
+  - npm install full-icu
 script:
-- npm test
+  - npm test
 env:
-  matrix:
   - MYSQL_HOST=us-cdbr-gcp-east-01.cleardb.net
   - MYSQL_USER=bf513a472fe95b
   - MYSQL_DATABASE=gcp_0ec181dd4858ee89399d
