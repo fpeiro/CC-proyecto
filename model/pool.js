@@ -6,10 +6,10 @@ var DAOValor = require("./daovalor.js");
 var DAOAlert = require("./daoalert.js");
 
 var pool = mysql.createPool({
-    host: 'us-cdbr-gcp-east-01.cleardb.net',
-    user: 'bf513a472fe95b',
-    password: '18ecf997',
-    database: 'gcp_0ec181dd4858ee89399d'
+    host: '10.0.0.5',
+    user: 'root',
+    password: '',
+    database: 'ccproyecto'
 });
 
 var daochart = new DAOChart(pool, 'charts');

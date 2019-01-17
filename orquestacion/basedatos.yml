@@ -11,3 +11,19 @@
         name: mysql 
         state: started
         enabled: true
+    - name: Crea la base de datos
+      mysql_db:
+        name: ccproyecto
+        state: present
+    - name: Crea el usuario para conectarse
+      mysql_user:
+        name: root
+        password:
+        host: %
+        priv: '*.*:ALL,GRANT'
+        state: present
+    - name: Permite la conexión desde cualquier IP
+      replace:
+        path: /etc/mysql/mysql.conf.d/mysqld.cnf
+        regexp: 'bind-address'
+        replace: '#bind-address'
