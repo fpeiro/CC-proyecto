@@ -34,18 +34,11 @@ Para este hito se utilizará dos máquinas virtuales, las cuales se conectarán 
 * Máquina virtual donde se desplegará el servicio y que será accesible desde el exterior mediante HTTP. Su playbook es este: [servicio.yml](https://github.com/fpeiro/CC-proyecto/blob/master/orquestacion/servicio.yml).
 * Máquina virtual donde se ejecutará la base de datos y que será accesible únicamente por la otra máquina virtual. Su playbook es este: [basedatos.yml](https://github.com/fpeiro/CC-proyecto/blob/master/orquestacion/basedatos.yml).
 
-Por cada máquina virtual se añadirá una línea al `Vagrantfile` donde se le asignará una dirección IP para la red privada tal y como se indica [en la página de Vagrant](https://www.vagrantup.com/docs/networking/private_network.html) de la forma:
+Azure asigna a cada máquina virtual una dirección IP privada distinta mediante la que se comunicarán. Para permitir la comunicación con la base de datos antes hay que modificar la configuración de MySQL:
+* Se debe permitir el acceso externo a _localhost_ a la base de datos eliminando la variable de configuración `bind-address`.
+* Se debe hacer uso de un usuario de la base de datos con permisos de acceso externo.
 
-```
-  config.vm.define "machine" do |machine|
-    machine.vm.network "private_network", ip: "192.168.50.4"
-    #
-    # Run Ansible from the Vagrant Host
-    #
-  end
-```
-
-De esta manera podrán conectarse ambas máquinas virtuales.
+Esta configuración se encuentra automatizada en el playbook de la máquina con la base de datos.
 
 ## Integración con Azure CLI
 
@@ -93,8 +86,7 @@ Este comando indica básicamente la localización del `playbook.yml` ya que el p
 
 ## Ejecución de Vagrant
 
-Una vez configurado todo podemos ejecutar la orquestación mediante el comando `vagrant up --provider=azure`. El resultado que obtenemos
-es el siguiente:
+Una vez configurado todo podemos ejecutar la orquestación mediante el comando `vagrant up --provider=azure --no-parallel`. La variable `--no-parallel` permite que las máquinas virtuales se creen una detrás de otra permitiendo que estas compartan grupo de recursos para realizar su conexión. El resultado que obtenemos es el siguiente:
 
 ![Orquestación con Vagrant](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/vagrant-deploy.png)
 
