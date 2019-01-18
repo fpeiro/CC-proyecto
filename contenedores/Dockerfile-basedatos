@@ -1,0 +1,24 @@
+# Se utiliza la imagen de Ubuntu 18.04 LTS
+FROM ubuntu:latest
+
+# Directorio de trabajo principal
+WORKDIR /
+
+RUN apt-get update && `# Se actualizan los paquetes instalados previamente` \
+    apt-get install -y python-mysqldb mysql-server && `# Se instala mysql` \
+    service mysql start && `# Se ejecuta mysql` \
+    mysql -e "CREATE DATABASE ccproyecto" && `# Se crea la base de datos` \
+    mysql -e "CREATE USER 'root'@'%' IDENTIFIED BY ''" && `# Se crea el usuario para conectarse` \
+    mysql -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION" && `# Se otorga permisos al usuario` \
+    sed -i 's/bind-address/#bind-address/' /etc/mysql/mysql.conf.d/mysqld.cnf && `# Se elimina la restricción de IPs` \
+    service mysql stop && `# Se para mysql` \
+    chown -R mysql:mysql /var/run/mysqld `# Se da permisos de lectura a mysql`
+
+# Se define donde se va a ejecutar la base de datos
+VOLUME ["/var/lib/mysql"]
+
+# Se abre el puerto 3306 para permitir la conexión
+EXPOSE 3306
+
+# Ejecuta permanentemente mysql
+CMD ["mysqld_safe"]

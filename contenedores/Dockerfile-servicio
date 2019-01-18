@@ -1,0 +1,18 @@
+# Se utiliza la imagen de Ubuntu 18.04 LTS
+FROM ubuntu:latest
+
+# Directorio de trabajo principal
+WORKDIR /CC-proyecto
+
+# Se copia el contenido del proyecto en el directorio de trabajo
+COPY ./ /CC-proyecto/
+
+RUN apt-get update && apt-get install -y curl && `# Se actualizan los paquetes instalados previamente` \
+    apt-get install -y npm && `# Se instala npm` \
+    npm cache clean -f && npm install -g n && n stable && `# Se actualiza node` \
+    npm install -g pm2 && `# Se instala pm2` \
+    npm install && `# Se instalan las dependencias del proyecto` \
+    pm2 delete CC-proyecto || true `# Se eliminan los procesos pm2 antiguos`
+
+# Se ejecuta el servicio a través de pm2
+CMD ["pm2-runtime", "server.js", "--name", "CC-proyecto"]
