@@ -27,3 +27,8 @@
         path: /etc/mysql/mysql.conf.d/mysqld.cnf
         regexp: 'bind-address'
         replace: '#bind-address'
+    - name: Reinicia mysql
+      service:
+        name: mysql
+        state: restarted
+        enabled: true
