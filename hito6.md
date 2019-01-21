@@ -1,0 +1,47 @@
+# Documentacion del hito 6
+
+En este hito se han realizado los contenedores que permitirán el despliegue automático del servicio haciendo uso de Docker. Los
+contenedores se ejecutan sobre Linux compartiendo kernel permitiendo la portabilidad a cualquier tipo de entorno ya sea físico o en la
+nube.
+
+## Instalación de Docker
+
+Para la realización de un contenedor con Docker primero hay que hacer su instalación y, tras ello, definir la imagen de la que se va a
+partir, los archivos que se copiarán y los paquetes que se utilizarán. Para instalar Docker debemos ejecutar los siguientes comandos tal
+y como se explica en [la página oficial](https://docs.docker.com/install/linux/docker-ce/ubuntu/):
+
+```sh
+$ sudo apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+$ sudo apt-get update
+$ sudo apt-get install docker-ce
+```
+
+Este comando añade a la lista de repositorios la última versión de Docker y después lo instala desde ahí. De esta manera Docker ya estará
+instalado en nuestra máquina.
+
+Ahora toca crear el `Dockerfile` a utilizar. Este documento es el encargado de indicar la secuencia de comandos a realizar para la
+creación del contenedor. En este caso se van a definir dos, uno para el servicio y otro para la base de datos, los cuales pueden verse
+[aquí](https://github.com/fpeiro/CC-proyecto/tree/master/contenedores). Estos harán uso de Ubuntu, distribución ya utilizada en los hitos
+anteriores. La configuración de la base de datos, al igual que en el hito anterior, se ha configurado para su acceso desde IPs externas.
+
+## Creación de los contenedores
+
+Una vez creados los `Dockerfiles` es hora de crear sus respectivos contenedores. Para ello se ejecutarán los siguientes comandos desde
+la carpeta principal del proyecto, que es la que se copiará al contenedor:
+
+```sh
+$ docker build -t fpeiro/cc-proyecto:basedatos -f contenedores/Dockerfile-basedatos .
+$ docker build -t fpeiro/cc-proyecto:servicio -f contenedores/Dockerfile-servicio .
+```
+
+El comando `-t` especifica el nombre que recibirá el contenedor creado y el comando `-f` la ruta donde se encuentra el Dockerfile
+asociado.
+
+Una vez creados los contenedores la lista de imágenes quedará así:
+
+![Imágenes de Docker](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/docker-images.png)
+
+Tras ello solo queda subir las imágenes haciendo uso del comando `docker push NAME[:TAG]`, siendo `NAME[:TAG]` el nombre de dicho
+contenedor. Se nos pedirá identificarnos y tras ello quedará subido a nuestra cuenta de Docker Hub.
