@@ -6,6 +6,7 @@
 * [Información sobre el hito 3](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito3.md). Provisionamiento con Ansible.
 * [Información sobre el hito 4](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito4.md). Automatización con Azure CLI y desarrollo del segundo microservicio.
 * [Información sobre el hito 5](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito5.md). Orquestación con Vagrant y desarrollo del tercer microservicio.
+* [Información sobre el hito 6](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito6.md). Despliegue con contenedores Docker.
 
 ---
 
@@ -59,7 +60,11 @@ Haciendo uso de la interfaz de línea de comandos de Azure se ha realizado un ej
 
 ## Orquestación con Vagrant
 
-Se ha hecho uso de Vagrant para la orquestación de máquinas virtuales. En la carpeta [orquestacion](https://github.com/fpeiro/CC-proyecto/tree/master/orquestacion) se encuentran los archivos necesarios para llevarla a cabo. Se debe ejecutar el comando `vagrant up --provider=azure` el cual iniciará la serie de tareas que se encuentran en el _Vagrantfile_. La dirección IP de la máquina virtual donde se ha desplegado la orquestación es Despliegue Vagrant: 51.140.67.10 . La documentación correspondiente a la orquestación se encuentra [aquí](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito5.md).
+Se ha hecho uso de Vagrant para la orquestación de máquinas virtuales. En la carpeta [orquestacion](https://github.com/fpeiro/CC-proyecto/tree/master/orquestacion) se encuentran los archivos necesarios para llevarla a cabo. Se debe ejecutar el comando `vagrant up --provider=azure` el cual iniciará la serie de tareas que se encuentran en el _Vagrantfile_. La dirección IP de la máquina virtual donde se ha desplegado la orquestación es Despliegue Vagrant: 51.140.180.218 . La documentación correspondiente a la orquestación se encuentra [aquí](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito5.md).
+
+## Despliegue con contenedores Docker
+
+Mediante Docker se han definido dos contenedores para su despliegue automático. Los archivos necesarios para ello se pueden encontrar en la carpeta [contenedores](https://github.com/fpeiro/CC-proyecto/tree/master/contenedores). Lanzando el ejecutable _shell_ `configure.sh` es posible desplegar estos contenedores en Azure. La dirección IP donde se encuentra desplegado el Docker es Contenedor: 40.81.153.130 . Se puede encontrar más información sobre el despliegue [aquí](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito6.md).
 
 ## Ejecución de manera local
 
