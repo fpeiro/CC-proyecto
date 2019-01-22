@@ -1,8 +1,7 @@
 # Documentacion del hito 6
 
 En este hito se han realizado los contenedores que permitirán el despliegue automático del servicio haciendo uso de Docker. Los
-contenedores se ejecutan sobre Linux compartiendo kernel permitiendo la portabilidad a cualquier tipo de entorno ya sea físico o en la
-nube.
+contenedores se ejecutan sobre Linux compartiendo kernel permitiendo así la portabilidad a cualquier tipo de entorno ya sea físico o en la nube.
 
 ## Instalación de Docker
 
@@ -18,13 +17,11 @@ $ sudo apt-get update
 $ sudo apt-get install docker-ce
 ```
 
-Este comando añade a la lista de repositorios la última versión de Docker y después lo instala desde ahí. De esta manera Docker ya estará
-instalado en nuestra máquina.
+Este comando añade a la lista de repositorios la última versión de Docker y después lo instala desde ahí. De esta manera Docker ya estará instalado en nuestra máquina.
 
 Ahora toca crear el `Dockerfile` a utilizar. Este documento es el encargado de indicar la secuencia de comandos a realizar para la
 creación del contenedor. En este caso se van a definir dos, uno para el servicio y otro para la base de datos, los cuales pueden verse
-[aquí](https://github.com/fpeiro/CC-proyecto/tree/master/contenedores). Estos harán uso de Ubuntu, distribución ya utilizada en los hitos
-anteriores. La configuración de la base de datos, al igual que en el hito anterior, se ha configurado para su acceso desde IPs externas.
+[aquí](https://github.com/fpeiro/CC-proyecto/tree/master/contenedores). Estos harán uso de Ubuntu, distribución ya utilizada en los hitos anteriores. La configuración de la base de datos, al igual que en el hito anterior, se ha configurado para su acceso desde IPs externas.
 
 ## Creación de los contenedores
 
@@ -43,5 +40,19 @@ Una vez creados los contenedores la lista de imágenes quedará así:
 
 ![Imágenes de Docker](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/docker-images.png)
 
-Tras ello solo queda subir las imágenes haciendo uso del comando `docker push NAME[:TAG]`, siendo `NAME[:TAG]` el nombre de dicho
-contenedor. Se nos pedirá identificarnos y tras ello quedará subido a nuestra cuenta de Docker Hub.
+Tras ello solo queda subir las imágenes haciendo uso del comando `docker push NAME[:TAG]`, siendo `NAME[:TAG]` el nombre del contenedor a subir. Se nos pedirá identificarnos y tras ello quedará subido a [nuestra cuenta de Docker Hub](https://cloud.docker.com/repository/docker/fpeiro/cc-proyecto):
+
+![Proyecto en Docker Hub](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/dockerhub-project.png)
+
+## Despliegue en Azure
+
+Ahora se van a desplegar los contenedores en Azure haciendo uso de la interfaz de línea de comandos. Para ello se ejecutarán los siguientes comandos:
+
+```sh
+$ az group create --name $RES_GROUP --location $LOCATION
+$ az container create --resource-group $RES_GROUP --name $DOCKER_NAME --image $IMAGE --dns-name-label $DNS_NAME --ports $OPEN_PORTS
+```
+
+Se ha diseñado un script para automatizar este proceso en nuestro proyecto, el cual puede verse [aquí](https://github.com/fpeiro/CC-proyecto/blob/master/contenedores/configure.sh). Tras haberlo ejecutado el servicio estará listo en http://40.81.153.130/
+
+![Proyecto en Chrome](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/azure-chrome4.png)
