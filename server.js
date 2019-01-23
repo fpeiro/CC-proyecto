@@ -2,6 +2,7 @@
 
 const express = require('express');
 const path = require('path');
+const basicAuth = require('express-basic-auth');
 const PORT = process.env.PORT || 80;
 
 var app = express();
@@ -16,6 +17,7 @@ var server = net.createServer();
 var Pool = require("./model/pool.js");
 var Chart = require("./model/chart.js");
 var Alert = require("./model/alert.js");
+var User = require("./model/user.js");
 
 // Configuración de la aplicación
 app
@@ -23,7 +25,35 @@ app
         .use(bodyParser.json())
         .use(bodyParser.urlencoded({extended: false}))
         .set('views', path.join(__dirname, 'views'))
-        .set('view engine', 'ejs');
+        .set('view engine', 'ejs')
+		.set('usuario', null);
+
+// Usuario de la sesión
+var usuario = app.get('usuario');
+
+// Middleware para el inicio de sesión
+function requiresLogin(req, res, next) {
+	if (usuario !== null) {
+		return next();
+	} else {
+		var auth = basicAuth({authorizer: authorize, authorizeAsync: true, challenge: true,
+		unauthorizedResponse: {
+			"message": 'Tiene que autenticarse para acceder a la URL ' + req.protocol + '://' + req.get('host') + req.originalUrl,
+			"status": "UNAUTHORIZED"
+		}});
+		return auth(req, res, next);
+	}
+}
+
+// Inicio de sesión
+function authorize(user, pass, callback) {
+    Pool.daouser.find(new User(user, pass), function (status) {
+		if (status !== "ERROR") {
+			usuario = user;
+		}
+        return callback(null, status !== "ERROR");
+    });
+}
 
 // Página principal
 app.get('/', function (req, res) {
@@ -42,8 +72,8 @@ app.get('/about', function (req, res) {
 });
 
 // Página para añadir sensores
-app.put('/chart', function (req, res) {
-    Pool.daochart.insert(new Chart(null, req.body.tipo), function (status) {
+app.put('/chart', requiresLogin, function (req, res) {
+    Pool.daochart.insert(new Chart(null, req.body.tipo, usuario), function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
         else
@@ -55,8 +85,8 @@ app.put('/chart', function (req, res) {
 });
 
 // Página para modificar sensores
-app.post('/chart', function (req, res) {
-    Pool.daochart.update(new Chart(req.body.id, req.body.tipo), function (status) {
+app.post('/chart', requiresLogin, function (req, res) {
+    Pool.daochart.update(new Chart(req.body.id, req.body.tipo, usuario), function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
         else
@@ -68,8 +98,8 @@ app.post('/chart', function (req, res) {
 });
 
 // Página para eliminar sensores
-app.delete('/chart', function (req, res) {
-    Pool.daochart.delete(new Chart(req.query.id, null), function (status) {
+app.delete('/chart', requiresLogin, function (req, res) {
+    Pool.daochart.delete(new Chart(req.query.id, null, usuario), function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
         else
@@ -81,8 +111,8 @@ app.delete('/chart', function (req, res) {
 });
 
 // Página para buscar sensores
-app.get('/chart', function (req, res) {
-    Pool.daochart.find(new Chart(req.query.id, null), function (chart) {
+app.get('/chart', requiresLogin, function (req, res) {
+    Pool.daochart.find(new Chart(req.query.id, null, usuario), function (chart) {
         if (chart === "ERROR")
             err404(null, req, res, null);
         else {
@@ -111,8 +141,8 @@ app.get('/chart', function (req, res) {
 });
 
 // Página para buscar gráficas
-app.get('/graph', function (req, res) {
-    Pool.daochart.find(new Chart(req.query.id, null), function (chart) {
+app.get('/graph', requiresLogin, function (req, res) {
+    Pool.daochart.find(new Chart(req.query.id, null, usuario), function (chart) {
         if (chart === "ERROR")
             err404(null, req, res, null);
         else {
@@ -141,8 +171,8 @@ app.get('/graph', function (req, res) {
 });
 
 // Página para resetear los sensores
-app.delete('/charts', function (req, res) {
-    Pool.daochart.deleteAll(function (status) {
+app.delete('/charts', requiresLogin, function (req, res) {
+    Pool.daochart.deleteAll(usuario, function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
         else
@@ -154,8 +184,8 @@ app.delete('/charts', function (req, res) {
 });
 
 // Página para obtener los sensores
-app.get('/charts', function (req, res) {
-    Pool.daochart.findAll(function (charts) {
+app.get('/charts', requiresLogin, function (req, res) {
+    Pool.daochart.findAll(usuario, function (charts) {
         if (charts === "ERROR")
             err404(null, req, res, null);
         else {
@@ -200,8 +230,8 @@ app.get('/charts', function (req, res) {
 
 
 // Página para obtener las gráficas
-app.get('/graphs', function (req, res) {
-    Pool.daochart.findAll(function (charts) {
+app.get('/graphs', requiresLogin, function (req, res) {
+    Pool.daochart.findAll(usuario, function (charts) {
         if (charts === "ERROR")
             err404(null, req, res, null);
         else {
@@ -245,7 +275,7 @@ app.get('/graphs', function (req, res) {
 });
 
 // Página para añadir valores
-app.put('/valor', function (req, res) {
+app.put('/valor', requiresLogin, function (req, res) {
     Pool.daovalor.insert(req.body.dato, req.body.sensor, function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
@@ -258,7 +288,7 @@ app.put('/valor', function (req, res) {
 });
 
 // Página para buscar valores por sensor
-app.get('/valor', function (req, res) {
+app.get('/valor', requiresLogin, function (req, res) {
     Pool.daovalor.find(req.query.sensor, 100, function (datos) {
         if (datos === "ERROR")
             err404(null, req, res, null);
@@ -279,7 +309,7 @@ app.get('/valor', function (req, res) {
 });
 
 // Página para resetear los valores
-app.delete('/valores', function (req, res) {
+app.delete('/valores', requiresLogin, function (req, res) {
     Pool.daovalor.deleteAll(function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
@@ -292,7 +322,7 @@ app.delete('/valores', function (req, res) {
 });
 
 // Página para añadir alertas
-app.put('/alert', function (req, res) {
+app.put('/alert', requiresLogin, function (req, res) {
     Pool.daoalert.insert(new Alert(null, req.body.tipo, req.body.sensor, req.body.dato), function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
@@ -305,7 +335,7 @@ app.put('/alert', function (req, res) {
 });
 
 // Página para modificar alertas
-app.post('/alert', function (req, res) {
+app.post('/alert', requiresLogin, function (req, res) {
     Pool.daoalert.update(new Alert(req.body.id, req.body.tipo, req.body.sensor, req.body.dato), function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
@@ -318,7 +348,7 @@ app.post('/alert', function (req, res) {
 });
 
 // Página para eliminar alertas
-app.delete('/alert', function (req, res) {
+app.delete('/alert', requiresLogin, function (req, res) {
     Pool.daoalert.delete(req.query.id, function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
@@ -331,7 +361,7 @@ app.delete('/alert', function (req, res) {
 });
 
 // Página para buscar alertas por sensor
-app.get('/alert', function (req, res) {
+app.get('/alert', requiresLogin, function (req, res) {
     Pool.daoalert.find(req.query.sensor, function (datos) {
         if (datos === "ERROR")
             err404(null, req, res, null);
@@ -352,13 +382,65 @@ app.get('/alert', function (req, res) {
 });
 
 // Página para resetear las alertas
-app.delete('/alerts', function (req, res) {
+app.delete('/alerts', requiresLogin, function (req, res) {
     Pool.daoalert.deleteAll(function (status) {
         if (status === "ERROR")
             err404(null, req, res, null);
         else
             res.status(200).json({
                 "message": "Se han reseteado las alertas",
+                "status": status
+            });
+    });
+});
+
+// Página para añadir usuarios
+app.put('/user', function (req, res) {
+	Pool.daouser.insert(new User(req.body.nick, req.body.pass), function (status) {
+        if (status === "ERROR")
+            err404(null, req, res, null);
+        else
+            res.status(200).json({
+                "message": "Se ha añadido el usuario " + req.body.nick,
+                "status": status
+            });
+    });
+});
+
+// Página para modificar usuarios
+app.post('/user', function (req, res) {
+    Pool.daouser.update(new User(req.body.nick, req.body.pass), function (status) {
+        if (status === "ERROR")
+            err404(null, req, res, null);
+        else
+            res.status(200).json({
+                "message": "Se ha modificado la contraseña del usuario " + req.body.nick,
+                "status": status
+            });
+    });
+});
+
+// Página para eliminar usuarios
+app.delete('/user', function (req, res) {
+    Pool.daouser.delete(new User(req.query.nick, null), function (status) {
+        if (status === "ERROR")
+            err404(null, req, res, null);
+        else
+            res.status(200).json({
+                "message": "Se ha eliminado el usuario " + req.query.nick,
+                "status": status
+            });
+    });
+});
+
+// Página para resetear los usuarios
+app.delete('/users', function (req, res) {
+    Pool.daouser.deleteAll(function (status) {
+        if (status === "ERROR")
+            err404(null, req, res, null);
+        else
+            res.status(200).json({
+                "message": "Se han reseteado los usuarios",
                 "status": status
             });
     });
@@ -547,6 +629,15 @@ app.get('*', function (req, res) {
     throw new Error();
 });
 
+// Gestión de error 401
+function err401(err, req, res, next) {
+    res.status(401).json({
+        "message": 'Tiene que autenticarse para acceder a la URL ' + req.protocol + '://' + req.get('host') + req.originalUrl,
+        "status": "UNAUTHORIZED"
+    });
+}
+app.use(err401);
+
 // Gestión de error 404
 function err404(err, req, res, next) {
     res.status(404).json({
@@ -559,7 +650,7 @@ app.use(err404);
 // Gestión de error 405
 function err405(err, req, res, next) {
     res.status(405).json({
-        "message": 'No tiene permiso para realizar ' + req.method + 'sobre la URL' + req.protocol + '://' + req.get('host') + req.originalUrl,
+        "message": 'No tiene permiso para realizar ' + req.method + ' sobre la URL ' + req.protocol + '://' + req.get('host') + req.originalUrl,
         "status": "FORBIDDEN"
     });
 }

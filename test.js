@@ -5,6 +5,11 @@ var assert = require('assert');
 var Pool = require("./model/pool.js");
 var Chart = require("./model/chart.js");
 var Alert = require("./model/alert.js");
+var User = require("./model/user.js");
+
+// Usuario de la sesión
+app.set('usuario', 'prueba');
+var usuario = app.get('usuario');
 
 // Página principal
 describe("GET /", function () {
@@ -26,6 +31,16 @@ describe("GET /about", function () {
     });
 });
 
+// Inicialización de users para el test
+describe("Inicialización de users para el test", function () {
+    it('', function (done) {
+        Pool.daouser.initialize(function (status) {
+            assert.equal(status, "SUCCESS");
+            done();
+        });
+    });
+});
+
 // Inicialización de charts para el test
 describe("Inicialización de charts para el test", function () {
     it('', function (done) {
@@ -56,11 +71,56 @@ describe("Inicialización de alerts para el test", function () {
     });
 });
 
+// Página para modificar usuarios
+describe("POST /user", function () {
+    it('user.nick debe existir en la base de datos', function (done) {
+        request(app)
+                .post('/user')
+                .send({nick: 'prueba', pass: 'contrasena'})
+                .expect('Content-Type', /json/)
+                .expect(200, done);
+    });
+});
+
+// Página para modificar usuarios (fallida)
+describe("POST /user (fallida)", function () {
+    it('user.nick no debe existir en la base de datos', function (done) {
+        request(app)
+                .post('/user')
+                .send({nick: 'test', pass: 'contrasena'})
+                .expect('Content-Type', /json/)
+                .expect(404, done);
+    });
+});
+
+// Página para añadir usuarios
+describe("PUT /user", function () {
+    it('user.nick no debe existir en la base de datos', function (done) {
+        request(app)
+                .put('/user')
+                .send({nick: 'test', pass: 'contrasena'})
+                .expect('Content-Type', /json/)
+                .expect(200, done);
+    });
+});
+
+// Página para añadir usuarios (fallida)
+describe("PUT /user (fallida)", function () {
+    it('user.nick debe existir en la base de datos', function (done) {
+        request(app)
+                .put('/user')
+                .send({nick: 'test', pass: 'contrasena'})
+                .expect('Content-Type', /json/)
+                .expect(404, done);
+    });
+});
+
 // Página para buscar alertas
 describe("GET /alert", function () {
     it('alert.sensor debe existir en la base de datos', function (done) {
         request(app)
                 .get('/alert')
+				.auth('prueba', 'contrasena')
                 .query({sensor: 31})
                 .expect('Content-Type', /json/)
                 .expect(200, done);
@@ -72,6 +132,7 @@ describe("GET /alert (fallida)", function () {
     it('alert.sensor no debe existir en la base de datos', function (done) {
         request(app)
                 .get('/alert')
+				.auth('prueba', 'contrasena')
                 .query({sensor: 19991})
                 .expect('Content-Type', /json/)
                 .expect(404, done);
@@ -83,6 +144,7 @@ describe("POST /alert", function () {
     it('alert.id debe existir en la base de datos', function (done) {
         request(app)
                 .post('/alert')
+				.auth('prueba', 'contrasena')
                 .send({id: 21, dato: 40, sensor: 31, tipo: 'mayor'})
                 .expect('Content-Type', /json/)
                 .expect(200, done);
@@ -94,6 +156,7 @@ describe("POST /alert (fallida)", function () {
     it('alert.id no debe existir en la base de datos', function (done) {
         request(app)
                 .post('/alert')
+				.auth('prueba', 'contrasena')
                 .send({id: 19991, dato: 40, sensor: 31, tipo: 'mayor'})
                 .expect('Content-Type', /json/)
                 .expect(404, done);
@@ -105,6 +168,7 @@ describe("PUT /alert", function () {
     it('alert.sensor debe existir en la base de datos', function (done) {
         request(app)
                 .put('/alert')
+				.auth('prueba', 'contrasena')
                 .send({dato: 45, sensor: 31, tipo: 'mayor'})
                 .expect('Content-Type', /json/)
                 .expect(200, done);
@@ -116,6 +180,7 @@ describe("PUT /alert (fallida)", function () {
     it('alert.sensor no debe existir en la base de datos', function (done) {
         request(app)
                 .put('/alert')
+				.auth('prueba', 'contrasena')
                 .send({dato: 45, sensor: 19991, tipo: 'mayor'})
                 .expect('Content-Type', /json/)
                 .expect(404, done);
@@ -127,6 +192,7 @@ describe("GET /valor", function () {
     it('valor.sensor debe existir en la base de datos', function (done) {
         request(app)
                 .get('/valor')
+				.auth('prueba', 'contrasena')
                 .query({sensor: 31})
                 .expect('Content-Type', /json/)
                 .expect(200, done);
@@ -138,6 +204,7 @@ describe("GET /valor (fallida)", function () {
     it('valor.sensor no debe existir en la base de datos', function (done) {
         request(app)
                 .get('/valor')
+				.auth('prueba', 'contrasena')
                 .query({sensor: 19991})
                 .expect('Content-Type', /json/)
                 .expect(404, done);
@@ -149,6 +216,7 @@ describe("PUT /valor", function () {
     it('valor.sensor debe existir en la base de datos', function (done) {
         request(app)
                 .put('/valor')
+				.auth('prueba', 'contrasena')
                 .send({dato: 50, sensor: 31})
                 .expect('Content-Type', /json/)
                 .expect(200, done);
@@ -160,6 +228,7 @@ describe("PUT /valor (fallida)", function () {
     it('valor.sensor no debe existir en la base de datos', function (done) {
         request(app)
                 .put('/valor')
+				.auth('prueba', 'contrasena')
                 .send({dato: 50, sensor: 19991})
                 .expect('Content-Type', /json/)
                 .expect(404, done);
@@ -172,6 +241,7 @@ describe("GET /chart", function () {
         this.timeout(10000);
         request(app)
                 .get('/chart')
+				.auth('prueba', 'contrasena')
                 .query({id: 31})
                 .expect('Content-Type', /json/)
                 .expect(200, done);
@@ -183,6 +253,7 @@ describe("GET /chart (fallida)", function () {
     it('chart.id no debe existir en la base de datos', function (done) {
         request(app)
                 .get('/chart')
+				.auth('prueba', 'contrasena')
                 .query({id: 19991})
                 .expect('Content-Type', /json/)
                 .expect(404, done);
@@ -195,6 +266,7 @@ describe("GET /graph", function () {
         this.timeout(10000);
         request(app)
                 .get('/graph')
+				.auth('prueba', 'contrasena')
                 .query({id: 31})
                 .expect('Content-Type', /json/)
                 .expect(200, done);
@@ -206,6 +278,7 @@ describe("GET /graph (fallida)", function () {
     it('chart.id no debe existir en la base de datos', function (done) {
         request(app)
                 .get('/graph')
+				.auth('prueba', 'contrasena')
                 .query({id: 19991})
                 .expect('Content-Type', /json/)
                 .expect(404, done);
@@ -217,6 +290,7 @@ describe("POST /chart", function () {
     it('chart.id debe existir en la base de datos', function (done) {
         request(app)
                 .post('/chart')
+				.auth('prueba', 'contrasena')
                 .send({id: 31, tipo: 'velviento'})
                 .expect('Content-Type', /json/)
                 .expect(200, done);
@@ -228,6 +302,7 @@ describe("POST /chart (fallida)", function () {
     it('chart.id no debe existir en la base de datos', function (done) {
         request(app)
                 .post('/chart')
+				.auth('prueba', 'contrasena')
                 .send({id: 19991, tipo: 'velviento'})
                 .expect('Content-Type', /json/)
                 .expect(404, done);
@@ -239,6 +314,7 @@ describe("PUT /chart", function () {
     it('devuelve 200 (json)', function (done) {
         request(app)
                 .put('/chart')
+				.auth('prueba', 'contrasena')
                 .send({tipo: 'temperatura'})
                 .expect('Content-Type', /json/)
                 .expect(200, done);
@@ -250,6 +326,7 @@ describe("DELETE /valores", function () {
     it('devuelve 200 (json)', function (done) {
         request(app)
                 .delete('/valores')
+				.auth('prueba', 'contrasena')
                 .expect('Content-Type', /json/)
                 .expect(200, done);
     });
@@ -260,6 +337,7 @@ describe("DELETE /alert", function () {
     it('alert.id debe existir en la base de datos', function (done) {
         request(app)
                 .delete('/alert')
+				.auth('prueba', 'contrasena')
                 .query({id: 21})
                 .expect('Content-Type', /json/)
                 .expect(200, done);
@@ -271,6 +349,7 @@ describe("DELETE /alert (fallida)", function () {
     it('alert.id no debe existir en la base de datos', function (done) {
         request(app)
                 .delete('/alert')
+				.auth('prueba', 'contrasena')
                 .query({id: 19991})
                 .expect('Content-Type', /json/)
                 .expect(404, done);
@@ -282,6 +361,7 @@ describe("DELETE /alerts", function () {
     it('devuelve 200 (json)', function (done) {
         request(app)
                 .delete('/alerts')
+				.auth('prueba', 'contrasena')
                 .expect('Content-Type', /json/)
                 .expect(200, done);
     });
@@ -292,6 +372,7 @@ describe("DELETE /chart", function () {
     it('chart.id debe existir en la base de datos', function (done) {
         request(app)
                 .delete('/chart')
+				.auth('prueba', 'contrasena')
                 .query({id: 31})
                 .expect('Content-Type', /json/)
                 .expect(200, done);
@@ -303,6 +384,7 @@ describe("DELETE /chart (fallida)", function () {
     it('chart.id no debe existir en la base de datos', function (done) {
         request(app)
                 .delete('/chart')
+				.auth('prueba', 'contrasena')
                 .query({id: 19991})
                 .expect('Content-Type', /json/)
                 .expect(404, done);
@@ -315,6 +397,7 @@ describe("GET /charts", function () {
         this.timeout(10000);
         request(app)
                 .get('/charts')
+				.auth('prueba', 'contrasena')
                 .expect('Content-Type', /json/)
                 .expect(200, done);
     });
@@ -326,6 +409,7 @@ describe("GET /graphs", function () {
         this.timeout(10000);
         request(app)
                 .get('/graphs')
+				.auth('prueba', 'contrasena')
                 .expect('Content-Type', /json/)
                 .expect(200, done);
     });
@@ -336,8 +420,51 @@ describe("DELETE /charts", function () {
     it('devuelve 200 (json)', function (done) {
         request(app)
                 .delete('/charts')
+				.auth('prueba', 'contrasena')
                 .expect('Content-Type', /json/)
                 .expect(200, done);
+    });
+});
+
+// Página para eliminar usuarios
+describe("DELETE /user", function () {
+    it('user.nick debe existir en la base de datos', function (done) {
+        request(app)
+                .delete('/user')
+                .query({nick: 'test'})
+                .expect('Content-Type', /json/)
+                .expect(200, done);
+    });
+});
+
+// Página para eliminar usuarios (fallida)
+describe("DELETE /user (fallida)", function () {
+    it('user.nick no debe existir en la base de datos', function (done) {
+        request(app)
+                .delete('/user')
+                .query({nick: 'test'})
+                .expect('Content-Type', /json/)
+                .expect(404, done);
+    });
+});
+
+// Página para resetear los usuarios
+describe("DELETE /users", function () {
+    it('devuelve 200 (json)', function (done) {
+        request(app)
+                .delete('/users')
+                .expect('Content-Type', /json/)
+                .expect(200, done);
+    });
+});
+
+// Inicialización de users para el test
+describe("Inicialización de users para el test", function () {
+    it('', function (done) {
+        Pool.daouser.initialize(function (status) {
+            assert.equal(status, "SUCCESS");
+            done();
+        });
     });
 });
 
@@ -366,6 +493,46 @@ describe("Inicialización de alerts para el test", function () {
     it('', function (done) {
         Pool.daoalert.initialize(function (status) {
             assert.equal(status, "SUCCESS");
+            done();
+        });
+    });
+});
+
+// Función para modificar usuarios
+describe("CALL Pool.daouser.update(...)", function () {
+    it('user.nick debe existir en la base de datos', function (done) {
+		Pool.daouser.update(new User('prueba', 'contrasena'), function (status) {
+            assert.equal(status, "SUCCESS");
+            done();
+        });
+    });
+});
+
+// Función para modificar usuarios (fallida)
+describe("CALL Pool.daouser.update(...) (fallida)", function () {
+    it('user.nick no debe existir en la base de datos', function (done) {
+		Pool.daouser.update(new User('test', 'contrasena'), function (status) {
+            assert.equal(status, "ERROR");
+            done();
+        });
+    });
+});
+
+// Función para añadir usuarios
+describe("CALL Pool.daouser.insert(...)", function () {
+    it('user.nick no debe existir en la base de datos', function (done) {
+		Pool.daouser.insert(new User('test', 'contrasena'), function (status) {
+            assert.equal(status, "SUCCESS");
+            done();
+        });
+    });
+});
+
+// Función para añadir usuarios (fallida)
+describe("CALL Pool.daouser.insert(...) (fallida)", function () {
+    it('user.nick debe existir en la base de datos', function (done) {
+		Pool.daouser.insert(new User('test', 'contrasena'), function (status) {
+            assert.equal(status, "ERROR");
             done();
         });
     });
@@ -474,7 +641,7 @@ describe("CALL Pool.daovalor.insert(...) (fallida)", function () {
 // Función para buscar sensores
 describe("CALL Pool.daochart.find(...)", function () {
     it('chart.id debe existir en la base de datos', function (done) {
-        Pool.daochart.find(new Chart(31, null), function (chart) {
+        Pool.daochart.find(new Chart(31, null, usuario), function (chart) {
             assert(chart instanceof Chart);
             done();
         });
@@ -484,7 +651,7 @@ describe("CALL Pool.daochart.find(...)", function () {
 // Función para buscar sensores (fallida)
 describe("CALL Pool.daochart.find(...) (fallida)", function () {
     it('chart.id no debe existir en la base de datos', function (done) {
-        Pool.daochart.find(new Chart(19991, null), function (status) {
+        Pool.daochart.find(new Chart(19991, null, usuario), function (status) {
             assert.equal(status, "ERROR");
             done();
         });
@@ -494,7 +661,7 @@ describe("CALL Pool.daochart.find(...) (fallida)", function () {
 // Función para modificar sensores
 describe("CALL Pool.daochart.update(...)", function () {
     it('chart.id debe existir en la base de datos', function (done) {
-        Pool.daochart.update(new Chart(31, 'luminiscencia'), function (status) {
+        Pool.daochart.update(new Chart(31, 'luminiscencia', usuario), function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -504,7 +671,7 @@ describe("CALL Pool.daochart.update(...)", function () {
 // Función para modificar sensores (fallida)
 describe("CALL Pool.daochart.update(...) (fallida)", function () {
     it('chart.id no debe existir en la base de datos', function (done) {
-        Pool.daochart.update(new Chart(19991, 'luminiscencia'), function (status) {
+        Pool.daochart.update(new Chart(19991, 'luminiscencia', usuario), function (status) {
             assert.equal(status, "ERROR");
             done();
         });
@@ -514,7 +681,7 @@ describe("CALL Pool.daochart.update(...) (fallida)", function () {
 // Función para añadir sensores
 describe("CALL Pool.daochart.insert(...)", function () {
     it('devuelve 200 (SUCCESS)', function (done) {
-        Pool.daochart.insert(new Chart(null, 'presion'), function (status) {
+        Pool.daochart.insert(new Chart(null, 'presion', usuario), function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -564,7 +731,7 @@ describe("CALL Pool.daoalert.deleteAll(...)", function () {
 // Función para eliminar sensores
 describe("CALL Pool.daochart.delete(...)", function () {
     it('chart.id debe existir en la base de datos', function (done) {
-        Pool.daochart.delete(new Chart(31, null), function (status) {
+        Pool.daochart.delete(new Chart(31, null, usuario), function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });
@@ -574,7 +741,7 @@ describe("CALL Pool.daochart.delete(...)", function () {
 // Función para eliminar sensores (fallida)
 describe("CALL Pool.daochart.delete(...) (fallida)", function () {
     it('chart.id no debe existir en la base de datos', function (done) {
-        Pool.daochart.delete(new Chart(19991, null), function (status) {
+        Pool.daochart.delete(new Chart(19991, null, usuario), function (status) {
             assert.equal(status, "ERROR");
             done();
         });
@@ -584,7 +751,7 @@ describe("CALL Pool.daochart.delete(...) (fallida)", function () {
 // Función para obtener los sensores
 describe("CALL Pool.daochart.findAll(...)", function () {
     it('devuelve un array de charts', function (done) {
-        Pool.daochart.findAll(function (charts) {
+        Pool.daochart.findAll(usuario, function (charts) {
             assert(typeof charts !== 'undefined' && charts.length > 0);
             done();
         });
@@ -594,7 +761,37 @@ describe("CALL Pool.daochart.findAll(...)", function () {
 // Función para resetear los sensores
 describe("CALL Pool.daochart.deleteAll(...)", function () {
     it('devuelve 200 (SUCCESS)', function (done) {
-        Pool.daochart.deleteAll(function (status) {
+        Pool.daochart.deleteAll(usuario, function (status) {
+            assert.equal(status, "SUCCESS");
+            done();
+        });
+    });
+});
+
+// Función para eliminar usuarios
+describe("CALL Pool.daouser.delete(...)", function () {
+    it('user.nick debe existir en la base de datos', function (done) {
+        Pool.daouser.delete(new User('test', null), function (status) {
+            assert.equal(status, "SUCCESS");
+            done();
+        });
+    });
+});
+
+// Función para eliminar usuarios (fallida)
+describe("CALL Pool.daouser.delete(...) (fallida)", function () {
+    it('user.nick no debe existir en la base de datos', function (done) {
+        Pool.daouser.delete(new User('test', null), function (status) {
+            assert.equal(status, "ERROR");
+            done();
+        });
+    });
+});
+
+// Función para resetear las usuarios
+describe("CALL Pool.daouser.deleteAll(...)", function () {
+    it('devuelve 200 (SUCCESS)', function (done) {
+        Pool.daouser.deleteAll(function (status) {
             assert.equal(status, "SUCCESS");
             done();
         });

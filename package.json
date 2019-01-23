@@ -11,17 +11,18 @@
     "test": "mocha --icu-data-dir=node_modules/full-icu --exit"
   },
   "dependencies": {
+	"bcrypt": "^3.0.3",
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "full-icu": "^1.2.1",
+    "express-basic-auth": "^1.1.6",
     "jsdom": "^13.0.0",
     "mysql": "^2.16.0"
   },
   "devDependencies": {
-    "supertest": "^3.3.0",
+    "full-icu": "^1.2.1",
     "mocha": "^5.2.0",
-    "full-icu": "^1.2.1"
+    "supertest": "^3.3.0"
   },
   "repository": {
     "type": "git",
