@@ -64,7 +64,7 @@ Se ha hecho uso de Vagrant para la orquestación de máquinas virtuales. En la c
 
 ## Despliegue con contenedores Docker
 
-Mediante Docker se han definido dos contenedores para su despliegue automático. Los archivos necesarios para ello se pueden encontrar en la carpeta [contenedores](https://github.com/fpeiro/CC-proyecto/tree/master/contenedores). Lanzando el ejecutable _shell_ `configure.sh` es posible desplegar estos contenedores en Azure. La dirección donde se encuentra desplegado el Docker es Contenedor: http://cc-serv-fpeiro.uksouth.azurecontainer.io/ Docker Hub: https://hub.docker.com/r/fpeiro/cc-proyecto . Se puede encontrar más información sobre el despliegue [aquí](https://fpeiro.github.io/CC-proyecto/hito6).
+Mediante Docker se han definido dos contenedores para su despliegue automático. Los archivos necesarios para ello se pueden encontrar en la carpeta [contenedores](https://github.com/fpeiro/CC-proyecto/tree/master/contenedores). Lanzando el ejecutable _shell_ `configure.sh` es posible desplegar estos contenedores en Azure. Se puede encontrar más información sobre el despliegue [aquí](https://fpeiro.github.io/CC-proyecto/hito6). La dirección donde se encuentra desplegado el Docker es Contenedor: http://cc-serv-fpeiro.uksouth.azurecontainer.io/ Docker Hub: https://hub.docker.com/r/fpeiro/cc-proyecto .
 
 ## Ejecución de manera local
 
