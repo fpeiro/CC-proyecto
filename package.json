@@ -1,5 +1,5 @@
 {
-  "name": "cc-proyecto",
+  "name": "CC-proyecto",
   "version": "1.0.0",
   "description": "Estación meteorológica local en Granada",
   "engines": {
@@ -11,7 +11,7 @@
     "test": "mocha --icu-data-dir=node_modules/full-icu --exit"
   },
   "dependencies": {
-	"bcrypt": "^3.0.3",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",

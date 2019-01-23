@@ -1,5 +1,5 @@
 var User = require("./user.js");
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 // Constructor de la clase
 function DAOUser(poolparam, NOMBRE_TABLA) {
@@ -29,15 +29,17 @@ function createTable(NOMBRE_TABLA) {
 DAOUser.prototype.insert = function insert(user, callback) {
     var sql = "INSERT INTO " + this.NOMBRE_TABLA + " (nick, pass) VALUES (?, ?)";
 	pool.getConnection(function (err, con) {
-		con.query(sql, [user.nick, hash(user.pass)], function (err, result) {
-			if (callback) {
-				if (err)
-					callback('ERROR');
-				else
-					callback('SUCCESS');
-			}
+		hash(user.pass, function(encrpass) {
+			con.query(sql, [user.nick, encrpass], function (err, result) {
+				if (callback) {
+					if (err)
+						callback('ERROR');
+					else
+						callback('SUCCESS');
+				}
+			});
+			con.release();
 		});
-		con.release();
     });
 };
 
@@ -45,15 +47,17 @@ DAOUser.prototype.insert = function insert(user, callback) {
 DAOUser.prototype.update = function update(user, callback) {
     var sql = "UPDATE " + this.NOMBRE_TABLA + " SET pass = ? WHERE nick = ?";
 	pool.getConnection(function (err, con) {
-		con.query(sql, [hash(user.pass), user.nick], function (err, result) {
-			if (callback) {
-				if (err || result.affectedRows === 0)
-					callback('ERROR');
-				else
-					callback('SUCCESS');
-			}
+		hash(user.pass, function(encrpass) {
+			con.query(sql, [encrpass, user.nick], function (err, result) {
+				if (callback) {
+					if (err || result.affectedRows === 0)
+						callback('ERROR');
+					else
+						callback('SUCCESS');
+				}
+			});
+			con.release();
 		});
-		con.release();
     });
 };
 
@@ -113,26 +117,29 @@ DAOUser.prototype.deleteAll = function deleteAll(callback) {
 
 // Creación de datos para test
 DAOUser.prototype.initialize = function initialize(callback) {
-    var sql = "INSERT IGNORE INTO " + this.NOMBRE_TABLA + " (nick, pass) VALUES ('prueba', '" + hash("abc123") + "')";
-	pool.getConnection(function (err, con) {
-		con.query(sql, function (err, result) {
-			if (callback) {
-				if (err)
-					callback('ERROR');
-				callback('SUCCESS');
-			}
+	var NOMBRE_TABLA = this.NOMBRE_TABLA;
+	hash('abc123', function(encrpass) {
+		var sql = "INSERT IGNORE INTO " + NOMBRE_TABLA + " (nick, pass) VALUES ('prueba', '" + encrpass + "')";
+		pool.getConnection(function (err, con) {
+			con.query(sql, function (err, result) {
+				if (callback) {
+					if (err)
+						callback('ERROR');
+					callback('SUCCESS');
+				}
+			});
+			con.release();
 		});
-		con.release();
     });
 };
 
 // Función para encriptar la contraseña
-function hash(pass) {
+function hash(pass, callback) {
 	bcrypt.hash(pass, 10, function (err, hash){
 		if (err) {
-			return pass;
+			callback(pass);
 		}
-		return hash;
+		callback(hash);
 	})
 }
 
