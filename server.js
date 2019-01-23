@@ -63,6 +63,14 @@ app.get('/', function (req, res) {
     });
 });
 
+// Página de estado
+app.get('/status', function (req, res) {
+    res.status(200).json({
+        "ruta": req.protocol + '://' + req.get('host') + req.originalUrl,
+        "status": "OK"
+    });
+});
+
 // Página de información
 app.get('/about', function (req, res) {
     res.status(200).json({

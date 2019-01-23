@@ -21,6 +21,16 @@ describe("GET /", function () {
     });
 });
 
+// Página de estado
+describe("GET /status", function () {
+    it('devuelve 200 (json)', function (done) {
+        request(app)
+                .get('/status')
+                .expect('Content-Type', /json/)
+                .expect(200, done);
+    });
+});
+
 // Página de información
 describe("GET /about", function () {
     it('devuelve 200 (json)', function (done) {
