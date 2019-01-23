@@ -1,7 +1,8 @@
 # Documentacion del hito 6
 
-En este hito se han realizado los contenedores que permitirán el despliegue automático del servicio haciendo uso de Docker. Los
-contenedores se ejecutan sobre Linux compartiendo kernel permitiendo así la portabilidad a cualquier tipo de entorno ya sea físico o en la nube.
+En este hito se han realizado las siguientes tareas:
+* Construcción de los contenedores que permitirán el despliegue automático del servicio haciendo uso de Docker. Los contenedores se ejecutan sobre Linux compartiendo kernel permitiendo así la portabilidad a cualquier tipo de entorno ya sea físico o en la nube.
+* Microservicio de creación de usuarios de la aplicación añadiendo aislamiento de datos, inicio de sesión y registro. Estos datos se almacenarán en una base de datos MySQL.
 
 ## Instalación de Docker
 
@@ -56,3 +57,34 @@ $ az container create --resource-group $RES_GROUP --name $DOCKER_NAME --image $I
 Se ha diseñado un script para automatizar este proceso en nuestro proyecto, el cual puede verse [aquí](https://github.com/fpeiro/CC-proyecto/blob/master/contenedores/configure.sh). Tras haberlo ejecutado el servicio estará listo en http://40.81.153.130/
 
 ![Proyecto en Chrome](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/images/azure-chrome4.png)
+
+## Funcionalidad
+
+Se han implementado en este hito las siguientes funcionalidades:
+
+* Registro de usuarios
+* Inicio de sesión
+* Aislamiento de datos
+
+Para cada una de las direcciones URL y funciones implementadas se han desarrollado los tests para comprobar su correcto funcionamiento.
+
+## Estructura de los alertas del sensor
+
+Las usuarios poseen los siguientes campos en la base de datos:
+
+* Nombre de usuario. Es la clave primaria por la que se identifican.
+* Contraseña. Cadena de caracteres que permite el inicio de sesión del usuario. Esta contraseña se encuentra encriptada a través de _bcrypt_.
+
+Además, se han añadido a los sensores el campo "dueño" que identifica al usuario que puede hacer uso de estos.
+
+## Direcciones implementadas
+
+Se han implementado las siguientes direcciones para la realización de las funcionalidades:
+
+* `/user`: Depende su funcionalidad según el método utilizado:
+  - Con el método PUT sirve para crear un usuario con la contraseña indicada.
+  - Con el método POST sirve para editar un usuario con la contraseña indicada.
+  - Con el método DELETE sirve para eliminar un usuario.
+* `/users`: Sirve para eliminar todos los usuarios del sistema. (Solo admite el método DELETE.)
+
+Además, ahora el usuario tendrá que identificarse para acceder al resto de direcciones.
