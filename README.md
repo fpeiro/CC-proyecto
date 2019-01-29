@@ -6,7 +6,7 @@
 * [Información sobre el hito 3](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito3.md). Provisionamiento con Ansible.
 * [Información sobre el hito 4](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito4.md). Automatización con Azure CLI y desarrollo del segundo microservicio.
 * [Información sobre el hito 5](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito5.md). Orquestación con Vagrant y desarrollo del tercer microservicio.
-* [Información sobre el hito 6](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito6.md). Despliegue con contenedores Docker.
+* [Información sobre el hito 6](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito6.md). Despliegue con contenedores Docker y desarrollo del cuarto microservicio.
 
 ---
 
@@ -64,7 +64,7 @@ Se ha hecho uso de Vagrant para la orquestación de máquinas virtuales. En la c
 
 ## Despliegue con contenedores Docker
 
-Mediante Docker se han definido dos contenedores para su despliegue automático [disponibles en Docker Hub](https://hub.docker.com/r/fpeiro/cc-proyecto). Los archivos necesarios para ello se pueden encontrar en la carpeta [contenedores](https://github.com/fpeiro/CC-proyecto/tree/master/contenedores). Lanzando el ejecutable _shell_ `configure.sh` es posible desplegar estos contenedores en Azure. Se puede encontrar más información sobre el despliegue [aquí](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito6.md). La dirección donde se encuentra desplegado el Docker es Contenedor: http://cc-serv-fpeiro.uksouth.azurecontainer.io/ .
+Mediante Docker se han definido dos contenedores para su despliegue automático [disponibles en Docker Hub](https://hub.docker.com/r/fpeiro/cc-proyecto). Los archivos necesarios para ello se pueden encontrar en la carpeta [contenedores](https://github.com/fpeiro/CC-proyecto/tree/master/contenedores). Lanzando el ejecutable _shell_ `configure.sh` es posible desplegar estos contenedores en Azure. Se puede encontrar más información sobre el despliegue [aquí](https://github.com/fpeiro/CC-proyecto/blob/gh-pages/hito6.md). La dirección IP donde se encuentra desplegado el Docker es Contenedor: 40.81.153.130 .
 
 ## Ejecución de manera local
 
